@@ -1,0 +1,7 @@
+*.onnx
+
+./env/third-party
+
+*.deb
+
+*.tar

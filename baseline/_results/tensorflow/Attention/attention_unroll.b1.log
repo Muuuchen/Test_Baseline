@@ -1,0 +1,182 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+2023-10-09 13:26:30.437701: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-09 13:26:30.541028: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-10-09 13:26:31.072688: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-09 13:26:31.072738: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-09 13:26:31.072743: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-10-09 13:26:31.645652: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-09 13:26:32.289756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 691 MB memory:  -> device: 0, name: NVIDIA RTX 6000 Ada Generation, pci bus id: 0000:65:00.0, compute capability: 8.9
+----batch_size=1---tf_function=True----
+[warmup]
+Time 3198.0345249176025 ms
+Time 10.109186172485352 ms
+Time 4.686832427978516 ms
+Time 4.893064498901367 ms
+Time 9.68313217163086 ms
+Time 6.93511962890625 ms
+Time 9.837865829467773 ms
+Time 9.387016296386719 ms
+Time 9.381294250488281 ms
+Time 9.441614151000977 ms
+Time 9.529352188110352 ms
+Time 9.891986846923828 ms
+Time 8.716106414794922 ms
+Time 9.79924201965332 ms
+Time 9.60993766784668 ms
+Time 9.204864501953125 ms
+Time 9.956121444702148 ms
+Time 10.280132293701172 ms
+Time 10.022163391113281 ms
+Time 10.391950607299805 ms
+Time 10.12277603149414 ms
+Time 10.457277297973633 ms
+Time 10.24627685546875 ms
+Time 10.385751724243164 ms
+Time 10.173797607421875 ms
+Time 10.42318344116211 ms
+Time 9.126901626586914 ms
+Time 7.782936096191406 ms
+Time 10.39886474609375 ms
+Time 9.990692138671875 ms
+Time 10.24174690246582 ms
+Time 10.457515716552734 ms
+Time 10.44011116027832 ms
+Time 10.370016098022461 ms
+Time 10.286092758178711 ms
+Time 10.339975357055664 ms
+Time 10.18071174621582 ms
+Time 10.417461395263672 ms
+Time 10.28299331665039 ms
+Time 10.425806045532227 ms
+Time 10.212421417236328 ms
+Time 10.379552841186523 ms
+Time 10.228157043457031 ms
+Time 9.122133255004883 ms
+Time 10.360002517700195 ms
+Time 9.7808837890625 ms
+Time 10.344505310058594 ms
+Time 10.267496109008789 ms
+Time 10.382890701293945 ms
+Time 10.23101806640625 ms
+Time 10.338306427001953 ms
+Time 10.2691650390625 ms
+Time 9.151697158813477 ms
+Time 10.315418243408203 ms
+Time 10.243415832519531 ms
+Time 9.001970291137695 ms
+Time 10.309696197509766 ms
+Time 9.66954231262207 ms
+Time 10.382413864135742 ms
+Time 10.19430160522461 ms
+Time 10.278463363647461 ms
+Time 10.153055191040039 ms
+Time 9.089231491088867 ms
+Time 10.369539260864258 ms
+Time 10.664701461791992 ms
+Time 10.431051254272461 ms
+Time 10.1776123046875 ms
+Time 10.171890258789062 ms
+Time 10.086774826049805 ms
+Time 10.234355926513672 ms
+Time 10.138511657714844 ms
+Time 9.093999862670898 ms
+Time 11.938333511352539 ms
+Time 10.704517364501953 ms
+Time 10.787487030029297 ms
+Time 10.556697845458984 ms
+Time 10.549545288085938 ms
+Time 10.677814483642578 ms
+Time 6.112575531005859 ms
+Time 10.206222534179688 ms
+Time 7.091999053955078 ms
+Time 7.913351058959961 ms
+Time 9.986400604248047 ms
+Time 9.227752685546875 ms
+Time 9.998559951782227 ms
+Time 10.058879852294922 ms
+Time 10.220527648925781 ms
+Time 10.186195373535156 ms
+Time 9.770870208740234 ms
+Time 10.169744491577148 ms
+Time 9.882926940917969 ms
+Time 10.228872299194336 ms
+Time 10.525941848754883 ms
+Time 9.57942008972168 ms
+Time 10.155439376831055 ms
+Time 10.147333145141602 ms
+Time 10.321855545043945 ms
+Time 10.243892669677734 ms
+Time 10.158300399780273 ms
+Time 10.260820388793945 ms
+[run]
+[31m100 iters, min = 3.7813 ms, max = 12.5766 ms, avg = 9.4244 ms[m
+Generating '/tmp/nsys-report-c75c.qdstrm'
+[1/7] [0%                          ] report2.nsys-rep[1/7] [0%                          ] report2.nsys-rep[1/7] [0%                          ] report2.nsys-rep[1/7] [13%                         ] report2.nsys-rep[1/7] [11%                         ] report2.nsys-rep[1/7] [10%                         ] report2.nsys-rep[1/7] [9%                          ] report2.nsys-rep[1/7] [=17%                        ] report2.nsys-rep[1/7] [=16%                        ] report2.nsys-rep[1/7] [=15%                        ] report2.nsys-rep[1/7] [=16%                        ] report2.nsys-rep[1/7] [===23%                      ] report2.nsys-rep[1/7] [=====31%                    ] report2.nsys-rep[1/7] [=======38%                  ] report2.nsys-rep[1/7] [=========46%                ] report2.nsys-rep[1/7] [===========53%              ] report2.nsys-rep[1/7] [==============61%           ] report2.nsys-rep[1/7] [================68%         ] report2.nsys-rep[1/7] [==================76%       ] report2.nsys-rep[1/7] [====================83%     ] report2.nsys-rep[1/7] [=====================86%    ] report2.nsys-rep[1/7] [========================100%] report2.nsys-rep[1/7] [========================100%] report2.nsys-rep
+[2/7] [0%                          ] report2.sqlite[2/7] [1%                          ] report2.sqlite[2/7] [2%                          ] report2.sqlite[2/7] [3%                          ] report2.sqlite[2/7] [4%                          ] report2.sqlite[2/7] [5%                          ] report2.sqlite[2/7] [6%                          ] report2.sqlite[2/7] [7%                          ] report2.sqlite[2/7] [8%                          ] report2.sqlite[2/7] [9%                          ] report2.sqlite[2/7] [10%                         ] report2.sqlite[2/7] [11%                         ] report2.sqlite[2/7] [12%                         ] report2.sqlite[2/7] [13%                         ] report2.sqlite[2/7] [14%                         ] report2.sqlite[2/7] [=15%                        ] report2.sqlite[2/7] [=16%                        ] report2.sqlite[2/7] [=17%                        ] report2.sqlite[2/7] [==18%                       ] report2.sqlite[2/7] [==19%                       ] report2.sqlite[2/7] [==20%                       ] report2.sqlite[2/7] [==21%                       ] report2.sqlite[2/7] [===22%                      ] report2.sqlite[2/7] [===23%                      ] report2.sqlite[2/7] [===24%                      ] report2.sqlite[2/7] [====25%                     ] report2.sqlite[2/7] [====26%                     ] report2.sqlite[2/7] [====27%                     ] report2.sqlite[2/7] [====28%                     ] report2.sqlite[2/7] [=====29%                    ] report2.sqlite[2/7] [=====30%                    ] report2.sqlite[2/7] [=====31%                    ] report2.sqlite[2/7] [=====32%                    ] report2.sqlite[2/7] [======33%                   ] report2.sqlite[2/7] [======34%                   ] report2.sqlite[2/7] [======35%                   ] report2.sqlite[2/7] [=======36%                  ] report2.sqlite[2/7] [=======37%                  ] report2.sqlite[2/7] [=======38%                  ] report2.sqlite[2/7] [=======39%                  ] report2.sqlite[2/7] [========40%                 ] report2.sqlite[2/7] [========41%                 ] report2.sqlite[2/7] [========42%                 ] report2.sqlite[2/7] [=========43%                ] report2.sqlite[2/7] [=========44%                ] report2.sqlite[2/7] [=========45%                ] report2.sqlite[2/7] [=========46%                ] report2.sqlite[2/7] [==========47%               ] report2.sqlite[2/7] [==========48%               ] report2.sqlite[2/7] [==========49%               ] report2.sqlite[2/7] [===========50%              ] report2.sqlite[2/7] [===========51%              ] report2.sqlite[2/7] [===========52%              ] report2.sqlite[2/7] [===========53%              ] report2.sqlite[2/7] [============54%             ] report2.sqlite[2/7] [============55%             ] report2.sqlite[2/7] [============56%             ] report2.sqlite[2/7] [============57%             ] report2.sqlite[2/7] [=============58%            ] report2.sqlite[2/7] [=============59%            ] report2.sqlite[2/7] [=============60%            ] report2.sqlite[2/7] [==============61%           ] report2.sqlite[2/7] [==============62%           ] report2.sqlite[2/7] [==============63%           ] report2.sqlite[2/7] [==============64%           ] report2.sqlite[2/7] [===============65%          ] report2.sqlite[2/7] [===============66%          ] report2.sqlite[2/7] [===============67%          ] report2.sqlite[2/7] [================68%         ] report2.sqlite[2/7] [================69%         ] report2.sqlite[2/7] [================70%         ] report2.sqlite[2/7] [================71%         ] report2.sqlite[2/7] [=================72%        ] report2.sqlite[2/7] [=================73%        ] report2.sqlite[2/7] [=================74%        ] report2.sqlite[2/7] [==================75%       ] report2.sqlite[2/7] [==================76%       ] report2.sqlite[2/7] [==================77%       ] report2.sqlite[2/7] [==================78%       ] report2.sqlite[2/7] [===================79%      ] report2.sqlite[2/7] [===================80%      ] report2.sqlite[2/7] [===================81%      ] report2.sqlite[2/7] [===================82%      ] report2.sqlite[2/7] [====================83%     ] report2.sqlite[2/7] [====================84%     ] report2.sqlite[2/7] [====================85%     ] report2.sqlite[2/7] [=====================86%    ] report2.sqlite[2/7] [=====================87%    ] report2.sqlite[2/7] [=====================88%    ] report2.sqlite[2/7] [=====================89%    ] report2.sqlite[2/7] [======================90%   ] report2.sqlite[2/7] [======================91%   ] report2.sqlite[2/7] [======================92%   ] report2.sqlite[2/7] [=======================93%  ] report2.sqlite[2/7] [=======================94%  ] report2.sqlite[2/7] [=======================95%  ] report2.sqlite[2/7] [=======================96%  ] report2.sqlite[2/7] [========================97% ] report2.sqlite[2/7] [========================98% ] report2.sqlite[2/7] [========================99% ] report2.sqlite[2/7] [========================100%] report2.sqlite[2/7] [========================100%] report2.sqlite
+SKIPPED: /root/mlir/baseline/attention/report2.sqlite does not contain NV Tools Extension (NVTX) data.
+[3/7] Executing 'nvtx_sum' stats report
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)            Name          
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------
+     53.7       1003330127          2  501665063.5  501665063.5  109383497  893946630  554769911.6  cudaFree                
+     29.7        554756292      57613       9629.0       9853.0       2397     321878       3929.6  cudaLaunchKernel        
+      9.4        176114800        686     256727.1      47239.0       2016    4133024     519960.5  cuModuleUnload          
+      2.7         50758875       6414       7913.8       8164.0       2313      86655       2372.2  cuLaunchKernel          
+      2.6         49321300      98983        498.3        443.0        101     770253       2461.4  cuCtxSetCurrent         
+      1.6         30815811          1   30815811.0   30815811.0   30815811   30815811          0.0  cudaProfilerStop        
+      0.0           689659          1     689659.0     689659.0     689659     689659          0.0  cuMemHostAlloc          
+      0.0           675793          3     225264.3     170325.0       3757     501711     253482.3  cudaMalloc              
+      0.0           577363          1     577363.0     577363.0     577363     577363          0.0  cuMemAlloc_v2           
+      0.0           362508       1152        314.7        226.5         92       2053        205.1  cuGetProcAddress        
+      0.0           335457          3     111819.0     106702.0      98286     130469      16690.5  cuModuleLoadData        
+      0.0            63204          4      15801.0      14149.0      10361      24545       6606.0  cuMemcpyHtoDAsync_v2    
+      0.0            34063          1      34063.0      34063.0      34063      34063          0.0  cuMemGetInfo_v2         
+      0.0            25754          1      25754.0      25754.0      25754      25754          0.0  cudaProfilerStart       
+      0.0            17919          4       4479.8       1221.5       1053      14423       6630.4  cuStreamCreate          
+      0.0            13804          8       1725.5       1261.0        372       3959       1479.7  cuEventRecord           
+      0.0            13326          1      13326.0      13326.0      13326      13326          0.0  cuMemsetD32_v2          
+      0.0            12138          4       3034.5       2760.0       1757       4861       1348.7  cuEventQuery            
+      0.0             8564         18        475.8        341.0        315       2313        474.0  cudaEventCreateWithFlags
+      0.0             6844          4       1711.0       1617.5        952       2657        769.5  cuStreamWaitEvent       
+      0.0             5762          3       1920.7       2071.0       1293       2398        567.6  cuInit                  
+      0.0             2747          5        549.4        321.0        216       1269        446.2  cuEventCreate           
+      0.0              918          3        306.0        210.0        163        545        208.3  cuModuleGetLoadingMode  
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     42.3         36753212      25600    1435.7    1440.0      1407      1696         14.3  void gemvNSP_kernel<float, float, float, float, (int)1, (int)32, (int)4, (int)1024, (bool)0, cublas…
+     11.4          9900565       6400    1547.0    1504.0      1471      1888         80.5  void tensorflow::<unnamed>::GenerateNormalizedProb<float, float, (int)4>(const T1 *, const T2 *, co…
+     11.0          9524389       6400    1488.2    1503.0      1471      1792         16.5  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+     10.5          9139746       6400    1428.1    1440.0      1407      1696         16.1  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      8.9          7712847       6400    1205.1    1216.0      1183      1248         15.2  void tensorflow::functor::RowReduceKernel<cub::TransformInputIterator<float, tensorflow::<unnamed>:…
+      8.0          6940322       6400    1084.4    1088.0      1055      1248         14.1  void tensorflow::functor::RowReduceKernel<const float *, float *, cub::Max>(T1, T2, int, int, T3, s…
+      7.8          6765928       6407    1056.0    1056.0      1023      1791         19.2  Mul_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                    
+      0.0            36000          7    5142.9    5312.0      3776      5536        609.6  void tensorflow::functor::FillPhiloxRandomKernelLaunch<tsl::random::NormalDistribution<tsl::random:…
+      0.0             9344          7    1334.9    1344.0      1120      1504        113.5  AddV2_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                  
+      0.0             2912          2    1456.0    1456.0      1408      1504         67.9  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.0             2816          2    1408.0    1408.0      1408      1408          0.0  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.0             2591          2    1295.5    1295.5      1279      1312         23.3  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     71.2             1664      4     416.0     384.0       384       512         64.0  [CUDA memcpy Host-to-Device]
+     28.8              672      1     672.0     672.0       672       672          0.0  [CUDA memset]               
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+      0.001      1     0.001     0.001     0.001     0.001        0.000  [CUDA memset]               
+      0.000      4     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy Host-to-Device]
+
+Generated:
+    /root/mlir/baseline/attention/report2.nsys-rep
+    /root/mlir/baseline/attention/report2.sqlite

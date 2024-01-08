@@ -1,0 +1,314 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+/root/miniconda3/envs/pytorch/lib/python3.9/site-packages/torch/nn/modules/module.py:1501: UserWarning: operator() profile_node %134 : bool = prim::profile_ivalue(%training.9)
+ does not have profile information (Triggered internally at ../third_party/nvfuser/csrc/graph_fuser.cpp:104.)
+  return forward_call(*args, **kwargs)
+/root/miniconda3/envs/pytorch/lib/python3.9/site-packages/torch/onnx/utils.py:825: UserWarning: no signature found for <torch.ScriptMethod object at 0x7f537b169b80>, skipping _decide_input_format
+  warnings.warn(f"{e}, skipping _decide_input_format")
+Namespace(overhead_test=False, unroll=False, rate=-1, bs=1, use_profile=True)
+----batch_size=1---torchscript=True----
+run model.forward_real tensor([[0., 1., 0., 1., 0., 1., 0., 1., 0., 1., 0., 1., 0., 1., 0.]],
+       device='cuda:0')
+[warmup]
+time 0.20694875717163086
+time 2.4220845699310303
+time 0.002152681350708008
+time 0.001920461654663086
+time 0.0018305778503417969
+time 0.0018546581268310547
+time 0.0018296241760253906
+time 0.0018415451049804688
+time 0.0018301010131835938
+time 0.0019965171813964844
+time 0.001821756362915039
+time 0.0017697811126708984
+time 0.0018391609191894531
+time 0.0017995834350585938
+time 0.0018644332885742188
+time 0.0018780231475830078
+time 0.002045869827270508
+time 0.001827239990234375
+time 0.001882791519165039
+time 0.0018229484558105469
+time 0.0018253326416015625
+time 0.0018019676208496094
+time 0.0018267631530761719
+time 0.001814126968383789
+time 0.0017685890197753906
+time 0.0017695426940917969
+time 0.0017552375793457031
+time 0.0018107891082763672
+time 0.00185394287109375
+time 0.0018603801727294922
+time 0.0018346309661865234
+time 0.0018620491027832031
+time 0.0017960071563720703
+time 0.001802682876586914
+time 0.001821279525756836
+time 0.0017833709716796875
+time 0.001832723617553711
+time 0.0017626285552978516
+time 0.0018322467803955078
+time 0.001767873764038086
+time 0.0018219947814941406
+time 0.0018231868743896484
+time 0.0019104480743408203
+time 0.0018565654754638672
+time 0.0018687248229980469
+time 0.0018916130065917969
+time 0.0018157958984375
+time 0.0018069744110107422
+time 0.0017614364624023438
+time 0.0017695426940917969
+time 0.0017552375793457031
+time 0.0017809867858886719
+time 0.001760244369506836
+time 0.001767873764038086
+time 0.0017971992492675781
+time 0.0017652511596679688
+time 0.0018537044525146484
+time 0.001842498779296875
+time 0.0018024444580078125
+time 0.001800537109375
+time 0.0018391609191894531
+time 0.0018088817596435547
+time 0.0018050670623779297
+time 0.0017657279968261719
+time 0.0017647743225097656
+time 0.0017898082733154297
+time 0.001825094223022461
+time 0.0018169879913330078
+time 0.0018088817596435547
+time 0.0018105506896972656
+time 0.001794576644897461
+time 0.0018825531005859375
+time 0.0018241405487060547
+time 0.0018734931945800781
+time 0.0018239021301269531
+time 0.0018334388732910156
+time 0.0017771720886230469
+time 0.0018165111541748047
+time 0.0018184185028076172
+time 0.0018444061279296875
+time 0.0018157958984375
+time 0.0017590522766113281
+time 0.0018205642700195312
+time 0.0025751590728759766
+time 0.002145528793334961
+time 0.0019061565399169922
+time 0.0018401145935058594
+time 0.001878499984741211
+time 0.0019061565399169922
+time 0.0018908977508544922
+time 0.0018939971923828125
+time 0.0018818378448486328
+time 0.0018723011016845703
+time 0.001857757568359375
+time 0.0018885135650634766
+time 0.0018672943115234375
+time 0.0019075870513916016
+time 0.0018579959869384766
+time 0.001865386962890625
+time 0.0018644332885742188
+[run]
+[31m100 iters, min = 1.7598 ms, max = 2.6088 ms, avg = 1.8417 ms[m
+============= Diagnostic Run torch.onnx.export version 2.0.1+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+Generating '/tmp/nsys-report-fa68.qdstrm'
+[1/7] [0%                          ] report1.nsys-rep[1/7] [0%                          ] report1.nsys-rep[1/7] [=17%                        ] report1.nsys-rep[1/7] [13%                         ] report1.nsys-rep[1/7] [10%                         ] report1.nsys-rep[1/7] [==19%                       ] report1.nsys-rep[1/7] [=16%                        ] report1.nsys-rep[1/7] [14%                         ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [11%                         ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [==18%                       ] report1.nsys-rep[1/7] [====27%                     ] report1.nsys-rep[1/7] [======34%                   ] report1.nsys-rep[1/7] [========41%                 ] report1.nsys-rep[1/7] [===========50%              ] report1.nsys-rep[1/7] [=============58%            ] report1.nsys-rep[1/7] [==============62%           ] report1.nsys-rep[1/7] [==================76%       ] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep
+[2/7] [0%                          ] report1.sqlite[2/7] [1%                          ] report1.sqlite[2/7] [2%                          ] report1.sqlite[2/7] [3%                          ] report1.sqlite[2/7] [4%                          ] report1.sqlite[2/7] [5%                          ] report1.sqlite[2/7] [6%                          ] report1.sqlite[2/7] [7%                          ] report1.sqlite[2/7] [8%                          ] report1.sqlite[2/7] [9%                          ] report1.sqlite[2/7] [10%                         ] report1.sqlite[2/7] [11%                         ] report1.sqlite[2/7] [12%                         ] report1.sqlite[2/7] [13%                         ] report1.sqlite[2/7] [14%                         ] report1.sqlite[2/7] [=15%                        ] report1.sqlite[2/7] [=16%                        ] report1.sqlite[2/7] [=17%                        ] report1.sqlite[2/7] [==18%                       ] report1.sqlite[2/7] [==19%                       ] report1.sqlite[2/7] [==20%                       ] report1.sqlite[2/7] [==21%                       ] report1.sqlite[2/7] [===22%                      ] report1.sqlite[2/7] [===23%                      ] report1.sqlite[2/7] [===24%                      ] report1.sqlite[2/7] [====25%                     ] report1.sqlite[2/7] [====26%                     ] report1.sqlite[2/7] [====27%                     ] report1.sqlite[2/7] [====28%                     ] report1.sqlite[2/7] [=====29%                    ] report1.sqlite[2/7] [=====30%                    ] report1.sqlite[2/7] [=====31%                    ] report1.sqlite[2/7] [=====32%                    ] report1.sqlite[2/7] [======33%                   ] report1.sqlite[2/7] [======34%                   ] report1.sqlite[2/7] [======35%                   ] report1.sqlite[2/7] [=======36%                  ] report1.sqlite[2/7] [=======37%                  ] report1.sqlite[2/7] [=======38%                  ] report1.sqlite[2/7] [=======39%                  ] report1.sqlite[2/7] [========40%                 ] report1.sqlite[2/7] [========41%                 ] report1.sqlite[2/7] [========42%                 ] report1.sqlite[2/7] [=========43%                ] report1.sqlite[2/7] [=========44%                ] report1.sqlite[2/7] [=========45%                ] report1.sqlite[2/7] [=========46%                ] report1.sqlite[2/7] [==========47%               ] report1.sqlite[2/7] [==========48%               ] report1.sqlite[2/7] [==========49%               ] report1.sqlite[2/7] [===========50%              ] report1.sqlite[2/7] [===========51%              ] report1.sqlite[2/7] [===========52%              ] report1.sqlite[2/7] [===========53%              ] report1.sqlite[2/7] [============54%             ] report1.sqlite[2/7] [============55%             ] report1.sqlite[2/7] [============56%             ] report1.sqlite[2/7] [============57%             ] report1.sqlite[2/7] [=============58%            ] report1.sqlite[2/7] [=============59%            ] report1.sqlite[2/7] [=============60%            ] report1.sqlite[2/7] [==============61%           ] report1.sqlite[2/7] [==============62%           ] report1.sqlite[2/7] [==============63%           ] report1.sqlite[2/7] [==============64%           ] report1.sqlite[2/7] [===============65%          ] report1.sqlite[2/7] [===============66%          ] report1.sqlite[2/7] [===============67%          ] report1.sqlite[2/7] [================68%         ] report1.sqlite[2/7] [================69%         ] report1.sqlite[2/7] [================70%         ] report1.sqlite[2/7] [================71%         ] report1.sqlite[2/7] [=================72%        ] report1.sqlite[2/7] [=================73%        ] report1.sqlite[2/7] [=================74%        ] report1.sqlite[2/7] [==================75%       ] report1.sqlite[2/7] [==================76%       ] report1.sqlite[2/7] [==================77%       ] report1.sqlite[2/7] [==================78%       ] report1.sqlite[2/7] [===================79%      ] report1.sqlite[2/7] [===================80%      ] report1.sqlite[2/7] [===================81%      ] report1.sqlite[2/7] [===================82%      ] report1.sqlite[2/7] [====================83%     ] report1.sqlite[2/7] [====================84%     ] report1.sqlite[2/7] [====================85%     ] report1.sqlite[2/7] [=====================86%    ] report1.sqlite[2/7] [=====================87%    ] report1.sqlite[2/7] [=====================88%    ] report1.sqlite[2/7] [=====================89%    ] report1.sqlite[2/7] [======================90%   ] report1.sqlite[2/7] [======================91%   ] report1.sqlite[2/7] [======================92%   ] report1.sqlite[2/7] [=======================93%  ] report1.sqlite[2/7] [=======================94%  ] report1.sqlite[2/7] [=======================95%  ] report1.sqlite[2/7] [=======================96%  ] report1.sqlite[2/7] [========================97% ] report1.sqlite[2/7] [========================98% ] report1.sqlite[2/7] [========================99% ] report1.sqlite[2/7] [========================100%] report1.sqlite[2/7] [========================100%] report1.sqlite
+[3/7] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)   Style                                 Range                               
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  -------  ------------------------------------------------------------------
+     10.3       1339531184       3200      418603.5       23485.5       19651   199281991    8451163.8  PushPop  nvFuser::Manager::runCudaFusionGroup                              
+     10.2       1334582914       3200      417057.2       21897.0       18676   199277216    8451024.5  PushPop  GraphCache::runGraphWithInputs                                    
+     10.2       1330360635       3200      415737.7       20600.0       17792   199273460    8450914.7  PushPop  FusionExecutorCache::runFusionWithInputs                          
+      9.6       1250863184       3200      390894.7       15370.0       13042   189381897    8031438.4  PushPop  FusionKernelRuntime::runWithInput                                 
+      9.5       1238180507       3200      386931.4       11752.0        9645   189371601    8031261.0  PushPop  FusionKernelRuntime::runKernelWithInput                           
+      9.2       1195626639          7   170803805.6   166648951.0   149719820   188739298   14942544.2  PushPop  FusionKernelRuntime::runKernelWithInput::Compile                  
+      8.3       1076233216          7   153747602.3   151803368.0   143925742   164118258    8030551.3  PushPop  compileFusion                                                     
+      8.3       1075341997          1  1075341997.0  1075341997.0  1075341997  1075341997          0.0  PushPop  nvFuser::Manager::CudaFuseGraph                                   
+      7.1        922947174          7   131849596.3   131368048.0   129766556   135537254    1894066.8  PushPop  executor_utils::NVRTC                                             
+      7.1        921451931          7   131635990.1   131172756.0   129569139   135274955    1875675.5  PushPop  executor_utils::Nvrtc::CompileProgram                             
+      2.7        350887139        638      549979.8         304.5          90   154312595    7568904.8  PushPop  compileFusionRecursive                                            
+      1.2        153967445         16     9622965.3     2975068.0      740533   111504732   27253782.8  PushPop  nvFuser::Manager::compileCudaFusionGroup                          
+      1.2        149943773          7    21420539.0    19043449.0     8088273    31279558    8518845.1  PushPop  GpuLower::lower                                                   
+      0.9        116805252          7    16686464.6    14768499.0     5694567    24224487    6908919.0  PushPop  Schedule PointWise Fusion                                         
+      0.6         80338860          7    11476980.0    10086162.0     3655789    17042101    4908628.7  PushPop  GpuLower::Lower::IndexLowering::getIndexedExprs                   
+      0.5         61816175          7     8830882.1    10034134.0     1650785    10161174    3167589.5  PushPop  FusionKernelRuntime::FusionKernelRuntime                          
+      0.4         50455542        173      291650.5      313871.0      108917      411791      73355.9  PushPop  GpuLower::Lower::Index::getProducerStridedIndices                 
+      0.3         45336481       1210       37468.2       40726.5       10350      125517       9974.6  PushPop  transform_replay.cpp::getMatchedLeafPosWithoutReplayCasP          
+      0.3         42991652        180      238842.5       10328.0        3899     2717584     413392.6  PushPop  GpuLower::Lower::UnswitchPredicate::openLoop                      
+      0.3         38535900       3200       12042.5       10531.5        8679      647083      24499.4  PushPop  FusionExecutor::RunFusion                                         
+      0.2         28812641        174      165589.9      171698.5       91101      236928      37535.8  PushPop  GpuLower::Lower::Index::getConsumerStridedIndices                 
+      0.2         24779282         14     1769948.7     2278455.0        3940     3571722    1401810.8  PushPop  getPointwiseHeuristics                                            
+      0.1         18228210        334       54575.5       60024.5       14624       92106      16901.5  PushPop  TransformReplay::replayPasC                                       
+      0.1         15515753          7     2216536.1     2017854.0     1374785     3134416     706303.4  PushPop  ConditionalFromPredicateModifier::ConditionalFromPredicateModifier
+      0.1         15431646         16      964477.9      378020.5        6846     2726834    1045250.5  PushPop  GpuLower::Lower::UnswitchPredicate::get                           
+      0.1         15252616        171       89196.6        5185.0        3144      437771     141798.2  PushPop  GpuLower::Lower::UnswitchPredicate::predicateOn                   
+      0.1         14011770       3200        4378.7        4214.5        3534      181350       3378.1  PushPop  ExecutorRunFusion::cuLaunchKernel                                 
+      0.1         13841199         48      288358.3      300441.5      147717      412460      76265.8  PushPop  GpuLower::Lower::Index::getReferenceRootPredicates                
+      0.1         12642857       3200        3950.9        3695.5        2986      190434       3466.4  PushPop  FusionExecutorCache::prepareInputs                                
+      0.1          9982349        322       31001.1       28992.5        7561       62314      11868.0  PushPop  transform_replay.cpp::getMatchedLeafPosWithoutReplayPasC          
+      0.1          9419055        443       21262.0       23214.0        5854       46700       8734.6  PushPop  GpuLower::Lower::updateIndexCompute                               
+      0.1          8963151       3193        2807.1        2774.0        2295       18890        602.1  PushPop  ExecutorRunFusion::OutputAlloc                                    
+      0.1          8550432         40      213760.8      206394.0      108481      353802      67112.3  PushPop  GpuLower::Lower::getGlobalProducerIndex                           
+      0.0          6502226         14      464444.7      244955.5       34586     1161617     382535.9  PushPop  Fusion copy                                                       
+      0.0          6475507          7      925072.4      876144.0      388190     1308937     322726.6  PushPop  GpuLower::Lower::replaceSymbolicSizes                             
+      0.0          5652253        585        9662.0        6939.0        1040       46029       7610.3  PushPop  Fusion::resetTvUses                                               
+      0.0          4598496         49       93846.9       51488.0         622      433765     113981.9  PushPop  Fusion clear                                                      
+      0.0          4582794        112       40917.8         593.0          97      432881      87899.7  PushPop  IrContainer clear                                                 
+      0.0          3399889       3545         959.1         529.0          90      172651       5111.3  PushPop  kir::ExpressionEvaluator::evaluate                                
+      0.0          3318606          7      474086.6      523654.0      286184      603276     130608.9  PushPop  ExecutorRunFusion::ValidateAndInitialize                          
+      0.0          3203441         14      228817.2      188696.5       33197      434804     125347.5  PushPop  IrContainer copy                                                  
+      0.0          3163090       3193         990.6         529.0         112       18982       1206.6  PushPop  isFusibleCudaFusionGroup                                          
+      0.0          1751591          7      250227.3      272249.0      114762      325738      76696.7  PushPop  generateCudaKernel                                                
+      0.0          1551524          7      221646.3      190818.0       87882      317973      91820.1  PushPop  GpuLower::Lower::insertAllocations                                
+      0.0          1363302          7      194757.4      181475.0       79186      296698      73851.6  PushPop  GpuLower::Lower::validateIr                                       
+      0.0          1352110          7      193158.6      207825.0      112129      223527      39853.3  PushPop  GpuLower::Lower::getGlobalConsumerIndex                           
+      0.0          1190650          7      170092.9      158205.0       67692      264198      66776.8  PushPop  GpuLower::Lower::validateIterDomainUse                            
+      0.0          1129638          7      161376.9      150740.0      117551      209044      40947.1  PushPop  GraphCache::GraphCache                                            
+      0.0          1120112          7      160016.0      149332.0      116482      207855      41125.7  PushPop  GraphCache::createFusion                                          
+      0.0          1115200          7      159314.3      141183.0       63693      241899      61401.4  PushPop  GpuLower::Lower::validatePartialSplit                             
+      0.0          1108865          7      158409.3      148272.0      115772      206874      41802.2  PushPop  parseJitIR                                                        
+      0.0          1098881          7      156983.0      138766.0       86821      222423      47612.8  PushPop  GpuLower::Lower::UnrollPass::runPass                              
+      0.0          1070019          7      152859.9      132829.0       83740      215206      48138.0  PushPop  GpuLower::Lower::LoopNestGenerator::loweredExprs                  
+      0.0           908470          7      129781.4      119637.0       55828      172739      42135.7  PushPop  GpuLower::Lower::ThreadPredicateMap                               
+      0.0           765055          7      109293.6      104109.0       99953      124585       9406.4  PushPop  executor_utils::Nvrtc::LoadPTX                                    
+      0.0           657576       3193         205.9         202.0         106         894         93.8  PushPop  ExecutorRunFusion::IntermediateBufferAlloc                        
+      0.0           543662        973         558.7         192.0          80       20343       2229.4  PushPop  getTerminatingOutputs                                             
+      0.0           520837         13       40064.4       20953.0       17872       67125      22752.5  PushPop  TransformReplay::replayCasP                                       
+      0.0           478212          7       68316.0       69828.0       35014       91228      22192.7  PushPop  GpuLower::Lower::validateParallelize                              
+      0.0           444547          7       63506.7       57812.0       28024       91313      23410.6  PushPop  GpuLower::Lower::insertMagicZero                                  
+      0.0           412547          7       58935.3       53151.0       28883       79733      18278.6  PushPop  reuseMemoryAllocations                                            
+      0.0           411793         14       29413.8       24282.0       17862       70022      14319.8  PushPop  FusionExecutor::ComputeLaunchParams                               
+      0.0           399212       1186         336.6         227.5         137        3528        309.3  PushPop  GpuLower::Lower::IndexCompute::IndexCompute                       
+      0.0           393634        311        1265.7         182.0         102      137223       7945.3  PushPop  PeepholeOptimizeShapeExpressions                                  
+      0.0           254394          7       36342.0       33794.0       15678       48096      11768.8  PushPop  GpuLower::Lower::validateVectorize                                
+      0.0           205247          7       29321.0       30872.0       18460       33849       5400.1  PushPop  executor_utils::NvrtcCreateProgram                                
+      0.0           185031          7       26433.0       26677.0       24876       27984       1130.7  PushPop  FusionExecutor::AllocOutputs                                      
+      0.0           167030          7       23861.4       24195.0       22257       25147       1204.6  PushPop  inferAndAlloc                                                     
+      0.0           149610        134        1116.5        1077.5         535        2103        370.6  PushPop  GpuLower::Lower::ThreadPredicateMap::updateBitSet                 
+      0.0           116083          7       16583.3       15401.0       11166       20293       3647.2  PushPop  GpuLower::Lower::insertRawThreadSynchronization                   
+      0.0            91256         32        2851.8        1370.0         975       11988       2887.5  PushPop  FusionExecutor::ParallelBindingResolution                         
+      0.0            80863          7       11551.9       11613.0        9965       12675       1173.8  PushPop  executor_utils::ValidateKernelInputs                              
+      0.0            73732          7       10533.1       10036.0        6231       14216       2548.7  PushPop  Kernel::analyze                                                   
+      0.0            71684         16        4480.3        5067.5        1510       13983       3118.1  PushPop  TypePropagate                                                     
+      0.0            69450          7        9921.4        6394.0        5491       31052       9338.8  PushPop  executor_utils::Nvrtc::GetPTX                                     
+      0.0            54424         14        3887.4        4156.5        2309        4907        813.0  PushPop  executor_utils::BindFusionInputs                                  
+      0.0            50734          7        7247.7        6413.0        4056       10093       2507.5  PushPop  executor_utils::BindKernelInputs                                  
+      0.0            45517          7        6502.4        6511.0        4102        7656       1256.0  PushPop  GpuLower::Lower::processMisalignedVectorization                   
+      0.0            41842          7        5977.4        5939.0        3576        7264       1316.6  PushPop  GpuLower::Lower::MisalignedVectorizationModifier                  
+      0.0            39636          7        5662.3        5770.0        4112        6697        917.7  PushPop  GpuLower::Lower::insertWarThreadSynchronization                   
+      0.0            31727         14        2266.2        2083.0         503        4627       1585.3  PushPop  PrecomputedValues::Evaluate                                       
+      0.0            15693          7        2241.9        2241.0        1876        2630        276.0  PushPop  FusionExecutor::validateVectorizedTensors                         
+      0.0            14712          7        2101.7        2087.0        1811        2471        262.2  PushPop  executor_utils::NvrtcDestroyProgram                               
+      0.0            10275          7        1467.9        1436.0        1070        2002        305.2  PushPop  Segmenter::FusionSegmentGuard                                     
+      0.0             8916          7        1273.7        1253.0        1006        1528        165.7  PushPop  ExecutorRunFusion::FillCacheEntry                                 
+      0.0             7680          7        1097.1        1157.0         776        1263        178.3  PushPop  ~Segmenter::FusionSegmentGuard                                    
+      0.0             3925         14         280.4         287.5         130         439         96.8  PushPop  PrecomputedValuess::Validate                                      
+      0.0             2311         14         165.1         116.5         103         454         94.2  PushPop  computeSharedMemory                                               
+      0.0             1892          7         270.3         262.0         169         417         77.8  PushPop  FusionExecutor::AllocGlobalVals                                   
+
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)              Name            
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  ----------------------------
+     52.8        161220814      14751    10929.5     3556.0      2473  15215938     217927.3  cudaLaunchKernel            
+     16.3         49770353       5210     9552.9     7598.0      2374   8968849     124221.5  cudaMemcpyAsync             
+     13.9         42295993       3034    13940.7      483.0       346  40794747     740612.8  cudaStreamIsCapturing_v10000
+      3.9         11851768       3200     3703.7     3550.5      3027    180586       3337.0  cuLaunchKernel              
+      3.4         10286426          4  2571606.5   585849.5       756   9113971    4396230.1  cudaFree                    
+      2.3          7071900          1  7071900.0  7071900.0   7071900   7071900          0.0  cudaProfilerStop            
+      2.1          6368119       3917     1625.8     1593.0       739     19768       1099.5  cudaStreamSynchronize       
+      1.9          5706632       1809     3154.6     3086.0      2688     18697        504.8  cudaLaunchKernelExC_v11060  
+      1.2          3776263       3030     1246.3     1176.0       836     17024        580.5  cudaEventRecord             
+      0.7          1985147         28    70898.1    26689.0     18302    538111     123854.8  cuModuleUnload              
+      0.5          1434645         16    89665.3     1259.0      1109   1167298     293952.5  cudaStreamCreateWithFlags   
+      0.3           953666        400     2384.2     3238.0      1002     21186       1577.6  cudaDeviceSynchronize       
+      0.2           678473          7    96924.7    95980.0     92490    103625       3960.1  cuModuleLoadDataEx          
+      0.2           608596         10    60859.6    58735.0      3058    153469      53791.7  cudaMalloc                  
+      0.2           568318       2304      246.7      164.0        91      3365        190.4  cuGetProcAddress            
+      0.2           567291          1   567291.0   567291.0    567291    567291          0.0  cudaHostAlloc               
+      0.0            19276         37      521.0      328.0       292      2056        482.6  cudaEventCreateWithFlags    
+      0.0            17889          1    17889.0    17889.0     17889     17889          0.0  cudaMemsetAsync             
+      0.0            16340          1    16340.0    16340.0     16340     16340          0.0  cudaProfilerStart           
+      0.0             8580          6     1430.0     1503.5       868      1897        405.4  cuInit                      
+      0.0             2895          7      413.6      238.0       141      1210        386.4  cuModuleGetLoadingMode      
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     25.3         10382528       1809    5739.4    5856.0      5407      6784        277.0  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage4_warpsize2x2…
+     16.1          6612377       1206    5482.9    6016.0      2752      6400       1211.9  void implicit_convolve_sgemm<float, float, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)…
+     13.6          5591880       3618    1545.6    1536.0      1503      1920         32.6  void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(…
+     12.5          5129763       3015    1701.4    1696.0      1631      2145         55.1  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapp…
+      7.7          3163487       3015    1049.2    1056.0      1023      1121         20.9  void at::native::vectorized_elementwise_kernel<(int)4, void at::native::compare_scalar_kernel<float…
+      4.4          1787883        603    2965.0    2400.0      2335      4288        833.3  void at::native::<unnamed>::avg_pool2d_out_cuda_frame<float, float>(int, const T1 *, long, long, lo…
+      3.9          1609560       1150    1399.6    1408.0      1216      1664         31.7  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::…
+      2.2           895608       1005     891.2     896.0       832      1056         24.3  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::…
+      2.0           814951        402    2027.2    2048.0      1951      2272         52.8  void at::native::<unnamed>::CatArrayBatchedCopy<float, unsigned int, (int)4, (int)128, (int)1>(T1 *…
+      1.9           778082        600    1296.8    1311.5      1279      1344         16.1  CudaCodeGen::kernel5(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)4>, CudaCo…
+      1.8           719231        600    1198.7    1184.0      1183      1249         16.2  CudaCodeGen::kernel2(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)1>, CudaCo…
+      1.7           703047        600    1171.7    1184.0      1151      1216         15.8  CudaCodeGen::kernel4(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)1>, CudaCo…
+      1.3           540044        400    1350.1    1344.0      1280      1409         38.7  CudaCodeGen::kernel3(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)4>, CudaCo…
+      1.2           507203        400    1268.0    1280.0      1247      1312         15.7  CudaCodeGen::kernel7(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)4>, CudaCo…
+      1.1           463296        400    1158.2    1152.0      1120      1185         13.1  CudaCodeGen::kernel6(CudaCodeGen::Tensor<float, (int)4>, CudaCodeGen::Tensor<float, (int)1>, CudaCo…
+      1.0           401604        145    2769.7    2113.0      1760      4673       1056.6  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<bool, at::native::func_wrappe…
+      0.8           333186        201    1657.6    1664.0      1631      1696         14.3  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      0.6           234818        200    1174.1    1184.0      1151      1312         18.0  CudaCodeGen::kernel1(CudaCodeGen::Tensor<float, (int)2>, CudaCodeGen::Tensor<float, (int)2>, CudaCo…
+      0.4           157092        148    1061.4    1056.0       992      1248         39.2  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, bool…
+      0.1            46208         45    1026.8    1024.0       991      1089         31.9  void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::deta…
+      0.1            37187         38     978.6     976.5       960      1024         20.6  void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, at…
+      0.1            33184         31    1070.5    1056.0      1056      1152         23.1  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, floa…
+      0.1            32896         31    1061.2    1056.0      1024      1120         16.7  void at::native::vectorized_elementwise_kernel<(int)4, at::native::sqrt_kernel_cuda(at::TensorItera…
+      0.1            31168         31    1005.4     992.0       992      1024         16.1  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, floa…
+      0.1            22688         15    1512.5    1504.0      1376      1632         95.6  void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, co…
+      0.0            16353         15    1090.2    1088.0      1056      1120         19.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(a…
+      0.0             7072          7    1010.3    1024.0       992      1024         17.1  void at::native::unrolled_elementwise_kernel<at::native::neg_kernel_cuda(at::TensorIteratorBase &):…
+      0.0             3104          3    1034.7    1024.0      1024      1056         18.5  void at::native::unrolled_elementwise_kernel<at::native::BinaryFunctor<float, float, bool, at::nati…
+      0.0             3009          3    1003.0     993.0       992      1024         18.2  void at::native::unrolled_elementwise_kernel<at::native::ceil_kernel_cuda(at::TensorIteratorBase &)…
+      0.0             2688          2    1344.0    1344.0      1024      1664        452.5  void at::native::vectorized_elementwise_kernel<(int)4, at::native::AbsFunctor<float>, at::detail::A…
+      0.0             2464          2    1232.0    1232.0      1024      1440        294.2  void at::native::vectorized_elementwise_kernel<(int)4, at::native::AUnaryFunctor<float, float, bool…
+      0.0             2432          1    2432.0    2432.0      2432      2432          0.0  void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void …
+      0.0             2400          1    2400.0    2400.0      2400      2400          0.0  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<double, at::native::func_wrap…
+      0.0             2175          2    1087.5    1087.5      1056      1119         44.5  void at::native::vectorized_elementwise_kernel<(int)4, void at::native::compare_scalar_kernel<doubl…
+      0.0             2144          1    2144.0    2144.0      2144      2144          0.0  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<double, at::native::func_wrap…
+      0.0             2080          2    1040.0    1040.0      1024      1056         22.6  void at::native::vectorized_elementwise_kernel<(int)2, at::native::BinaryFunctor<float, float, bool…
+      0.0             2048          2    1024.0    1024.0      1024      1024          0.0  void at::native::vectorized_elementwise_kernel<(int)2, at::native::ceil_kernel_cuda(at::TensorItera…
+      0.0             2048          2    1024.0    1024.0      1024      1024          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::ceil_kernel_cuda(at::TensorItera…
+      0.0             1312          1    1312.0    1312.0      1312      1312          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<double, double, do…
+      0.0             1280          1    1280.0    1280.0      1280      1280          0.0  void at_cuda_detail::cub::DeviceReduceSingleTileKernel<at_cuda_detail::cub::DeviceReducePolicy<bool…
+      0.0             1280          1    1280.0    1280.0      1280      1280          0.0  void at_cuda_detail::cub::DeviceSelectSweepKernel<at_cuda_detail::cub::DispatchSelectIf<at_cuda_det…
+      0.0             1249          1    1249.0    1249.0      1249      1249          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<bool, bool, bool, …
+      0.0             1248          1    1248.0    1248.0      1248      1248          0.0  void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIterator…
+      0.0             1248          1    1248.0    1248.0      1248      1248          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<bool, bool, bool, …
+      0.0             1216          1    1216.0    1216.0      1216      1216          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::where_kernel_impl(at:…
+      0.0             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::CompareFunctor<float>…
+      0.0              896          1     896.0     896.0       896       896          0.0  void at_cuda_detail::cub::DeviceCompactInitKernel<at_cuda_detail::cub::ScanTileState<int, (bool)1>,…
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)            Operation           
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ------------------------------
+     72.2          4042751   3681    1098.3     864.0       832     19072       1380.2  [CUDA memcpy Device-to-Host]  
+     22.8          1277207   1293     987.8     992.0       927      1153         21.2  [CUDA memcpy Device-to-Device]
+      5.0           280770    236    1189.7     384.0       351     14240       2835.5  [CUDA memcpy Host-to-Device]  
+      0.0             1728      1    1728.0    1728.0      1728      1728          0.0  [CUDA memset]                 
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)            Operation           
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------------------
+     11.126   3681     0.003     0.000     0.000     0.147        0.018  [CUDA memcpy Device-to-Host]  
+      3.720   1293     0.003     0.001     0.000     0.147        0.013  [CUDA memcpy Device-to-Device]
+      2.183    236     0.009     0.000     0.000     0.147        0.031  [CUDA memcpy Host-to-Device]  
+      0.027      1     0.027     0.027     0.027     0.027        0.000  [CUDA memset]                 
+
+Generated:
+    /root/mlir/baseline/blockdrop/report1.nsys-rep
+    /root/mlir/baseline/blockdrop/report1.sqlite

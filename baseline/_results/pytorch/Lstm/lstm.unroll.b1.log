@@ -1,0 +1,159 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+----batch_size=1---torchscript=True----
+[warmup]
+Time 3584.331512451172 ms
+Time 695477.968454361 ms
+Time 27.466297149658203 ms
+Time 28.664350509643555 ms
+Time 28.507232666015625 ms
+Time 27.63533592224121 ms
+Time 28.264522552490234 ms
+Time 28.400421142578125 ms
+Time 28.03659439086914 ms
+Time 27.735471725463867 ms
+Time 28.469085693359375 ms
+Time 28.16295623779297 ms
+Time 27.60767936706543 ms
+Time 28.0301570892334 ms
+Time 28.60283851623535 ms
+Time 28.226613998413086 ms
+Time 27.71592140197754 ms
+Time 28.223037719726562 ms
+Time 28.07784080505371 ms
+Time 27.701854705810547 ms
+Time 27.826547622680664 ms
+Time 28.593063354492188 ms
+Time 27.87923812866211 ms
+Time 27.767181396484375 ms
+Time 28.54013442993164 ms
+Time 28.42569351196289 ms
+Time 27.968883514404297 ms
+Time 27.841806411743164 ms
+Time 28.45597267150879 ms
+Time 27.7554988861084 ms
+Time 27.878999710083008 ms
+Time 28.315067291259766 ms
+Time 28.21946144104004 ms
+Time 27.94027328491211 ms
+Time 27.733564376831055 ms
+Time 28.702259063720703 ms
+Time 28.084278106689453 ms
+Time 27.636051177978516 ms
+Time 28.260469436645508 ms
+Time 28.358936309814453 ms
+Time 27.987957000732422 ms
+Time 27.7402400970459 ms
+Time 28.564453125 ms
+Time 28.135061264038086 ms
+Time 27.738332748413086 ms
+Time 28.23638916015625 ms
+Time 28.103351593017578 ms
+Time 27.70066261291504 ms
+Time 27.670860290527344 ms
+Time 28.68175506591797 ms
+Time 28.234243392944336 ms
+Time 28.082847595214844 ms
+Time 28.52034568786621 ms
+Time 28.328418731689453 ms
+Time 27.98748016357422 ms
+Time 27.65488624572754 ms
+Time 28.738737106323242 ms
+Time 28.014659881591797 ms
+Time 27.67324447631836 ms
+Time 28.090476989746094 ms
+Time 28.30028533935547 ms
+Time 28.125286102294922 ms
+Time 27.645587921142578 ms
+Time 28.696298599243164 ms
+Time 27.758359909057617 ms
+Time 27.806758880615234 ms
+Time 43.26343536376953 ms
+Time 37.66989707946777 ms
+Time 27.55451202392578 ms
+Time 27.75740623474121 ms
+Time 28.83625030517578 ms
+Time 27.759790420532227 ms
+Time 27.631759643554688 ms
+Time 27.65035629272461 ms
+Time 28.512239456176758 ms
+Time 27.639389038085938 ms
+Time 27.477264404296875 ms
+Time 28.654813766479492 ms
+Time 28.304100036621094 ms
+Time 27.8778076171875 ms
+Time 28.06997299194336 ms
+Time 28.254985809326172 ms
+Time 27.814865112304688 ms
+Time 27.616500854492188 ms
+Time 28.83744239807129 ms
+Time 28.232574462890625 ms
+Time 27.732133865356445 ms
+Time 28.219223022460938 ms
+Time 28.46980094909668 ms
+Time 27.608633041381836 ms
+Time 27.384042739868164 ms
+Time 28.637409210205078 ms
+Time 27.97698974609375 ms
+Time 27.5881290435791 ms
+Time 27.6944637298584 ms
+Time 28.450727462768555 ms
+Time 28.095722198486328 ms
+Time 27.817964553833008 ms
+Time 28.387069702148438 ms
+Time 27.688980102539062 ms
+[31m100 iters, min = 27.2982 ms, max = 57.8246 ms, avg = 28.3692 ms[m
+Generating '/tmp/nsys-report-4164.qdstrm'
+[1/7] [0%                          ] report3.nsys-rep[1/7] [0%                          ] report3.nsys-rep[1/7] [5%                          ] report3.nsys-rep[1/7] [=15%                        ] report3.nsys-rep[1/7] [14%                         ] report3.nsys-rep[1/7] [12%                         ] report3.nsys-rep[1/7] [11%                         ] report3.nsys-rep[1/7] [10%                         ] report3.nsys-rep[1/7] [9%                          ] report3.nsys-rep[1/7] [12%                         ] report3.nsys-rep[1/7] [11%                         ] report3.nsys-rep[1/7] [10%                         ] report3.nsys-rep[1/7] [9%                          ] report3.nsys-rep[1/7] [8%                          ] report3.nsys-rep[1/7] [7%                          ] report3.nsys-rep[1/7] [6%                          ] report3.nsys-rep[1/7] [5%                          ] report3.nsys-rep[1/7] [5%                          ] report3.nsys-rep[1/7] [6%                          ] report3.nsys-rep[1/7] [7%                          ] report3.nsys-rep[1/7] [9%                          ] report3.nsys-rep[1/7] [11%                         ] report3.nsys-rep[1/7] [13%                         ] report3.nsys-rep[1/7] [14%                         ] report3.nsys-rep[1/7] [=16%                        ] report3.nsys-rep[1/7] [==18%                       ] report3.nsys-rep[1/7] [==19%                       ] report3.nsys-rep[1/7] [==21%                       ] report3.nsys-rep[1/7] [===23%                      ] report3.nsys-rep[1/7] [====25%                     ] report3.nsys-rep[1/7] [====26%                     ] report3.nsys-rep[1/7] [====28%                     ] report3.nsys-rep[1/7] [=====30%                    ] report3.nsys-rep[1/7] [=====32%                    ] report3.nsys-rep[1/7] [======33%                   ] report3.nsys-rep[1/7] [======35%                   ] report3.nsys-rep[1/7] [=======37%                  ] report3.nsys-rep[1/7] [=======38%                  ] report3.nsys-rep[1/7] [========40%                 ] report3.nsys-rep[1/7] [========42%                 ] report3.nsys-rep[1/7] [=========44%                ] report3.nsys-rep[1/7] [=========45%                ] report3.nsys-rep[1/7] [==========47%               ] report3.nsys-rep[1/7] [==========49%               ] report3.nsys-rep[1/7] [===========50%              ] report3.nsys-rep[1/7] [===========52%              ] report3.nsys-rep[1/7] [============54%             ] report3.nsys-rep[1/7] [============56%             ] report3.nsys-rep[1/7] [============57%             ] report3.nsys-rep[1/7] [=============59%            ] report3.nsys-rep[1/7] [==============61%           ] report3.nsys-rep[1/7] [==============62%           ] report3.nsys-rep[1/7] [==============64%           ] report3.nsys-rep[1/7] [===============66%          ] report3.nsys-rep[1/7] [================68%         ] report3.nsys-rep[1/7] [================69%         ] report3.nsys-rep[1/7] [================71%         ] report3.nsys-rep[1/7] [=================73%        ] report3.nsys-rep[1/7] [==================76%       ] report3.nsys-rep[1/7] [========================100%] report3.nsys-rep[1/7] [========================100%] report3.nsys-rep
+[2/7] [0%                          ] report3.sqlite[2/7] [1%                          ] report3.sqlite[2/7] [2%                          ] report3.sqlite[2/7] [3%                          ] report3.sqlite[2/7] [4%                          ] report3.sqlite[2/7] [5%                          ] report3.sqlite[2/7] [6%                          ] report3.sqlite[2/7] [7%                          ] report3.sqlite[2/7] [8%                          ] report3.sqlite[2/7] [9%                          ] report3.sqlite[2/7] [10%                         ] report3.sqlite[2/7] [11%                         ] report3.sqlite[2/7] [12%                         ] report3.sqlite[2/7] [13%                         ] report3.sqlite[2/7] [14%                         ] report3.sqlite[2/7] [=15%                        ] report3.sqlite[2/7] [=16%                        ] report3.sqlite[2/7] [=17%                        ] report3.sqlite[2/7] [==18%                       ] report3.sqlite[2/7] [==19%                       ] report3.sqlite[2/7] [==20%                       ] report3.sqlite[2/7] [==21%                       ] report3.sqlite[2/7] [===22%                      ] report3.sqlite[2/7] [===23%                      ] report3.sqlite[2/7] [===24%                      ] report3.sqlite[2/7] [====25%                     ] report3.sqlite[2/7] [====26%                     ] report3.sqlite[2/7] [====27%                     ] report3.sqlite[2/7] [====28%                     ] report3.sqlite[2/7] [=====29%                    ] report3.sqlite[2/7] [=====30%                    ] report3.sqlite[2/7] [=====31%                    ] report3.sqlite[2/7] [=====32%                    ] report3.sqlite[2/7] [======33%                   ] report3.sqlite[2/7] [======34%                   ] report3.sqlite[2/7] [======35%                   ] report3.sqlite[2/7] [=======36%                  ] report3.sqlite[2/7] [=======37%                  ] report3.sqlite[2/7] [=======38%                  ] report3.sqlite[2/7] [=======39%                  ] report3.sqlite[2/7] [========40%                 ] report3.sqlite[2/7] [========41%                 ] report3.sqlite[2/7] [========42%                 ] report3.sqlite[2/7] [=========43%                ] report3.sqlite[2/7] [=========44%                ] report3.sqlite[2/7] [=========45%                ] report3.sqlite[2/7] [=========46%                ] report3.sqlite[2/7] [==========47%               ] report3.sqlite[2/7] [==========48%               ] report3.sqlite[2/7] [==========49%               ] report3.sqlite[2/7] [===========50%              ] report3.sqlite[2/7] [===========51%              ] report3.sqlite[2/7] [===========52%              ] report3.sqlite[2/7] [===========53%              ] report3.sqlite[2/7] [============54%             ] report3.sqlite[2/7] [============55%             ] report3.sqlite[2/7] [============56%             ] report3.sqlite[2/7] [============57%             ] report3.sqlite[2/7] [=============58%            ] report3.sqlite[2/7] [=============59%            ] report3.sqlite[2/7] [=============60%            ] report3.sqlite[2/7] [==============61%           ] report3.sqlite[2/7] [==============62%           ] report3.sqlite[2/7] [==============63%           ] report3.sqlite[2/7] [==============64%           ] report3.sqlite[2/7] [===============65%          ] report3.sqlite[2/7] [===============66%          ] report3.sqlite[2/7] [===============67%          ] report3.sqlite[2/7] [================68%         ] report3.sqlite[2/7] [================69%         ] report3.sqlite[2/7] [================70%         ] report3.sqlite[2/7] [================71%         ] report3.sqlite[2/7] [=================72%        ] report3.sqlite[2/7] [=================73%        ] report3.sqlite[2/7] [=================74%        ] report3.sqlite[2/7] [==================75%       ] report3.sqlite[2/7] [==================76%       ] report3.sqlite[2/7] [==================77%       ] report3.sqlite[2/7] [==================78%       ] report3.sqlite[2/7] [===================79%      ] report3.sqlite[2/7] [===================80%      ] report3.sqlite[2/7] [===================81%      ] report3.sqlite[2/7] [===================82%      ] report3.sqlite[2/7] [====================83%     ] report3.sqlite[2/7] [====================84%     ] report3.sqlite[2/7] [====================85%     ] report3.sqlite[2/7] [=====================86%    ] report3.sqlite[2/7] [=====================87%    ] report3.sqlite[2/7] [=====================88%    ] report3.sqlite[2/7] [=====================89%    ] report3.sqlite[2/7] [======================90%   ] report3.sqlite[2/7] [======================91%   ] report3.sqlite[2/7] [======================92%   ] report3.sqlite[2/7] [=======================93%  ] report3.sqlite[2/7] [=======================94%  ] report3.sqlite[2/7] [=======================95%  ] report3.sqlite[2/7] [=======================96%  ] report3.sqlite[2/7] [========================97% ] report3.sqlite[2/7] [========================98% ] report3.sqlite[2/7] [========================99% ] report3.sqlite[2/7] [========================100%] report3.sqlite[2/7] [========================100%] report3.sqlite
+[3/7] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances     Avg (ns)        Med (ns)       Min (ns)      Max (ns)    StdDev (ns)   Style                Range              
+ --------  ---------------  ---------  --------------  --------------  ------------  ------------  -----------  -------  --------------------------------
+    100.0     680864501635          1  680864501635.0  680864501635.0  680864501635  680864501635          0.0  PushPop  nvFuser::Manager::CudaFuseGraph 
+      0.0         67883462      21341          3180.9           675.0           180        162601       7387.7  PushPop  isFusibleCudaFusionGroup        
+      0.0         10067753      10242           983.0           308.0            86       3514423      47926.1  PushPop  compileFusionRecursive          
+      0.0          7021528       5121          1371.1           423.0            96       4760299      66515.4  PushPop  PeepholeOptimizeShapeExpressions
+
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)              Name            
+ --------  ---------------  ---------  ----------  ----------  --------  --------  -----------  ----------------------------
+     93.7       1320808405     388001      3404.1      3311.0      2634   6520812      11237.4  cudaLaunchKernel            
+      3.2         45713227         13   3516402.1       883.0       709  45696287   12673478.2  cudaStreamIsCapturing_v10000
+      1.0         13951170          2   6975585.0   6975585.0   1577656  12373514    7633824.4  cudaFree                    
+      0.9         13042248          1  13042248.0  13042248.0  13042248  13042248          0.0  cudaProfilerStop            
+      0.8         11476105         40    286902.6     64802.0      3564   8960661    1407925.0  cudaMemcpyAsync             
+      0.1          1861092         40     46527.3     44424.5      3047     90617      43724.9  cudaStreamSynchronize       
+      0.1          1282532         15     85502.1     80261.0      2969    269310      55395.6  cudaMalloc                  
+      0.1          1083998        202      5366.3      4817.0      2904     12513       1680.2  cudaDeviceSynchronize       
+      0.0           275550       1536       179.4       143.0        94      1188         96.2  cuGetProcAddress            
+      0.0            19525         18      1084.7       432.0       351     12068       2741.9  cudaEventCreateWithFlags    
+      0.0            15333          1     15333.0     15333.0     15333     15333          0.0  cudaProfilerStart           
+      0.0             4266          4      1066.5      1102.0       719      1343        309.3  cuInit                      
+      0.0             2095          5       419.0       225.0       155      1199        439.1  cuModuleGetLoadingMode      
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     62.3        504519950     256000    1970.8    1984.0      1919      2977         19.3  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+     37.3        301570509     128000    2356.0    2337.0      2303      2560         36.5  void at::native::<unnamed>::kernel::lstm_cell_forward<float, float, int, (int)1>(at::cuda::detail::…
+      0.4          3458629       4000     864.7     864.0       831      1439         15.8  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::…
+      0.0             1664          1    1664.0    1664.0      1664      1664          0.0  void at::native::<unnamed>::distribution_elementwise_grid_stride_kernel<float, (int)4, void at::nat…
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+    100.0          1757491     40   43937.3   43840.0       512     87713      43956.0  [CUDA memcpy Host-to-Device]
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     21.053     40     0.526     0.526     0.004     1.049        0.529  [CUDA memcpy Host-to-Device]
+
+Generated:
+    /root/mlir/baseline/lstm/report3.nsys-rep
+    /root/mlir/baseline/lstm/report3.sqlite

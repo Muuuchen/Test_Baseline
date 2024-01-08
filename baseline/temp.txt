@@ -1,0 +1,216 @@
+# layer 00
+        action = policy[0]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][0](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 01
+        action = policy[1]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][1](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 02
+        action = policy[2]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][2](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 03
+        action = policy[3]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][3](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 04
+        action = policy[4]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][4](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 05
+        action = policy[5]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][5](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 06
+        action = policy[6]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][6](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 07
+        action = policy[7]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][7](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 08
+        action = policy[8]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][8](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 09
+        action = policy[9]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][9](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 010
+        action = policy[10]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][10](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 011
+        action = policy[11]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][11](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 012
+        action = policy[12]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][12](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 013
+        action = policy[13]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][13](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 014
+        action = policy[14]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][14](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 015
+        action = policy[15]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][15](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 016
+        action = policy[16]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][16](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 017
+        action = policy[17]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][17](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 018
+        action = policy[18]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][18](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 019
+        action = policy[19]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][19](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 020
+        action = policy[20]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][20](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 021
+        action = policy[21]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][21](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 022
+        action = policy[22]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][22](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        
+# layer 023
+        action = policy[23]
+        residual = x
+        if tf.reduce_sum(action) > 0.0:
+            action_mask = tf.reshape(action, (-1, 1, 1, 1))
+            fx = self.rnet.blocks[0][23](x)
+            fx = tf.nn.relu(residual + fx)
+            x = fx * action_mask + residual * (1.0 - action_mask)
+        

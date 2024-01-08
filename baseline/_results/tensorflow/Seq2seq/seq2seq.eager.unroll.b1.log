@@ -1,0 +1,1431 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+2023-10-18 10:03:50.315300: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-18 10:03:50.416755: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-10-18 10:03:50.938895: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-18 10:03:50.938958: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-18 10:03:50.938963: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-10-18 10:03:51.504282: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-18 10:03:52.174103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46468 MB memory:  -> device: 0, name: NVIDIA RTX 6000 Ada Generation, pci bus id: 0000:65:00.0, compute capability: 8.9
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 33, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_1:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 54, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_2:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 75, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_3:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 96, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_4:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 117, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_5:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 138, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_6:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 159, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_7:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 180, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_8:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 201, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_9:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 222, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 33, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_1:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 54, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_2:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 75, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_3:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 96, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_4:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 117, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_5:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 138, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_6:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 159, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_7:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 180, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_8:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 201, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn_unroll/ArgMax_9:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filena2uwtrg.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_file5p6mjexy.py", line 222, in tf__call
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+2023-10-18 10:03:54.093166: W tensorflow/core/common_runtime/type_inference.cc:339] Type inference failed. This indicates an invalid graph that escaped type checking. Error message: INVALID_ARGUMENT: type mismatch for node 'attn_decoder_rnn_unroll/TensorArrayV2Write/TensorListSetItem': expected a subtype of:
+type_id: TFT_PRODUCT
+args {
+  type_id: TFT_ARRAY
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_INT64
+    }
+  }
+}
+
+  got:
+type_id: TFT_PRODUCT
+args {
+  type_id: TFT_ARRAY
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_FLOAT
+    }
+  }
+}
+
+  
+	while updating its output type.
+2023-10-18 10:03:55.192476: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+----batch_size=1---unroll=True----
+[31m100 iters, min = 3.7653 ms, max = 10.8116 ms, avg = 8.7003 ms[m
+Generating '/tmp/nsys-report-412e.qdstrm'
+[1/7] [0%                          ] report2.nsys-rep[1/7] [0%                          ] report2.nsys-rep[1/7] [12%                         ] report2.nsys-rep[1/7] [11%                         ] report2.nsys-rep[1/7] [10%                         ] report2.nsys-rep[1/7] [9%                          ] report2.nsys-rep[1/7] [10%                         ] report2.nsys-rep[1/7] [=17%                        ] report2.nsys-rep[1/7] [====25%                     ] report2.nsys-rep[1/7] [======33%                   ] report2.nsys-rep[1/7] [========41%                 ] report2.nsys-rep[1/7] [==========48%               ] report2.nsys-rep[1/7] [============56%             ] report2.nsys-rep[1/7] [==============64%           ] report2.nsys-rep[1/7] [=================72%        ] report2.nsys-rep[1/7] [===================80%      ] report2.nsys-rep[1/7] [=====================87%    ] report2.nsys-rep[1/7] [========================100%] report2.nsys-rep[1/7] [========================100%] report2.nsys-rep
+[2/7] [0%                          ] report2.sqlite[2/7] [1%                          ] report2.sqlite[2/7] [2%                          ] report2.sqlite[2/7] [3%                          ] report2.sqlite[2/7] [4%                          ] report2.sqlite[2/7] [5%                          ] report2.sqlite[2/7] [6%                          ] report2.sqlite[2/7] [7%                          ] report2.sqlite[2/7] [8%                          ] report2.sqlite[2/7] [9%                          ] report2.sqlite[2/7] [10%                         ] report2.sqlite[2/7] [11%                         ] report2.sqlite[2/7] [12%                         ] report2.sqlite[2/7] [13%                         ] report2.sqlite[2/7] [14%                         ] report2.sqlite[2/7] [=15%                        ] report2.sqlite[2/7] [=16%                        ] report2.sqlite[2/7] [=17%                        ] report2.sqlite[2/7] [==18%                       ] report2.sqlite[2/7] [==19%                       ] report2.sqlite[2/7] [==20%                       ] report2.sqlite[2/7] [==21%                       ] report2.sqlite[2/7] [===22%                      ] report2.sqlite[2/7] [===23%                      ] report2.sqlite[2/7] [===24%                      ] report2.sqlite[2/7] [====25%                     ] report2.sqlite[2/7] [====26%                     ] report2.sqlite[2/7] [====27%                     ] report2.sqlite[2/7] [====28%                     ] report2.sqlite[2/7] [=====29%                    ] report2.sqlite[2/7] [=====30%                    ] report2.sqlite[2/7] [=====31%                    ] report2.sqlite[2/7] [=====32%                    ] report2.sqlite[2/7] [======33%                   ] report2.sqlite[2/7] [======34%                   ] report2.sqlite[2/7] [======35%                   ] report2.sqlite[2/7] [=======36%                  ] report2.sqlite[2/7] [=======37%                  ] report2.sqlite[2/7] [=======38%                  ] report2.sqlite[2/7] [=======39%                  ] report2.sqlite[2/7] [========40%                 ] report2.sqlite[2/7] [========41%                 ] report2.sqlite[2/7] [========42%                 ] report2.sqlite[2/7] [=========43%                ] report2.sqlite[2/7] [=========44%                ] report2.sqlite[2/7] [=========45%                ] report2.sqlite[2/7] [=========46%                ] report2.sqlite[2/7] [==========47%               ] report2.sqlite[2/7] [==========48%               ] report2.sqlite[2/7] [==========49%               ] report2.sqlite[2/7] [===========50%              ] report2.sqlite[2/7] [===========51%              ] report2.sqlite[2/7] [===========52%              ] report2.sqlite[2/7] [===========53%              ] report2.sqlite[2/7] [============54%             ] report2.sqlite[2/7] [============55%             ] report2.sqlite[2/7] [============56%             ] report2.sqlite[2/7] [============57%             ] report2.sqlite[2/7] [=============58%            ] report2.sqlite[2/7] [=============59%            ] report2.sqlite[2/7] [=============60%            ] report2.sqlite[2/7] [==============61%           ] report2.sqlite[2/7] [==============62%           ] report2.sqlite[2/7] [==============63%           ] report2.sqlite[2/7] [==============64%           ] report2.sqlite[2/7] [===============65%          ] report2.sqlite[2/7] [===============66%          ] report2.sqlite[2/7] [===============67%          ] report2.sqlite[2/7] [================68%         ] report2.sqlite[2/7] [================69%         ] report2.sqlite[2/7] [================70%         ] report2.sqlite[2/7] [================71%         ] report2.sqlite[2/7] [=================72%        ] report2.sqlite[2/7] [=================73%        ] report2.sqlite[2/7] [=================74%        ] report2.sqlite[2/7] [==================75%       ] report2.sqlite[2/7] [==================76%       ] report2.sqlite[2/7] [==================77%       ] report2.sqlite[2/7] [==================78%       ] report2.sqlite[2/7] [===================79%      ] report2.sqlite[2/7] [===================80%      ] report2.sqlite[2/7] [===================81%      ] report2.sqlite[2/7] [===================82%      ] report2.sqlite[2/7] [====================83%     ] report2.sqlite[2/7] [====================84%     ] report2.sqlite[2/7] [====================85%     ] report2.sqlite[2/7] [=====================86%    ] report2.sqlite[2/7] [=====================87%    ] report2.sqlite[2/7] [=====================88%    ] report2.sqlite[2/7] [=====================89%    ] report2.sqlite[2/7] [======================90%   ] report2.sqlite[2/7] [======================91%   ] report2.sqlite[2/7] [======================92%   ] report2.sqlite[2/7] [=======================93%  ] report2.sqlite[2/7] [=======================94%  ] report2.sqlite[2/7] [=======================95%  ] report2.sqlite[2/7] [=======================96%  ] report2.sqlite[2/7] [========================97% ] report2.sqlite[2/7] [========================98% ] report2.sqlite[2/7] [========================99% ] report2.sqlite[2/7] [========================100%] report2.sqlite[2/7] [========================100%] report2.sqlite
+SKIPPED: /root/mlir/baseline/seq2seq/report2.sqlite does not contain NV Tools Extension (NVTX) data.
+[3/7] Executing 'nvtx_sum' stats report
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)            Name          
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------
+     55.7        947203384          2  473601692.0  473601692.0  133038849  814164535  481628591.4  cudaFree                
+     17.9        304755816      29217      10430.8       9670.0       2587     758046       7145.8  cudaLaunchKernel        
+     12.5        212481504      27832       7634.4       7841.0       2185     763473       5071.1  cuLaunchKernel          
+      9.6        163719913        686     238658.8      49221.5       1905    3815484     468935.7  cuModuleUnload          
+      3.2         54306592     101487        535.1        494.0        102     736999       2369.5  cuCtxSetCurrent         
+      0.4          6490014        234      27735.1      29818.0       6218      82946       7933.4  cuMemcpyHtoDAsync_v2    
+      0.2          3128673          1    3128673.0    3128673.0    3128673    3128673          0.0  cudaProfilerStop        
+      0.1          2285595          8     285699.4     247578.5     146323     505315     115153.8  cuModuleLoadData        
+      0.1          1710185          1    1710185.0    1710185.0    1710185    1710185          0.0  cuMemHostAlloc          
+      0.1          1650166        468       3526.0       1615.5        364       9034       2445.7  cuEventRecord           
+      0.1          1233717        236       5227.6       5586.5        968      21376       1618.6  cuEventQuery            
+      0.1           857240        234       3663.4       3870.5        861       5359        798.8  cuStreamWaitEvent       
+      0.0           695085          4     173771.3     165773.5     119283     244255      51961.7  cuMemAlloc_v2           
+      0.0           374122       1152        324.8        202.5         92       2153        250.5  cuGetProcAddress        
+      0.0           210072          3      70024.0      84179.0      13883     112010      50571.7  cudaMalloc              
+      0.0            31045          1      31045.0      31045.0      31045      31045          0.0  cuMemGetInfo_v2         
+      0.0            25382          1      25382.0      25382.0      25382      25382          0.0  cudaProfilerStart       
+      0.0            18886          4       4721.5       1338.0       1224      14986       6843.2  cuStreamCreate          
+      0.0             9946          1       9946.0       9946.0       9946       9946          0.0  cuMemsetD32_v2          
+      0.0             8669         18        481.6        335.0        298       2499        512.0  cudaEventCreateWithFlags
+      0.0             6625          3       2208.3       2102.0       1819       2704        452.0  cuInit                  
+      0.0             2603          5        520.6        356.0        292        876        272.3  cuEventCreate           
+      0.0             1138          3        379.3        203.0        135        800        365.9  cuModuleGetLoadingMode  
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     76.0        232612919       1800  129229.4  129153.0    128289    130114        290.2  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      6.5         19825747      16000    1239.1    1248.0      1215      1281         17.4  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      4.5         13674283      11815    1157.4    1088.0      1023      2816        187.3  AddV2_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                  
+      3.0          9109970       4000    2277.5    2272.0      2112      2401         26.2  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      2.2          6625019       6015    1101.4    1088.0      1055      2784         37.8  Mul_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                    
+      2.1          6458963       6000    1076.5    1088.0      1024      1121         22.5  Sigmoid_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                
+      1.9          5673291       1800    3151.8    3167.0      3071      3264         23.9  void gemvNSP_kernel<float, float, float, float, (int)1, (int)16, (int)4, (int)1024, (bool)0, cublas…
+      1.6          4792679       4000    1198.2    1184.0      1151      1280         16.3  Tanh_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                   
+      0.8          2459367       1800    1366.3    1376.0      1343      1504         16.0  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.7          2283573       1800    1268.7    1280.0      1216      1313         17.9  void tensorflow::GatherOpKernel<tensorflow::AlignedVector<float, (int)4>, long, (bool)1>(const T1 *…
+      0.7          2211283       1800    1228.5    1216.0      1184      1312         15.8  void tensorflow::BiasNHWCKernel<float>(int, const T1 *, const T1 *, T1 *, int)                      
+      0.1           250881        200    1254.4    1248.0      1216      1281         13.6  void tensorflow::GatherOpKernel<tensorflow::AlignedVector<float, (int)4>, int, (bool)1>(const T1 *,…
+      0.0            56544         13    4349.5    3744.0      3680      7328       1253.1  void tensorflow::functor::FillPhiloxRandomKernelLaunch<tsl::random::NormalDistribution<tsl::random:…
+      0.0             9569          2    4784.5    4784.5      4640      4929        204.4  void tensorflow::functor::FillPhiloxRandomKernelLaunch<tsl::random::UniformDistribution<tsl::random…
+      0.0             2784          2    1392.0    1392.0      1280      1504        158.4  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.0             2304          2    1152.0    1152.0      1152      1152          0.0  Sub_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                    
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     99.7           152742    234     652.7     384.0       352     64065       4163.3  [CUDA memcpy Host-to-Device]
+      0.3              416      1     416.0     416.0       416       416          0.0  [CUDA memset]               
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+      0.761    234     0.003     0.000     0.000     0.759        0.050  [CUDA memcpy Host-to-Device]
+      0.001      1     0.001     0.001     0.001     0.001        0.000  [CUDA memset]               
+
+Generated:
+    /root/mlir/baseline/seq2seq/report2.nsys-rep
+    /root/mlir/baseline/seq2seq/report2.sqlite

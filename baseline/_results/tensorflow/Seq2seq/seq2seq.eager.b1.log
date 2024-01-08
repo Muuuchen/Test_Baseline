@@ -1,0 +1,279 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+2023-10-18 10:03:38.820997: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-18 10:03:38.920861: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-10-18 10:03:39.443787: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-18 10:03:39.443832: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2023-10-18 10:03:39.443836: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-10-18 10:03:40.005190: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-18 10:03:40.657285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46468 MB memory:  -> device: 0, name: NVIDIA RTX 6000 Ada Generation, pci bus id: 0000:65:00.0, compute capability: 8.9
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn/while/ArgMax:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 928, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 751, in _initialize
+    *args, **kwds))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 162, in _get_concrete_function_internal_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filee01tsm7c.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filee01tsm7c.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filermdmif4d.py", line 66, in tf__call
+    ag__.while_stmt(loop_test, loop_body, get_state, set_state, ('h', 'c', 'cond', 'id', 'output'), {})
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 890, in while_stmt
+    _tf_while_stmt(test, body, get_state, set_state, symbol_names, opts)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1300, in _tf_while_stmt
+    aug_test, aug_body, aug_init_vars, **while_loop_opts)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2725, in while_loop
+    back_prop=back_prop)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/while_v2.py", line 231, in while_loop
+    acd_record_initial_resource_uses=stateful_parallelism)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/while_v2.py", line 201, in wrapped_body
+    *_pack_sequence_as(loop_vars_signature, flat_orig_loop_vars, args))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1270, in aug_body
+    body()
+  File "/tmp/__autograph_generated_filermdmif4d.py", line 45, in loop_body
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+ERROR:tensorflow:Error: Input value Tensor("attn_decoder_rnn/while/ArgMax:0", shape=(1,), dtype=int64) has dtype <dtype: 'int64'>, but expected dtype <dtype: 'float32'>.  This leads to undefined behavior and will be an error in future versions of TensorFlow.  Traceback:
+  File "seq2seq_tf2.py", line 474, in <module>
+    run_fix_policy(1, arguments.unroll)
+  File "seq2seq_tf2.py", line 461, in run_fix_policy
+    _ = script_model(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 945, in _call
+    return self._no_variable_creation_fn(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 133, in __call__
+    filtered_flat_args) = self._maybe_define_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compiler.py", line 293, in _create_concrete_function
+    capture_by_value=self._capture_by_value),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1265, in autograph_handler
+    user_requested=True,
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filee01tsm7c.py", line 44, in tf__error_handler
+    ag__.if_stmt(ag__.not_(ag__.converted_call(ag__.ld(tf).debugging.is_traceback_filtering_enabled, (), None, fscope)), if_body, else_body, get_state, set_state, ('do_return', 'retval_'), 2)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1363, in if_stmt
+    _py_if_stmt(cond, body, orelse)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1416, in _py_if_stmt
+    return body() if cond else orelse()
+  File "/tmp/__autograph_generated_filee01tsm7c.py", line 34, in else_body
+    retval_ = ag__.converted_call(ag__.ld(fn), tuple(ag__.ld(args)), dict(**ag__.ld(kwargs)), fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 458, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 689, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filermdmif4d.py", line 66, in tf__call
+    ag__.while_stmt(loop_test, loop_body, get_state, set_state, ('h', 'c', 'cond', 'id', 'output'), {})
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 890, in while_stmt
+    _tf_while_stmt(test, body, get_state, set_state, symbol_names, opts)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1300, in _tf_while_stmt
+    aug_test, aug_body, aug_init_vars, **while_loop_opts)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2725, in while_loop
+    back_prop=back_prop)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/while_v2.py", line 231, in while_loop
+    acd_record_initial_resource_uses=stateful_parallelism)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/framework/func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/while_v2.py", line 201, in wrapped_body
+    *_pack_sequence_as(loop_vars_signature, flat_orig_loop_vars, args))
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 1270, in aug_body
+    body()
+  File "/tmp/__autograph_generated_filermdmif4d.py", line 45, in loop_body
+    ag__.converted_call(ag__.ld(output_all).write, (ag__.ld(id), ag__.ld(output)), None, fscope)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 331, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py", line 243, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs),
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1173, in write
+    return self._implementation.write(index, value, name=name)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 543, in write
+    _check_dtypes(value, self._dtype)
+  File "/root/miniconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/ops/tensor_array_ops.py", line 1342, in _check_dtypes
+    "".join(traceback.format_stack())))
+
+2023-10-18 10:03:41.388457: W tensorflow/core/common_runtime/type_inference.cc:339] Type inference failed. This indicates an invalid graph that escaped type checking. Error message: INVALID_ARGUMENT: type mismatch for node 'attn_decoder_rnn/while/body/_1/attn_decoder_rnn/while/TensorArrayV2Write/TensorListSetItem': expected a subtype of:
+type_id: TFT_PRODUCT
+args {
+  type_id: TFT_ARRAY
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_INT64
+    }
+  }
+}
+
+  got:
+type_id: TFT_PRODUCT
+args {
+  type_id: TFT_ARRAY
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_FLOAT
+    }
+  }
+}
+
+  
+	while updating its output type.
+2023-10-18 10:03:42.361993: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+----batch_size=1---unroll=False----
+[31m100 iters, min = 9.4769 ms, max = 16.7129 ms, avg = 14.2453 ms[m
+Generating '/tmp/nsys-report-2ead.qdstrm'
+[1/7] [0%                          ] report1.nsys-rep[1/7] [0%                          ] report1.nsys-rep[1/7] [=15%                        ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [10%                         ] report1.nsys-rep[1/7] [9%                          ] report1.nsys-rep[1/7] [==21%                       ] report1.nsys-rep[1/7] [==19%                       ] report1.nsys-rep[1/7] [=17%                        ] report1.nsys-rep[1/7] [=15%                        ] report1.nsys-rep[1/7] [14%                         ] report1.nsys-rep[1/7] [==20%                       ] report1.nsys-rep[1/7] [==19%                       ] report1.nsys-rep[1/7] [=17%                        ] report1.nsys-rep[1/7] [=16%                        ] report1.nsys-rep[1/7] [=15%                        ] report1.nsys-rep[1/7] [14%                         ] report1.nsys-rep[1/7] [13%                         ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [11%                         ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [13%                         ] report1.nsys-rep[1/7] [14%                         ] report1.nsys-rep[1/7] [=15%                        ] report1.nsys-rep[1/7] [==19%                       ] report1.nsys-rep[1/7] [===24%                      ] report1.nsys-rep[1/7] [====28%                     ] report1.nsys-rep[1/7] [======33%                   ] report1.nsys-rep[1/7] [=======38%                  ] report1.nsys-rep[1/7] [========42%                 ] report1.nsys-rep[1/7] [==========47%               ] report1.nsys-rep[1/7] [===========51%              ] report1.nsys-rep[1/7] [============56%             ] report1.nsys-rep[1/7] [=============60%            ] report1.nsys-rep[1/7] [===============65%          ] report1.nsys-rep[1/7] [================70%         ] report1.nsys-rep[1/7] [=================74%        ] report1.nsys-rep[1/7] [===================79%      ] report1.nsys-rep[1/7] [====================83%     ] report1.nsys-rep[1/7] [=====================88%    ] report1.nsys-rep[1/7] [======================90%   ] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep
+[2/7] [0%                          ] report1.sqlite[2/7] [1%                          ] report1.sqlite[2/7] [2%                          ] report1.sqlite[2/7] [3%                          ] report1.sqlite[2/7] [4%                          ] report1.sqlite[2/7] [5%                          ] report1.sqlite[2/7] [6%                          ] report1.sqlite[2/7] [7%                          ] report1.sqlite[2/7] [8%                          ] report1.sqlite[2/7] [9%                          ] report1.sqlite[2/7] [10%                         ] report1.sqlite[2/7] [11%                         ] report1.sqlite[2/7] [12%                         ] report1.sqlite[2/7] [13%                         ] report1.sqlite[2/7] [14%                         ] report1.sqlite[2/7] [=15%                        ] report1.sqlite[2/7] [=16%                        ] report1.sqlite[2/7] [=17%                        ] report1.sqlite[2/7] [==18%                       ] report1.sqlite[2/7] [==19%                       ] report1.sqlite[2/7] [==20%                       ] report1.sqlite[2/7] [==21%                       ] report1.sqlite[2/7] [===22%                      ] report1.sqlite[2/7] [===23%                      ] report1.sqlite[2/7] [===24%                      ] report1.sqlite[2/7] [====25%                     ] report1.sqlite[2/7] [====26%                     ] report1.sqlite[2/7] [====27%                     ] report1.sqlite[2/7] [====28%                     ] report1.sqlite[2/7] [=====29%                    ] report1.sqlite[2/7] [=====30%                    ] report1.sqlite[2/7] [=====31%                    ] report1.sqlite[2/7] [=====32%                    ] report1.sqlite[2/7] [======33%                   ] report1.sqlite[2/7] [======34%                   ] report1.sqlite[2/7] [======35%                   ] report1.sqlite[2/7] [=======36%                  ] report1.sqlite[2/7] [=======37%                  ] report1.sqlite[2/7] [=======38%                  ] report1.sqlite[2/7] [=======39%                  ] report1.sqlite[2/7] [========40%                 ] report1.sqlite[2/7] [========41%                 ] report1.sqlite[2/7] [========42%                 ] report1.sqlite[2/7] [=========43%                ] report1.sqlite[2/7] [=========44%                ] report1.sqlite[2/7] [=========45%                ] report1.sqlite[2/7] [=========46%                ] report1.sqlite[2/7] [==========47%               ] report1.sqlite[2/7] [==========48%               ] report1.sqlite[2/7] [==========49%               ] report1.sqlite[2/7] [===========50%              ] report1.sqlite[2/7] [===========51%              ] report1.sqlite[2/7] [===========52%              ] report1.sqlite[2/7] [===========53%              ] report1.sqlite[2/7] [============54%             ] report1.sqlite[2/7] [============55%             ] report1.sqlite[2/7] [============56%             ] report1.sqlite[2/7] [============57%             ] report1.sqlite[2/7] [=============58%            ] report1.sqlite[2/7] [=============59%            ] report1.sqlite[2/7] [=============60%            ] report1.sqlite[2/7] [==============61%           ] report1.sqlite[2/7] [==============62%           ] report1.sqlite[2/7] [==============63%           ] report1.sqlite[2/7] [==============64%           ] report1.sqlite[2/7] [===============65%          ] report1.sqlite[2/7] [===============66%          ] report1.sqlite[2/7] [===============67%          ] report1.sqlite[2/7] [================68%         ] report1.sqlite[2/7] [================69%         ] report1.sqlite[2/7] [================70%         ] report1.sqlite[2/7] [================71%         ] report1.sqlite[2/7] [=================72%        ] report1.sqlite[2/7] [=================73%        ] report1.sqlite[2/7] [=================74%        ] report1.sqlite[2/7] [==================75%       ] report1.sqlite[2/7] [==================76%       ] report1.sqlite[2/7] [==================77%       ] report1.sqlite[2/7] [==================78%       ] report1.sqlite[2/7] [===================79%      ] report1.sqlite[2/7] [===================80%      ] report1.sqlite[2/7] [===================81%      ] report1.sqlite[2/7] [===================82%      ] report1.sqlite[2/7] [====================83%     ] report1.sqlite[2/7] [====================84%     ] report1.sqlite[2/7] [====================85%     ] report1.sqlite[2/7] [=====================86%    ] report1.sqlite[2/7] [=====================87%    ] report1.sqlite[2/7] [=====================88%    ] report1.sqlite[2/7] [=====================89%    ] report1.sqlite[2/7] [======================90%   ] report1.sqlite[2/7] [======================91%   ] report1.sqlite[2/7] [======================92%   ] report1.sqlite[2/7] [=======================93%  ] report1.sqlite[2/7] [=======================94%  ] report1.sqlite[2/7] [=======================95%  ] report1.sqlite[2/7] [=======================96%  ] report1.sqlite[2/7] [========================97% ] report1.sqlite[2/7] [========================98% ] report1.sqlite[2/7] [========================99% ] report1.sqlite[2/7] [========================100%] report1.sqlite[2/7] [========================100%] report1.sqlite
+SKIPPED: /root/mlir/baseline/seq2seq/report1.sqlite does not contain NV Tools Extension (NVTX) data.
+[3/7] Executing 'nvtx_sum' stats report
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)            Name          
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------
+     48.2        923054181          2  461527090.5  461527090.5  101225333  821828848  509543632.0  cudaFree                
+     17.1        326888633      30017      10890.1       9907.0       2702     518020       5722.1  cudaLaunchKernel        
+     13.0        248027341      32032       7743.1       7974.0       2299     117068       2294.5  cuLaunchKernel          
+      8.7        165967790        686     241935.6      44280.0       1878    3869981     478120.0  cuModuleUnload          
+      5.1         97622980     199064        490.4        454.0        104     733178       2386.8  cuCtxSetCurrent         
+      2.1         40354599       2200      18343.0      17953.0       5726     134924       6096.2  cuMemcpyDtoHAsync_v2    
+      1.7         32401941       2037      15906.7      16208.0       5086      76211       3212.2  cuMemcpyHtoDAsync_v2    
+      1.5         27939105       6621       4219.8       3386.0        702     146641       3760.2  cuEventQuery            
+      1.2         23170131          1   23170131.0   23170131.0   23170131   23170131          0.0  cudaProfilerStop        
+      0.8         14758599       8874       1663.1       1401.5        270      18061        970.6  cuEventRecord           
+      0.6         10572884       4437       2382.9       2345.0        631      21520        774.9  cuStreamWaitEvent       
+      0.1          1701135          1    1701135.0    1701135.0    1701135    1701135          0.0  cuMemHostAlloc          
+      0.1          1011996         10     101199.6     106992.0      53900     150572      33973.8  cuModuleLoadData        
+      0.0           571001          4     142750.3     140557.0     104698     185189      34961.9  cuMemAlloc_v2           
+      0.0           247384          3      82461.3      97330.0       3516     146538      72661.1  cudaMalloc              
+      0.0           210672       1152        182.9        145.0         96        931         96.6  cuGetProcAddress        
+      0.0            29639          1      29639.0      29639.0      29639      29639          0.0  cuMemGetInfo_v2         
+      0.0            26195          1      26195.0      26195.0      26195      26195          0.0  cudaProfilerStart       
+      0.0            17532          4       4383.0       1414.0       1146      13558       6118.0  cuStreamCreate          
+      0.0            10574          1      10574.0      10574.0      10574      10574          0.0  cuMemsetD32_v2          
+      0.0             8968         18        498.2        335.0        312       2741        568.4  cudaEventCreateWithFlags
+      0.0             4238          3       1412.7       1367.0       1190       1681        248.7  cuInit                  
+      0.0             2495          5        499.0        300.0        218        938        348.4  cuEventCreate           
+      0.0              528          3        176.0        196.0        128        204         41.8  cuModuleGetLoadingMode  
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     76.5        258530037       2000  129265.0  129218.0    129025    129506        160.1  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      5.9         19793616      16000    1237.1    1248.0      1215      1280         15.3  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      4.1         13972981      12015    1163.0    1088.0      1024      2944        190.3  AddV2_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                  
+      2.7          9158029       4000    2289.5    2272.0      2240      2401         34.0  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      2.0          6654262       6015    1106.3    1119.0      1055      2752         37.5  Mul_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                    
+      1.9          6412274       6000    1068.7    1056.0      1023      1120         16.6  Sigmoid_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                
+      1.9          6347346       2000    3173.7    3168.0      3072      3328         27.7  void gemvNSP_kernel<float, float, float, float, (int)1, (int)16, (int)4, (int)1024, (bool)0, cublas…
+      1.4          4821732       4000    1205.4    1216.0      1183      1280         15.1  Tanh_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                   
+      0.8          2778415       2000    1389.2    1376.0      1343      1696         20.8  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.7          2503915       2000    1252.0    1248.0      1216      1281         16.2  void tensorflow::GatherOpKernel<tensorflow::AlignedVector<float, (int)4>, long, (bool)1>(const T1 *…
+      0.7          2467175       2000    1233.6    1248.0      1216      1249         15.9  void tensorflow::BiasNHWCKernel<float>(int, const T1 *, const T1 *, T1 *, int)                      
+      0.6          2139204       2000    1069.6    1056.0      1024      1089         15.9  Greater_GPU_DT_INT64_DT_BOOL_kernel                                                                 
+      0.6          2113523       2000    1056.8    1056.0      1023      1089         12.5  LogicalAnd_GPU_DT_BOOL_DT_BOOL_kernel                                                               
+      0.0            56800         13    4369.2    3712.0      3679      7553       1300.7  void tensorflow::functor::FillPhiloxRandomKernelLaunch<tsl::random::NormalDistribution<tsl::random:…
+      0.0             9504          2    4752.0    4752.0      4608      4896        203.6  void tensorflow::functor::FillPhiloxRandomKernelLaunch<tsl::random::UniformDistribution<tsl::random…
+      0.0             2816          2    1408.0    1408.0      1280      1536        181.0  void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::Ten…
+      0.0             2272          2    1136.0    1136.0      1120      1152         22.6  Sub_GPU_DT_FLOAT_DT_FLOAT_kernel                                                                    
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     71.7          2123174   2200     965.1     960.0       832      2368         67.1  [CUDA memcpy Device-to-Host]
+     28.3           839553   2037     412.2     384.0       351     64321       1416.8  [CUDA memcpy Host-to-Device]
+      0.0              417      1     417.0     417.0       417       417          0.0  [CUDA memset]               
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+      0.762   2037     0.000     0.000     0.000     0.759        0.017  [CUDA memcpy Host-to-Device]
+      0.002   2200     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy Device-to-Host]
+      0.001      1     0.001     0.001     0.001     0.001        0.000  [CUDA memset]               
+
+Generated:
+    /root/mlir/baseline/seq2seq/report1.nsys-rep
+    /root/mlir/baseline/seq2seq/report1.sqlite

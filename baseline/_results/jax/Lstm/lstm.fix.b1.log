@@ -1,0 +1,299 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+gpu:0
+----batch_size=1--jit=True--scan=True--grad=False---
+[warmup]
+Time 688.9750957489014 ms
+Time 11.507987976074219 ms
+Time 11.339902877807617 ms
+Time 11.319398880004883 ms
+Time 10.74981689453125 ms
+Time 10.998249053955078 ms
+Time 10.883808135986328 ms
+Time 10.68115234375 ms
+Time 10.99848747253418 ms
+Time 13.288021087646484 ms
+Time 11.211633682250977 ms
+Time 11.392593383789062 ms
+Time 11.387109756469727 ms
+Time 11.379718780517578 ms
+Time 11.274099349975586 ms
+Time 11.460542678833008 ms
+Time 11.400222778320312 ms
+Time 10.938882827758789 ms
+Time 12.404441833496094 ms
+Time 12.081384658813477 ms
+Time 11.431455612182617 ms
+Time 11.4593505859375 ms
+Time 11.324167251586914 ms
+Time 11.493444442749023 ms
+Time 11.45625114440918 ms
+Time 10.995864868164062 ms
+Time 10.703563690185547 ms
+Time 11.045455932617188 ms
+Time 13.136863708496094 ms
+Time 11.424064636230469 ms
+Time 11.338472366333008 ms
+Time 11.332511901855469 ms
+Time 11.472702026367188 ms
+Time 11.546850204467773 ms
+Time 11.19232177734375 ms
+Time 10.987997055053711 ms
+Time 10.779619216918945 ms
+Time 11.091470718383789 ms
+Time 13.31782341003418 ms
+Time 11.458158493041992 ms
+Time 11.658668518066406 ms
+Time 11.462688446044922 ms
+Time 11.285781860351562 ms
+Time 11.388063430786133 ms
+Time 11.189699172973633 ms
+Time 11.079072952270508 ms
+Time 10.904312133789062 ms
+Time 13.184309005737305 ms
+Time 11.308908462524414 ms
+Time 11.631488800048828 ms
+Time 11.772632598876953 ms
+Time 11.162281036376953 ms
+Time 11.326074600219727 ms
+Time 11.476278305053711 ms
+Time 11.416435241699219 ms
+Time 11.023759841918945 ms
+Time 10.784149169921875 ms
+Time 13.45515251159668 ms
+Time 11.248588562011719 ms
+Time 11.60287857055664 ms
+Time 11.42263412475586 ms
+Time 11.432647705078125 ms
+Time 11.360645294189453 ms
+Time 11.166572570800781 ms
+Time 10.625123977661133 ms
+Time 11.238336563110352 ms
+Time 12.256860733032227 ms
+Time 11.823654174804688 ms
+Time 11.487722396850586 ms
+Time 11.513233184814453 ms
+Time 11.481523513793945 ms
+Time 11.415481567382812 ms
+Time 11.341571807861328 ms
+Time 11.204719543457031 ms
+Time 10.94365119934082 ms
+Time 10.991573333740234 ms
+Time 13.083934783935547 ms
+Time 11.377334594726562 ms
+Time 11.441707611083984 ms
+Time 11.28077507019043 ms
+Time 11.305570602416992 ms
+Time 11.359453201293945 ms
+Time 11.20305061340332 ms
+Time 10.748624801635742 ms
+Time 11.289596557617188 ms
+Time 10.652780532836914 ms
+Time 12.952089309692383 ms
+Time 11.565446853637695 ms
+Time 11.40904426574707 ms
+Time 11.41667366027832 ms
+Time 11.532783508300781 ms
+Time 11.454105377197266 ms
+Time 11.245965957641602 ms
+Time 10.918378829956055 ms
+Time 11.074304580688477 ms
+Time 13.175487518310547 ms
+Time 11.210441589355469 ms
+Time 12.625932693481445 ms
+Time 11.313915252685547 ms
+Time 11.57069206237793 ms
+[31m100 iters, min = 10.5696 ms, max = 25.4712 ms, avg = 11.6875 ms[m
+Generating '/tmp/nsys-report-6265.qdstrm'
+[1/7] [0%                          ] report1.nsys-rep[1/7] [0%                          ] report1.nsys-rep[1/7] [7%                          ] report1.nsys-rep[1/7] [6%                          ] report1.nsys-rep[1/7] [5%                          ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [10%                         ] report1.nsys-rep[1/7] [9%                          ] report1.nsys-rep[1/7] [8%                          ] report1.nsys-rep[1/7] [7%                          ] report1.nsys-rep[1/7] [6%                          ] report1.nsys-rep[1/7] [9%                          ] report1.nsys-rep[1/7] [8%                          ] report1.nsys-rep[1/7] [7%                          ] report1.nsys-rep[1/7] [6%                          ] report1.nsys-rep[1/7] [5%                          ] report1.nsys-rep[1/7] [0%                          ] report1.nsys-rep[1/7] [5%                          ] report1.nsys-rep[1/7] [6%                          ] report1.nsys-rep[1/7] [7%                          ] report1.nsys-rep[1/7] [8%                          ] report1.nsys-rep[1/7] [9%                          ] report1.nsys-rep[1/7] [10%                         ] report1.nsys-rep[1/7] [11%                         ] report1.nsys-rep[1/7] [12%                         ] report1.nsys-rep[1/7] [13%                         ] report1.nsys-rep[1/7] [14%                         ] report1.nsys-rep[1/7] [=15%                        ] report1.nsys-rep[1/7] [=16%                        ] report1.nsys-rep[1/7] [=17%                        ] report1.nsys-rep[1/7] [==18%                       ] report1.nsys-rep[1/7] [==19%                       ] report1.nsys-rep[1/7] [==20%                       ] report1.nsys-rep[1/7] [==21%                       ] report1.nsys-rep[1/7] [===22%                      ] report1.nsys-rep[1/7] [===23%                      ] report1.nsys-rep[1/7] [===24%                      ] report1.nsys-rep[1/7] [====25%                     ] report1.nsys-rep[1/7] [====26%                     ] report1.nsys-rep[1/7] [====27%                     ] report1.nsys-rep[1/7] [====28%                     ] report1.nsys-rep[1/7] [=====29%                    ] report1.nsys-rep[1/7] [=====30%                    ] report1.nsys-rep[1/7] [=====31%                    ] report1.nsys-rep[1/7] [=====32%                    ] report1.nsys-rep[1/7] [======33%                   ] report1.nsys-rep[1/7] [======34%                   ] report1.nsys-rep[1/7] [======35%                   ] report1.nsys-rep[1/7] [=======36%                  ] report1.nsys-rep[1/7] [=======37%                  ] report1.nsys-rep[1/7] [=======38%                  ] report1.nsys-rep[1/7] [=======39%                  ] report1.nsys-rep[1/7] [========40%                 ] report1.nsys-rep[1/7] [========41%                 ] report1.nsys-rep[1/7] [========42%                 ] report1.nsys-rep[1/7] [=========43%                ] report1.nsys-rep[1/7] [=========44%                ] report1.nsys-rep[1/7] [=========45%                ] report1.nsys-rep[1/7] [=========46%                ] report1.nsys-rep[1/7] [==========47%               ] report1.nsys-rep[1/7] [==========48%               ] report1.nsys-rep[1/7] [==========49%               ] report1.nsys-rep[1/7] [===========50%              ] report1.nsys-rep[1/7] [===========51%              ] report1.nsys-rep[1/7] [===========52%              ] report1.nsys-rep[1/7] [===========53%              ] report1.nsys-rep[1/7] [============54%             ] report1.nsys-rep[1/7] [============55%             ] report1.nsys-rep[1/7] [============56%             ] report1.nsys-rep[1/7] [============57%             ] report1.nsys-rep[1/7] [=============58%            ] report1.nsys-rep[1/7] [=============59%            ] report1.nsys-rep[1/7] [=============60%            ] report1.nsys-rep[1/7] [==============61%           ] report1.nsys-rep[1/7] [==============62%           ] report1.nsys-rep[1/7] [==============63%           ] report1.nsys-rep[1/7] [==============64%           ] report1.nsys-rep[1/7] [===============65%          ] report1.nsys-rep[1/7] [===============66%          ] report1.nsys-rep[1/7] [===============67%          ] report1.nsys-rep[1/7] [================68%         ] report1.nsys-rep[1/7] [================69%         ] report1.nsys-rep[1/7] [================70%         ] report1.nsys-rep[1/7] [================71%         ] report1.nsys-rep[1/7] [=================72%        ] report1.nsys-rep[1/7] [=================73%        ] report1.nsys-rep[1/7] [=================74%        ] report1.nsys-rep[1/7] [==================75%       ] report1.nsys-rep[1/7] [====================83%     ] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep[1/7] [========================100%] report1.nsys-rep
+[2/7] [0%                          ] report1.sqlite[2/7] [1%                          ] report1.sqlite[2/7] [2%                          ] report1.sqlite[2/7] [3%                          ] report1.sqlite[2/7] [4%                          ] report1.sqlite[2/7] [5%                          ] report1.sqlite[2/7] [6%                          ] report1.sqlite[2/7] [7%                          ] report1.sqlite[2/7] [8%                          ] report1.sqlite[2/7] [9%                          ] report1.sqlite[2/7] [10%                         ] report1.sqlite[2/7] [11%                         ] report1.sqlite[2/7] [12%                         ] report1.sqlite[2/7] [13%                         ] report1.sqlite[2/7] [14%                         ] report1.sqlite[2/7] [=15%                        ] report1.sqlite[2/7] [=16%                        ] report1.sqlite[2/7] [=17%                        ] report1.sqlite[2/7] [==18%                       ] report1.sqlite[2/7] [==19%                       ] report1.sqlite[2/7] [==20%                       ] report1.sqlite[2/7] [==21%                       ] report1.sqlite[2/7] [===22%                      ] report1.sqlite[2/7] [===23%                      ] report1.sqlite[2/7] [===24%                      ] report1.sqlite[2/7] [====25%                     ] report1.sqlite[2/7] [====26%                     ] report1.sqlite[2/7] [====27%                     ] report1.sqlite[2/7] [====28%                     ] report1.sqlite[2/7] [=====29%                    ] report1.sqlite[2/7] [=====30%                    ] report1.sqlite[2/7] [=====31%                    ] report1.sqlite[2/7] [=====32%                    ] report1.sqlite[2/7] [======33%                   ] report1.sqlite[2/7] [======34%                   ] report1.sqlite[2/7] [======35%                   ] report1.sqlite[2/7] [=======36%                  ] report1.sqlite[2/7] [=======37%                  ] report1.sqlite[2/7] [=======38%                  ] report1.sqlite[2/7] [=======39%                  ] report1.sqlite[2/7] [========40%                 ] report1.sqlite[2/7] [========41%                 ] report1.sqlite[2/7] [========42%                 ] report1.sqlite[2/7] [=========43%                ] report1.sqlite[2/7] [=========44%                ] report1.sqlite[2/7] [=========45%                ] report1.sqlite[2/7] [=========46%                ] report1.sqlite[2/7] [==========47%               ] report1.sqlite[2/7] [==========48%               ] report1.sqlite[2/7] [==========49%               ] report1.sqlite[2/7] [===========50%              ] report1.sqlite[2/7] [===========51%              ] report1.sqlite[2/7] [===========52%              ] report1.sqlite[2/7] [===========53%              ] report1.sqlite[2/7] [============54%             ] report1.sqlite[2/7] [============55%             ] report1.sqlite[2/7] [============56%             ] report1.sqlite[2/7] [============57%             ] report1.sqlite[2/7] [=============58%            ] report1.sqlite[2/7] [=============59%            ] report1.sqlite[2/7] [=============60%            ] report1.sqlite[2/7] [==============61%           ] report1.sqlite[2/7] [==============62%           ] report1.sqlite[2/7] [==============63%           ] report1.sqlite[2/7] [==============64%           ] report1.sqlite[2/7] [===============65%          ] report1.sqlite[2/7] [===============66%          ] report1.sqlite[2/7] [===============67%          ] report1.sqlite[2/7] [================68%         ] report1.sqlite[2/7] [================69%         ] report1.sqlite[2/7] [================70%         ] report1.sqlite[2/7] [================71%         ] report1.sqlite[2/7] [=================72%        ] report1.sqlite[2/7] [=================73%        ] report1.sqlite[2/7] [=================74%        ] report1.sqlite[2/7] [==================75%       ] report1.sqlite[2/7] [==================76%       ] report1.sqlite[2/7] [==================77%       ] report1.sqlite[2/7] [==================78%       ] report1.sqlite[2/7] [===================79%      ] report1.sqlite[2/7] [===================80%      ] report1.sqlite[2/7] [===================81%      ] report1.sqlite[2/7] [===================82%      ] report1.sqlite[2/7] [====================83%     ] report1.sqlite[2/7] [====================84%     ] report1.sqlite[2/7] [====================85%     ] report1.sqlite[2/7] [=====================86%    ] report1.sqlite[2/7] [=====================87%    ] report1.sqlite[2/7] [=====================88%    ] report1.sqlite[2/7] [=====================89%    ] report1.sqlite[2/7] [======================90%   ] report1.sqlite[2/7] [======================91%   ] report1.sqlite[2/7] [======================92%   ] report1.sqlite[2/7] [=======================93%  ] report1.sqlite[2/7] [=======================94%  ] report1.sqlite[2/7] [=======================95%  ] report1.sqlite[2/7] [=======================96%  ] report1.sqlite[2/7] [========================97% ] report1.sqlite[2/7] [========================98% ] report1.sqlite[2/7] [========================99% ] report1.sqlite[2/7] [========================100%] report1.sqlite[2/7] [========================100%] report1.sqlite
+[3/7] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)   Style                               Range                            
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  -------  -------------------------------------------------------------
+     47.9       2278810456        200   11394052.3   11206163.0   10432005   25263966    1229381.3  PushPop  TSL:XlaModule:#hlo_module=jit_lstm_lax,program_id=12#        
+      5.3        250593379      12841      19515.1       3819.0       3558  199310907    1758827.4  PushPop  TSL:Thunk:#hlo_op=fusion#                                    
+      4.2        199374950          1  199374950.0  199374950.0  199374950  199374950          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__threefry_seed,program_id=0#   
+      1.1         52274314      12800       4083.9       3890.0       3521     328217       3099.5  PushPop  TSL:Thunk:#hlo_op=fusion.8#                                  
+      1.1         52027611      12800       4064.7       3859.0       3523      37018       1262.4  PushPop  TSL:Thunk:#hlo_op=fusion.15#                                 
+      1.1         52007912      12800       4063.1       3896.0       3537      73667       1105.7  PushPop  TSL:Thunk:#hlo_op=add.137#                                   
+      1.1         51979276      12800       4060.9       3842.0       3489     210933       2126.2  PushPop  TSL:Thunk:#hlo_op=add.189#                                   
+      1.1         51969178      12800       4060.1       3833.0       3470     246837       2521.7  PushPop  TSL:Thunk:#hlo_op=add.152#                                   
+      1.1         51834808      12800       4049.6       3885.0       3532     157457       1792.0  PushPop  TSL:Thunk:#hlo_op=fusion.7#                                  
+      1.1         51796372      12800       4046.6       3834.0       3500      30785       1317.0  PushPop  TSL:Thunk:#hlo_op=fusion.14#                                 
+      1.1         51697890      12800       4038.9       3854.0       3517     237687       2432.4  PushPop  TSL:Thunk:#hlo_op=fusion.11#                                 
+      1.1         51652969      12800       4035.4       3847.0       3481     238817       2336.1  PushPop  TSL:Thunk:#hlo_op=add.252#                                   
+      1.1         51543217      12800       4026.8       3788.0       3448     210890       2904.0  PushPop  TSL:Thunk:#hlo_op=fusion.18#                                 
+      1.1         51525653      12800       4025.4       3821.0       3470     239863       2319.8  PushPop  TSL:Thunk:#hlo_op=add.217#                                   
+      1.1         51392668      12800       4015.1       3790.0       3490     249069       2440.8  PushPop  TSL:Thunk:#hlo_op=fusion.32#                                 
+      1.1         51385153      12800       4014.5       3851.5       3572      24686        682.3  PushPop  TSL:Thunk:#hlo_op=fusion.1#                                  
+      1.1         51357425      12800       4012.3       3823.0       3487     240810       3136.9  PushPop  TSL:Thunk:#hlo_op=fusion.67#                                 
+      1.1         51276359      12800       4006.0       3829.0       3518     186859       1781.6  PushPop  TSL:Thunk:#hlo_op=fusion.4#                                  
+      1.1         51230650      12800       4002.4       3808.0       3491      20753       1003.7  PushPop  TSL:Thunk:#hlo_op=fusion.29#                                 
+      1.1         51220991      12800       4001.6       3787.0       3473      22827       1112.9  PushPop  TSL:Thunk:#hlo_op=fusion.28#                                 
+      1.1         51201552      12800       4000.1       3797.0       3492     246644       2436.6  PushPop  TSL:Thunk:#hlo_op=fusion.43#                                 
+      1.1         51156455      12800       3996.6       3824.0       3454     242203       2999.9  PushPop  TSL:Thunk:#hlo_op=add.203#                                   
+      1.1         51025065      12800       3986.3       3822.0       3488      19806        823.5  PushPop  TSL:Thunk:#hlo_op=fusion.57#                                 
+      1.1         51014647      12800       3985.5       3821.0       3447     101326       1332.6  PushPop  TSL:Thunk:#hlo_op=fusion.35#                                 
+      1.1         50979723      12800       3982.8       3820.0       3561      58083        813.1  PushPop  TSL:Thunk:#hlo_op=add.123#                                   
+      1.1         50944727      12800       3980.1       3799.0       3427     228036       2197.8  PushPop  TSL:Thunk:#hlo_op=add.172#                                   
+      1.1         50901267      12800       3976.7       3795.0       3470     249839       2428.5  PushPop  TSL:Thunk:#hlo_op=fusion.50#                                 
+      1.1         50841534      12800       3972.0       3826.0       3509      49823        822.0  PushPop  TSL:Thunk:#hlo_op=fusion.64#                                 
+      1.1         50732423      12800       3963.5       3810.0       3486      23376        805.3  PushPop  TSL:Thunk:#hlo_op=fusion.36#                                 
+      1.1         50727368      12800       3963.1       3793.0       3473     198357       1908.3  PushPop  TSL:Thunk:#hlo_op=fusion.49#                                 
+      1.1         50684142      12800       3959.7       3805.0       3437     197374       1872.4  PushPop  TSL:Thunk:#hlo_op=add.232#                                   
+      1.1         50619317      12800       3954.6       3829.0       3459      21115        697.4  PushPop  TSL:Thunk:#hlo_op=add.269#                                   
+      1.1         50591832      12800       3952.5       3777.0       3474      20112        934.6  PushPop  TSL:Thunk:#hlo_op=fusion.22#                                 
+      1.1         50495627      12800       3945.0       3746.0       3402     245988       2582.4  PushPop  TSL:Thunk:#hlo_op=fusion.21#                                 
+      1.1         50447641      12800       3941.2       3770.0       3436      21007        880.5  PushPop  TSL:Thunk:#hlo_op=fusion.46#                                 
+      1.1         50446653      12800       3941.1       3763.0       3428     229028       2154.0  PushPop  TSL:Thunk:#hlo_op=fusion.56#                                 
+      1.1         50327596      12800       3931.8       3777.0       3457      21077        853.2  PushPop  TSL:Thunk:#hlo_op=fusion.60#                                 
+      1.1         50317892      12800       3931.1       3744.0       3409     241946       2314.4  PushPop  TSL:Thunk:#hlo_op=fusion.25#                                 
+      1.1         50241373      12800       3925.1       3767.0       3435      52167        938.6  PushPop  TSL:Thunk:#hlo_op=fusion.53#                                 
+      1.1         50137641      12800       3917.0       3760.0       3422     229037       2115.9  PushPop  TSL:Thunk:#hlo_op=fusion.63#                                 
+      1.1         50059840      12800       3910.9       3754.0       3399      76184       1161.5  PushPop  TSL:Thunk:#hlo_op=fusion.39#                                 
+      1.1         50054367      12800       3910.5       3735.0       3419      67687       1018.6  PushPop  TSL:Thunk:#hlo_op=fusion.42#                                 
+      0.0          2206253        200      11031.3      10581.5       9586      28402       2334.6  PushPop  TSL:Thunk:#hlo_op=copy.13#                                   
+      0.0          2181638        200      10908.2       9979.5       8240      65795       4741.2  PushPop  TSL:Thunk:#hlo_op=broadcast.164#                             
+      0.0          1535840        200       7679.2       7709.0       6324      12780        735.9  PushPop  TSL:Thunk:#hlo_op=copy.130#                                  
+      0.0          1366909        200       6834.5       6390.0       5527      25454       1934.9  PushPop  TSL:Thunk:#hlo_op=copy.120#                                  
+      0.0          1333364        200       6666.8       6224.5       5501      29039       2242.8  PushPop  TSL:Thunk:#hlo_op=copy.49#                                   
+      0.0          1329480        200       6647.4       6234.5       5484      38652       2483.8  PushPop  TSL:Thunk:#hlo_op=copy.37#                                   
+      0.0          1315238        200       6576.2       6240.0       5389      14397       1278.9  PushPop  TSL:Thunk:#hlo_op=copy.85#                                   
+      0.0          1312599        200       6563.0       6316.5       5676      13851        988.9  PushPop  TSL:Thunk:#hlo_op=copy.25#                                   
+      0.0          1307734        200       6538.7       6079.5       5422      19875       1805.0  PushPop  TSL:Thunk:#hlo_op=copy.61#                                   
+      0.0          1306972        200       6534.9       6186.5       5267      21863       1552.2  PushPop  TSL:Thunk:#hlo_op=copy.109#                                  
+      0.0          1303791        200       6519.0       6141.5       5385      15839       1314.4  PushPop  TSL:Thunk:#hlo_op=copy.97#                                   
+      0.0          1286683        200       6433.4       6082.5       5209      22041       1640.7  PushPop  TSL:Thunk:#hlo_op=copy.73#                                   
+      0.0          1129870         20      56493.5      52074.5      46647     138671      20026.4  PushPop  TSL:XlaModule:#hlo_module=jit__normal,program_id=2#          
+      0.0          1110552        200       5552.8       5419.5       4968      13845        774.2  PushPop  TSL:Thunk:#hlo_op=copy.10#                                   
+      0.0          1091140        200       5455.7       5297.0       4887      19573       1174.1  PushPop  TSL:Thunk:#hlo_op=copy.34#                                   
+      0.0          1080590        200       5403.0       5317.5       4974      10490        519.3  PushPop  TSL:Thunk:#hlo_op=copy.22#                                   
+      0.0          1074548        200       5372.7       5142.0       4788      20771       1504.1  PushPop  TSL:Thunk:#hlo_op=copy.70#                                   
+      0.0          1061559        200       5307.8       5178.5       4840      17683       1003.2  PushPop  TSL:Thunk:#hlo_op=copy.46#                                   
+      0.0          1056456         20      52822.8      49825.0      46006     109130      13507.9  PushPop  TSL:XlaModule:#hlo_module=jit__normal,program_id=6#          
+      0.0          1051860        200       5259.3       5145.0       4796      17965        979.8  PushPop  TSL:Thunk:#hlo_op=copy.58#                                   
+      0.0          1051583        200       5257.9       5011.5       4084      20329       1498.3  PushPop  TSL:Thunk:#hlo_op=broadcast.165#                             
+      0.0          1046514        200       5232.6       5141.5       4767      11946        609.1  PushPop  TSL:Thunk:#hlo_op=copy.106#                                  
+      0.0          1044412        200       5222.1       5116.0       4761      11650        709.2  PushPop  TSL:Thunk:#hlo_op=copy.82#                                   
+      0.0          1039430        200       5197.2       5113.5       4778      11236        500.0  PushPop  TSL:Thunk:#hlo_op=copy.94#                                   
+      0.0           999133        200       4995.7       4714.0       4129      17022       1273.7  PushPop  TSL:Thunk:#hlo_op=copy_fusion.8#                             
+      0.0           922937         40      23073.4      21094.5      19778      54294       6979.8  PushPop  TSL:Thunk:#hlo_op=fusion.2#                                  
+      0.0           913276        200       4566.4       4249.0       3741      25378       1756.1  PushPop  TSL:Thunk:#hlo_op=copy_fusion.6#                             
+      0.0           865003        200       4325.0       4101.0       3686      14240       1129.6  PushPop  TSL:Thunk:#hlo_op=copy_fusion.4#                             
+      0.0           852346        200       4261.7       4112.0       3595       8775        743.5  PushPop  TSL:Thunk:#hlo_op=copy_fusion.2#                             
+      0.0           851630        200       4258.2       4022.0       3611      14529       1090.9  PushPop  TSL:Thunk:#hlo_op=copy_fusion#                               
+      0.0           850730        200       4253.7       4112.5       3681       8250        639.9  PushPop  TSL:Thunk:#hlo_op=copy_fusion.1#                             
+      0.0           850221        200       4251.1       4097.0       3571      12844        911.9  PushPop  TSL:Thunk:#hlo_op=copy_fusion.5#                             
+      0.0           846199        200       4231.0       4111.0       3769       7486        554.8  PushPop  TSL:Thunk:#hlo_op=copy_fusion.7#                             
+      0.0           839364        200       4196.8       4094.0       3684       8642        549.4  PushPop  TSL:Thunk:#hlo_op=copy_fusion.3#                             
+      0.0           388789         40       9719.7       8664.5       7987      33100       4226.9  PushPop  TSL:Thunk:#hlo_op=custom-call.1#                             
+      0.0           253767         40       6344.2       5742.5       5392      12689       1535.8  PushPop  TSL:Thunk:#hlo_op=fusion.5#                                  
+      0.0            97993          1      97993.0      97993.0      97993      97993          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=10#
+      0.0            68418          1      68418.0      68418.0      68418      68418          0.0  PushPop  TSL:Thunk:#hlo_op=broadcast#                                 
+
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)               Name              
+ --------  ---------------  ---------  -----------  -----------  --------  ---------  -----------  -------------------------------
+     40.2       1240157382     514322       2411.2       2329.0      2083     319451       1681.4  cuLaunchKernel                 
+     30.5        942267638          3  314089212.7  101705271.0      1810  840560557  458764597.4  cudaFree                       
+     12.5        385400667     514322        749.3        354.0       316  199222690     277792.6  cudaStreamIsCapturing_v10000   
+      6.5        200555489        706     284072.9      47153.0      1848   11892567     707347.4  cuModuleUnload                 
+      4.9        151202976         16    9450186.0       1358.5       988  150799658   37693310.3  cudaStreamCreateWithFlags      
+      2.1         63477945     519444        122.2        120.0        95      40702        114.1  cuCtxSetCurrent                
+      1.3         40267894          1   40267894.0   40267894.0  40267894   40267894          0.0  cuMemAlloc_v2                  
+      1.2         36473180          1   36473180.0   36473180.0  36473180   36473180          0.0  cudaProfilerStop               
+      0.5         15182799       4000       3795.7       3535.0      2902      24455       1183.4  cuMemcpyPeerAsync              
+      0.1          2303571          5     460714.2     495109.0    253239     574167     129609.9  cuModuleLoadFatBinary          
+      0.1          1845391        244       7563.1       6452.5      3874     296642      18639.5  cuLaunchHostFunc               
+      0.1          1566073       4000        391.5        370.0       293      10889        251.0  cudaStreamGetCaptureInfo_v10010
+      0.0           713620        200       3568.1       3212.0      1581      17571       2615.3  cuEventQuery                   
+      0.0           680249          1     680249.0     680249.0    680249     680249          0.0  cuMemHostAlloc                 
+      0.0           634150          4     158537.5     128519.5      3359     373752     177843.1  cudaMalloc                     
+      0.0           598349          1     598349.0     598349.0    598349     598349          0.0  cudaHostAlloc                  
+      0.0           569483        490       1162.2       1013.5       264      10816        967.3  cuEventRecord                  
+      0.0           359066       1920        187.0        147.0        92       2137        111.9  cuGetProcAddress               
+      0.0           329164        248       1327.3       1244.5       752       7663        756.1  cuStreamWaitEvent              
+      0.0           253660         13      19512.3       1593.0      1116     106805      35728.4  cuStreamCreate                 
+      0.0           211445         40       5286.1       4978.5      4407      10040       1136.0  cudaLaunchKernel               
+      0.0            76342          2      38171.0      38171.0     26160      50182      16986.1  cuMemcpyHtoDAsync_v2           
+      0.0            66666         57       1169.6       1211.0       203       2974        497.9  cuEventCreate                  
+      0.0            25602          1      25602.0      25602.0     25602      25602          0.0  cudaMemsetAsync                
+      0.0            20404          1      20404.0      20404.0     20404      20404          0.0  cudaProfilerStart              
+      0.0            17627          1      17627.0      17627.0     17627      17627          0.0  cuMemGetInfo_v2                
+      0.0            11133         19        585.9        317.0       292       2112        597.6  cudaEventCreateWithFlags       
+      0.0             7547          5       1509.4       1614.0       666       2344        620.5  cuInit                         
+      0.0             1041          5        208.2        195.0       129        296         61.4  cuModuleGetLoadingMode         
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+      3.7         23215571      12800    1813.7    1792.0      1759      2144         51.5  fusion_67                                                                                           
+      3.6         23119874      12800    1806.2    1792.0      1759      2016         48.7  fusion_4                                                                                            
+      3.6         23107924      12800    1805.3    1792.0      1728      2144         55.4  fusion_60                                                                                           
+      3.6         23094534      12800    1804.3    1792.0      1728      2145         59.6  fusion_11                                                                                           
+      3.6         23085209      12800    1803.5    1792.0      1728      2145         59.7  fusion_53                                                                                           
+      3.6         23069378      12800    1802.3    1792.0      1728      2145         55.9  fusion_18                                                                                           
+      3.6         23041759      12800    1800.1    1792.0      1728      2144         59.7  fusion_25                                                                                           
+      3.6         23034846      12800    1799.6    1792.0      1728      2144         56.0  fusion_32                                                                                           
+      3.6         23026572      12800    1799.0    1792.0      1728      2144         59.1  fusion_39                                                                                           
+      3.6         23016816      12800    1798.2    1792.0      1728      2144         55.8  fusion_46                                                                                           
+      2.6         16579690      12800    1295.3    1280.0      1247      1409         33.5  fusion_1                                                                                            
+      2.6         16446049      12800    1284.8    1280.0      1247      1441         34.2  fusion_43                                                                                           
+      2.6         16402898      12800    1281.5    1280.0      1247      1409         34.8  fusion_29                                                                                           
+      2.6         16399091      12800    1281.2    1280.0      1247      1441         33.2  fusion_64                                                                                           
+      2.6         16397308      12800    1281.0    1280.0      1247      1440         34.3  fusion_22                                                                                           
+      2.6         16303890      12800    1273.7    1280.0      1247      1441         35.2  fusion_50                                                                                           
+      2.6         16290712      12800    1272.7    1279.0      1247      1440         35.1  fusion_36                                                                                           
+      2.6         16280592      12800    1271.9    1249.0      1247      1440         35.6  fusion_15                                                                                           
+      2.6         16275632      12800    1271.5    1249.0      1247      1440         34.7  fusion_57                                                                                           
+      2.6         16244405      12800    1269.1    1248.0      1247      1440         34.4  fusion_8                                                                                            
+      1.9         12203458      12800     953.4     960.0       927      1057         27.7  add_252                                                                                             
+      1.9         12114869      12800     946.5     928.0       927      1057         27.2  add_137                                                                                             
+      1.9         12111743      12800     946.2     928.0       927      1056         27.2  add_152                                                                                             
+      1.9         12110470      12800     946.1     928.0       927      1057         27.3  add_232                                                                                             
+      1.9         12110288      12800     946.1     928.0       927      1057         27.3  add_217                                                                                             
+      1.9         12109540      12800     946.1     928.0       927      1057         27.2  add_172                                                                                             
+      1.9         12108456      12800     946.0     928.0       927      1057         27.3  add_203                                                                                             
+      1.9         12103531      12800     945.6     928.0       927      1057         27.1  add_189                                                                                             
+      1.9         12103278      12800     945.6     928.0       927      1057         26.7  add_269                                                                                             
+      1.9         12049130      12800     941.3     928.0       895      1056         26.3  add_123                                                                                             
+      1.8         11668175      12800     911.6     896.0       895      1024         25.8  fusion_63                                                                                           
+      1.8         11661892      12800     911.1     896.0       895      1024         26.1  fusion_21                                                                                           
+      1.8         11661483      12800     911.1     896.0       895      1024         25.9  fusion_49                                                                                           
+      1.8         11661345      12800     911.0     896.0       895      1024         25.9  fusion_7                                                                                            
+      1.8         11660686      12800     911.0     896.0       895      1024         26.0  fusion_42                                                                                           
+      1.8         11660158      12800     910.9     896.0       895      1025         25.8  fusion_28                                                                                           
+      1.8         11659674      12800     910.9     896.0       895      1024         25.9  fusion_56                                                                                           
+      1.8         11658288      12800     910.8     896.0       895      1024         25.8  fusion_35                                                                                           
+      1.8         11657881      12800     910.8     896.0       895      1024         25.9  fusion_14                                                                                           
+      1.8         11567350      12841     900.8     896.0       864      1856         48.0  fusion                                                                                              
+      0.3          1594489       1800     885.8     896.0       864       992         26.5  copy_fusion_8                                                                                       
+      0.0           190018        200     950.1     944.0       927      1247         33.7  broadcast_165                                                                                       
+      0.0           178467        200     892.3     896.0       864      1056         29.4  broadcast_164                                                                                       
+      0.0            60609         40    1515.2    1568.0      1152      1920        353.0  jax::cuda::<unnamed>::ThreeFry2x32Kernel(const unsigned int *, const unsigned int *, const unsigned…
+      0.0            45890         40    1147.3    1152.0       896      1409        251.5  fusion_5                                                                                            
+      0.0            45313         40    1132.8    1120.0       960      1665        155.1  fusion_2                                                                                            
+      0.0             1088          1    1088.0    1088.0      1088      1088          0.0  broadcast                                                                                           
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)            Operation           
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ------------------------------
+     99.9          3722498   4000     930.6     928.0       864      1056         35.3  [CUDA memcpy Device-to-Device]
+      0.0             1568      1    1568.0    1568.0      1568      1568          0.0  [CUDA memset]                 
+      0.0             1120      2     560.0     560.0       416       704        203.6  [CUDA memcpy Host-to-Device]  
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)            Operation           
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------------------
+    118.178   4000     0.030     0.001     0.000     0.066        0.033  [CUDA memcpy Device-to-Device]
+      0.027      1     0.027     0.027     0.027     0.027        0.000  [CUDA memset]                 
+      0.000      2     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy Host-to-Device]  
+
+Generated:
+    /root/mlir/baseline/lstm/report1.nsys-rep
+    /root/mlir/baseline/lstm/report1.sqlite

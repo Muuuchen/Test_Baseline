@@ -1,0 +1,894 @@
+WARNING: python3 and any of its children processes will be profiled.
+
+[31m100 iters, min = 3.4635 ms, max = 5.7812 ms, avg = 3.7510 ms[m
+Generating '/tmp/nsys-report-85ca.qdstrm'
+[1/7] [0%                          ] report6.nsys-rep[1/7] [0%                          ] report6.nsys-rep[1/7] [5%                          ] report6.nsys-rep[1/7] [8%                          ] report6.nsys-rep[1/7] [7%                          ] report6.nsys-rep[1/7] [8%                          ] report6.nsys-rep[1/7] [7%                          ] report6.nsys-rep[1/7] [13%                         ] report6.nsys-rep[1/7] [12%                         ] report6.nsys-rep[1/7] [11%                         ] report6.nsys-rep[1/7] [10%                         ] report6.nsys-rep[1/7] [==21%                       ] report6.nsys-rep[1/7] [==20%                       ] report6.nsys-rep[1/7] [==19%                       ] report6.nsys-rep[1/7] [==18%                       ] report6.nsys-rep[1/7] [=17%                        ] report6.nsys-rep[1/7] [=16%                        ] report6.nsys-rep[1/7] [=15%                        ] report6.nsys-rep[1/7] [14%                         ] report6.nsys-rep[1/7] [13%                         ] report6.nsys-rep[1/7] [=15%                        ] report6.nsys-rep[1/7] [=17%                        ] report6.nsys-rep[1/7] [==18%                       ] report6.nsys-rep[1/7] [==19%                       ] report6.nsys-rep[1/7] [==20%                       ] report6.nsys-rep[1/7] [==21%                       ] report6.nsys-rep[1/7] [===22%                      ] report6.nsys-rep[1/7] [===23%                      ] report6.nsys-rep[1/7] [===24%                      ] report6.nsys-rep[1/7] [====25%                     ] report6.nsys-rep[1/7] [====27%                     ] report6.nsys-rep[1/7] [====28%                     ] report6.nsys-rep[1/7] [=====29%                    ] report6.nsys-rep[1/7] [=====30%                    ] report6.nsys-rep[1/7] [=====32%                    ] report6.nsys-rep[1/7] [======33%                   ] report6.nsys-rep[1/7] [======34%                   ] report6.nsys-rep[1/7] [======35%                   ] report6.nsys-rep[1/7] [=======37%                  ] report6.nsys-rep[1/7] [=======39%                  ] report6.nsys-rep[1/7] [========40%                 ] report6.nsys-rep[1/7] [========42%                 ] report6.nsys-rep[1/7] [=========43%                ] report6.nsys-rep[1/7] [=========45%                ] report6.nsys-rep[1/7] [==========47%               ] report6.nsys-rep[1/7] [==========48%               ] report6.nsys-rep[1/7] [==========49%               ] report6.nsys-rep[1/7] [===========50%              ] report6.nsys-rep[1/7] [===========52%              ] report6.nsys-rep[1/7] [============54%             ] report6.nsys-rep[1/7] [============55%             ] report6.nsys-rep[1/7] [============57%             ] report6.nsys-rep[1/7] [=============58%            ] report6.nsys-rep[1/7] [=============59%            ] report6.nsys-rep[1/7] [==============61%           ] report6.nsys-rep[1/7] [==============62%           ] report6.nsys-rep[1/7] [==============64%           ] report6.nsys-rep[1/7] [===============66%          ] report6.nsys-rep[1/7] [===============67%          ] report6.nsys-rep[1/7] [================68%         ] report6.nsys-rep[1/7] [================69%         ] report6.nsys-rep[1/7] [================71%         ] report6.nsys-rep[1/7] [=================73%        ] report6.nsys-rep[1/7] [=================74%        ] report6.nsys-rep[1/7] [==================76%       ] report6.nsys-rep[1/7] [==================77%       ] report6.nsys-rep[1/7] [===================79%      ] report6.nsys-rep[1/7] [===================80%      ] report6.nsys-rep[1/7] [===================82%      ] report6.nsys-rep[1/7] [====================83%     ] report6.nsys-rep[1/7] [=====================87%    ] report6.nsys-rep[1/7] [========================100%] report6.nsys-rep[1/7] [========================100%] report6.nsys-rep
+[2/7] [0%                          ] report6.sqlite[2/7] [1%                          ] report6.sqlite[2/7] [2%                          ] report6.sqlite[2/7] [3%                          ] report6.sqlite[2/7] [4%                          ] report6.sqlite[2/7] [5%                          ] report6.sqlite[2/7] [6%                          ] report6.sqlite[2/7] [7%                          ] report6.sqlite[2/7] [8%                          ] report6.sqlite[2/7] [9%                          ] report6.sqlite[2/7] [10%                         ] report6.sqlite[2/7] [11%                         ] report6.sqlite[2/7] [12%                         ] report6.sqlite[2/7] [13%                         ] report6.sqlite[2/7] [14%                         ] report6.sqlite[2/7] [=15%                        ] report6.sqlite[2/7] [=16%                        ] report6.sqlite[2/7] [=17%                        ] report6.sqlite[2/7] [==18%                       ] report6.sqlite[2/7] [==19%                       ] report6.sqlite[2/7] [==20%                       ] report6.sqlite[2/7] [==21%                       ] report6.sqlite[2/7] [===22%                      ] report6.sqlite[2/7] [===23%                      ] report6.sqlite[2/7] [===24%                      ] report6.sqlite[2/7] [====25%                     ] report6.sqlite[2/7] [====26%                     ] report6.sqlite[2/7] [====27%                     ] report6.sqlite[2/7] [====28%                     ] report6.sqlite[2/7] [=====29%                    ] report6.sqlite[2/7] [=====30%                    ] report6.sqlite[2/7] [=====31%                    ] report6.sqlite[2/7] [=====32%                    ] report6.sqlite[2/7] [======33%                   ] report6.sqlite[2/7] [======34%                   ] report6.sqlite[2/7] [======35%                   ] report6.sqlite[2/7] [=======36%                  ] report6.sqlite[2/7] [=======37%                  ] report6.sqlite[2/7] [=======38%                  ] report6.sqlite[2/7] [=======39%                  ] report6.sqlite[2/7] [========40%                 ] report6.sqlite[2/7] [========41%                 ] report6.sqlite[2/7] [========42%                 ] report6.sqlite[2/7] [=========43%                ] report6.sqlite[2/7] [=========44%                ] report6.sqlite[2/7] [=========45%                ] report6.sqlite[2/7] [=========46%                ] report6.sqlite[2/7] [==========47%               ] report6.sqlite[2/7] [==========48%               ] report6.sqlite[2/7] [==========49%               ] report6.sqlite[2/7] [===========50%              ] report6.sqlite[2/7] [===========51%              ] report6.sqlite[2/7] [===========52%              ] report6.sqlite[2/7] [===========53%              ] report6.sqlite[2/7] [============54%             ] report6.sqlite[2/7] [============55%             ] report6.sqlite[2/7] [============56%             ] report6.sqlite[2/7] [============57%             ] report6.sqlite[2/7] [=============58%            ] report6.sqlite[2/7] [=============59%            ] report6.sqlite[2/7] [=============60%            ] report6.sqlite[2/7] [==============61%           ] report6.sqlite[2/7] [==============62%           ] report6.sqlite[2/7] [==============63%           ] report6.sqlite[2/7] [==============64%           ] report6.sqlite[2/7] [===============65%          ] report6.sqlite[2/7] [===============66%          ] report6.sqlite[2/7] [===============67%          ] report6.sqlite[2/7] [================68%         ] report6.sqlite[2/7] [================69%         ] report6.sqlite[2/7] [================70%         ] report6.sqlite[2/7] [================71%         ] report6.sqlite[2/7] [=================72%        ] report6.sqlite[2/7] [=================73%        ] report6.sqlite[2/7] [=================74%        ] report6.sqlite[2/7] [==================75%       ] report6.sqlite[2/7] [==================76%       ] report6.sqlite[2/7] [==================77%       ] report6.sqlite[2/7] [==================78%       ] report6.sqlite[2/7] [===================79%      ] report6.sqlite[2/7] [===================80%      ] report6.sqlite[2/7] [===================81%      ] report6.sqlite[2/7] [===================82%      ] report6.sqlite[2/7] [====================83%     ] report6.sqlite[2/7] [====================84%     ] report6.sqlite[2/7] [====================85%     ] report6.sqlite[2/7] [=====================86%    ] report6.sqlite[2/7] [=====================87%    ] report6.sqlite[2/7] [=====================88%    ] report6.sqlite[2/7] [=====================89%    ] report6.sqlite[2/7] [======================90%   ] report6.sqlite[2/7] [======================91%   ] report6.sqlite[2/7] [======================92%   ] report6.sqlite[2/7] [=======================93%  ] report6.sqlite[2/7] [=======================94%  ] report6.sqlite[2/7] [=======================95%  ] report6.sqlite[2/7] [=======================96%  ] report6.sqlite[2/7] [========================97% ] report6.sqlite[2/7] [========================98% ] report6.sqlite[2/7] [========================99% ] report6.sqlite[2/7] [========================100%] report6.sqlite[2/7] [========================100%] report6.sqlite
+[3/7] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)   Style                                 Range                               
+ --------  ---------------  ---------  -----------  -----------  --------  ---------  -----------  -------  ------------------------------------------------------------------
+     32.3        587577599        200    2937888.0    2800986.0   2637735   22615165    1420951.4  PushPop  TSL:XlaModule:#hlo_module=jit_apply,program_id=517#               
+     13.2        241146276       1433     168280.7      14918.0      3978  213054646    5627711.5  PushPop  TSL:Thunk:#hlo_op=fusion#                                         
+     11.7        213169958          2  106584979.0  106584979.0     51971  213117987  150660424.8  PushPop  TSL:XlaModule:#hlo_module=jit__threefry_seed,program_id=0#        
+      1.3         23439047        328      71460.5      52670.5     43101     420638      47161.5  PushPop  TSL:XlaModule:#hlo_module=jit__threefry_fold_in,program_id=12#    
+      1.0         17839542        698      25558.1      20409.5     15989      95613      12822.1  PushPop  TSL:Thunk:#hlo_op=copy#                                           
+      0.7         12733884        148      86039.8      39164.5     21979     543398     109581.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.1#                                   
+      0.5          8578685        368      23311.6      18015.0     14035     233676      15804.5  PushPop  TSL:Thunk:#hlo_op=broadcast#                                      
+      0.4          7863691        627      12541.8      14374.0      4186      72179       8263.0  PushPop  TSL:Thunk:#hlo_op=concatenate#                                    
+      0.4          6732281        592      11372.1      10833.0      4209      98914       9346.5  PushPop  TSL:Thunk:#hlo_op=slice#                                          
+      0.3          5295194        200      26476.0      24287.5     23211     355340      23455.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.164#                                 
+      0.3          5259528        200      26297.6      24041.5     22805     322377      21189.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.165#                                 
+      0.3          4916897        200      24584.5      22322.0     21293     382953      25534.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.146#                                 
+      0.3          4645602        200      23228.0      21040.0     19960     351432      23455.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.169#                                 
+      0.2          4539620        200      22698.1      20070.5     18761     448019      30346.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.178#                                 
+      0.2          4530497        160      28315.6      22730.5     18874      91760      11879.5  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=95#     
+      0.2          4497943        200      22489.7      20209.5     18841     364296      24583.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.181#                                 
+      0.2          4442325        200      22211.6      20181.0     19082     333824      22285.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.172#                                 
+      0.2          4432599        200      22163.0      20402.0     19075     284237      18767.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.224#                                 
+      0.2          4410395        200      22052.0      20161.5     18814     324972      21636.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.184#                                 
+      0.2          4399604        200      21998.0      20182.5     18850     327270      21782.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.205#                                 
+      0.2          4395171        200      21975.9      20345.0     19103     330965      21978.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.193#                                 
+      0.2          4388775        200      21943.9      20094.0     18820     316434      21002.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.202#                                 
+      0.2          4386307        200      21931.5      20117.0     18813     321509      21379.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.211#                                 
+      0.2          4384437        200      21922.2      19970.5     18769     317459      21135.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.190#                                 
+      0.2          4383301        200      21916.5      20179.0     18798     320093      21239.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.187#                                 
+      0.2          4371196        200      21856.0      19993.0     18665     331891      22107.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.208#                                 
+      0.2          4368411        200      21842.1      20104.5     18862     321571      21343.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.175#                                 
+      0.2          4353719        200      21768.6      20159.0     18952     319832      21208.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.199#                                 
+      0.2          4343727        200      21718.6      19860.0     18514     315617      20986.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.214#                                 
+      0.2          4327593        200      21638.0      19852.5     18602     322450      21441.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.196#                                 
+      0.2          4306785        200      21533.9      19866.5     18654     308721      20437.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.217#                                 
+      0.2          4211356        290      14521.9      12697.0      5683      88002      12611.9  PushPop  TSL:Thunk:#hlo_op=add#                                            
+      0.2          4173516        200      20867.6      19137.0     17828     273253      18115.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.220#                                 
+      0.2          3972181        200      19860.9      18263.5     17209     296839      19728.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.219#                                 
+      0.2          3834281        328      11689.9       8423.0      7097      34974       6200.0  PushPop  TSL:Thunk:#hlo_op=custom-call.9#                                  
+      0.2          3795129        130      29193.3      20546.5      7261      88948      16218.0  PushPop  TSL:Thunk:#hlo_op=fusion.2#                                       
+      0.2          3525160        121      29133.6      23911.0     18841     107049      13236.4  PushPop  TSL:XlaModule:#hlo_module=jit_true_divide,program_id=19#          
+      0.2          3514256        121      29043.4      23765.0     19100     129960      13602.3  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=17#             
+      0.2          3384598        200      16923.0      16008.5     15343     150029       9504.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.149#                                 
+      0.2          3073457        116      26495.3      21379.5      6066      90106      15193.3  PushPop  TSL:Thunk:#hlo_op=transpose#                                      
+      0.2          2983464        200      14917.3      13786.5     12688     125356       8310.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.221#                                 
+      0.2          2967686        200      14838.4      13231.5     12381     147428      12712.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.223#                                 
+      0.2          2952185        200      14760.9      13286.5     12251     248500      16652.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.99#                  
+      0.2          2878844        200      14394.2      13615.5     12901     105517       6644.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.168#                                 
+      0.2          2877779        100      28777.8      24275.5     21595      78740      11243.3  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=196#    
+      0.2          2750548        181      15196.4      11442.0      5618     110343      16261.0  PushPop  TSL:Thunk:#hlo_op=multiply#                                       
+      0.2          2735414        200      13677.1      12385.0     11884     177976      11760.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.148#                                 
+      0.1          2652685        328       8087.5       6020.0      5060      59195       4877.5  PushPop  TSL:Thunk:#hlo_op=slice.1#                                        
+      0.1          2633218        200      13166.1      12342.5     11520     110267       7130.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.225#                                 
+      0.1          2626791         80      32834.9      25361.5     23016      87449      14903.0  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=105#             
+      0.1          2596340        121      21457.4      17668.0     14491      73685       8984.0  PushPop  TSL:Thunk:#hlo_op=divide#                                         
+      0.1          2593776         18     144098.7     108698.0     85577     654444     130804.9  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=369#
+      0.1          2593480        121      21433.7      17770.0     14355      82831       8985.9  PushPop  TSL:Thunk:#hlo_op=sqrt#                                           
+      0.1          2568238        200      12841.2      12012.0     11274      99722       6506.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.171#                                 
+      0.1          2566567        200      12832.8      12098.0     11222      98968       6307.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.183#                                 
+      0.1          2557138        200      12785.7      12022.0     11094     103100       6759.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.207#                                 
+      0.1          2544029        200      12720.1      11902.5     11224     107803       7022.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.180#                                 
+      0.1          2543172        200      12715.9      12022.5     11297      98741       6221.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.174#                                 
+      0.1          2538376        200      12691.9      11924.0     11241     105610       6851.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.204#                                 
+      0.1          2534859        200      12674.3      11942.0     11312     106076       6842.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.177#                                 
+      0.1          2520051        200      12600.3      12014.0     11225      99280       6262.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.189#                                 
+      0.1          2508907        200      12544.5      11893.5     11126      97632       6191.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.213#                                 
+      0.1          2508181        200      12540.9      11917.0     11226     100049       6390.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.186#                                 
+      0.1          2504224        200      12521.1      11921.5     11215      98163       6177.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.201#                                 
+      0.1          2503661        200      12518.3      12038.5     11233     102096       6401.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.192#                                 
+      0.1          2502501        200      12512.5      11947.5     11184      98490       6247.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.198#                                 
+      0.1          2489073        200      12445.4      11874.5     11062      98436       6211.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.216#                                 
+      0.1          2485491        200      12427.5      11869.0     11151      97896       6124.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.195#                                 
+      0.1          2482781        200      12413.9      11952.5     11252      97827       6098.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.210#                                 
+      0.1          2462466        200      12312.3      11084.0     10488     209401      14043.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.152#                                 
+      0.1          2437659         80      30470.7      25934.0     19882      97914      13835.6  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=97#     
+      0.1          2366151        200      11830.8      10533.5      9741     162791      10919.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.162#                                 
+      0.1          2364929        200      11824.6       9644.0      8807     228403      18953.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.130#                 
+      0.1          2357187        200      11785.9      10510.0      9333     180339      12132.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.106#                 
+      0.1          2337989        200      11689.9      10704.0     10115     159131      10561.9  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.159#                                 
+      0.1          2325009        200      11625.0      10545.0      9864     160829      10694.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.155#                                 
+      0.1          2247648        200      11238.2      10198.0      9170     163625      10917.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.129#                 
+      0.1          2208781        200      11043.9       9814.0      8991     168706      11456.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.107#                 
+      0.1          2201699        200      11008.5       9887.5      8932     161974      10901.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.109#                 
+      0.1          2197407        200      10987.0       9948.5      9122     113249       7581.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.166#                                 
+      0.1          2189053        165      13267.0      10064.0      7374     111731      10369.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=180#                  
+      0.1          2176511        200      10882.6       9672.0      8958     194639      13122.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.100#                 
+      0.1          2171191        200      10856.0       9613.0      8838     181558      12251.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.110#                 
+      0.1          2169414         66      32869.9      28089.0     20678     103142      13818.6  PushPop  TSL:XlaModule:#hlo_module=jit_concatenate,program_id=162#         
+      0.1          2159367        200      10796.8       9671.0      8846     162428      10939.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.108#                 
+      0.1          2157207        200      10786.0       9844.5      8627     157861      10523.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.128#                 
+      0.1          2146970        200      10734.9       9668.0      8759     161859      10829.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.113#                 
+      0.1          2140918        200      10704.6       9632.0      8763     163410      10915.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.112#                 
+      0.1          2139787        200      10698.9       9566.5      8620     166455      11218.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.124#                 
+      0.1          2136752        200      10683.8       9691.5      8817     158264      10596.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.119#                 
+      0.1          2132951        200      10664.8       9612.0      8677     161200      10816.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.115#                 
+      0.1          2131336        200      10656.7       9657.0      8697     159965      10687.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.125#                 
+      0.1          2129095        200      10645.5       9852.5      9442     114298       7524.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.151#                                 
+      0.1          2128956        200      10644.8       9706.0      8683     168665      11275.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.116#                 
+      0.1          2126009        200      10630.0       9618.0      8720     160492      10713.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.122#                 
+      0.1          2112156        200      10560.8       9560.5      8687     173667      11629.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.118#                 
+      0.1          2110063         80      26375.8      23077.0     18602     107293      12186.0  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=327#    
+      0.1          2095148        200      10475.7       9530.0      8649     160490      10744.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.121#                 
+      0.1          2094095        200      10470.5       9528.5      8579     157866      10507.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.127#                 
+      0.1          2093294        200      10466.5       9527.5      8686     159510      10639.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.126#                 
+      0.1          2083789        200      10418.9       9404.0      8654     171689      11521.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.103#                 
+      0.1          2070163        200      10350.8       9603.5      8990     116109       7586.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.147#                                 
+      0.1          2069546        200      10347.7       9145.5      8383     182713      12321.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.105#                 
+      0.1          2054128        200      10270.6       9215.0      8683     177982      11952.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.101#                 
+      0.1          2019352        200      10096.8       9090.5      8467     166858      11176.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.102#                 
+      0.1          2008820        200      10044.1       9122.5      8510     102433       7043.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.185#                                 
+      0.1          1984296        200       9921.5       9130.0      8537     134821       8927.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.191#                                 
+      0.1          1981711        200       9908.6       8782.0      7950     167801      11339.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.111#                 
+      0.1          1979143        200       9895.7       8849.0      7976     155332      10474.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.117#                 
+      0.1          1973595        200       9868.0       9131.0      8557     104441       6921.6  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.197#                                 
+      0.1          1972930        200       9864.7       9132.5      8422      99956       6533.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.176#                                 
+      0.1          1971912        200       9859.6       9128.5      8559     105508       7005.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.194#                                 
+      0.1          1968819        200       9844.1       9046.0      8413     102323       6837.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.200#                                 
+      0.1          1965392        200       9827.0       9209.0      8609     102706       6676.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.170#                                 
+      0.1          1963237        200       9816.2       9095.5      8358     113025       7417.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.179#                                 
+      0.1          1959770        200       9798.9       9111.0      8558     104440       6819.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.182#                                 
+      0.1          1959619         33      59382.4      42953.0     35594     478893      76005.9  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=198#
+      0.1          1959368        200       9796.8       9133.0      8601     104412       6853.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.188#                                 
+      0.1          1958922        200       9794.6       8599.5      7932     165897      11201.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.104#                 
+      0.1          1952828        200       9764.1       9130.5      8504     101573       6599.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.173#                                 
+      0.1          1951239        200       9756.2       9018.0      8400     102648       6783.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.209#                                 
+      0.1          1944022        200       9720.1       8563.0      7843     174594      11818.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.123#                 
+      0.1          1942433        200       9712.2       9060.0      8589     106755       6942.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.158#                                 
+      0.1          1941782        200       9708.9       9080.0      8474     100296       6504.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.218#                                 
+      0.1          1941618        200       9708.1       9111.5      8496     101324       6570.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.203#                                 
+      0.1          1928627        200       9643.1       8833.5      8374     116318       7707.5  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.161#                                 
+      0.1          1924450        200       9622.3       8929.0      8539     106400       6990.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.153#                                 
+      0.1          1921555         82      23433.6      16158.5     12368     112161      19126.8  PushPop  TSL:Thunk:#hlo_op=rsqrt#                                          
+      0.1          1914943        200       9574.7       8923.0      8362     101087       6632.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.215#                                 
+      0.1          1914633        200       9573.2       8600.0      7872     160422      10767.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.131#                 
+      0.1          1913572        200       9567.9       8883.5      8294     100127       6509.0  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.154#                                 
+      0.1          1909991        200       9550.0       8980.0      8404     103806       6741.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.212#                                 
+      0.1          1907742        200       9538.7       9013.5      8556     106546       6900.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.206#                                 
+      0.1          1905244          4     476311.0     195664.5    130641    1383274     605974.1  PushPop  TSL:XlaModule:#hlo_module=jit_qr,program_id=147#                  
+      0.1          1899863         17     111756.6      83090.0     70116     389950      78204.5  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=405#
+      0.1          1898345        200       9491.7       8808.0      8408     102633       6696.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.150#                                 
+      0.1          1896840         66      28740.0      24022.5     20494     109697      14995.1  PushPop  TSL:XlaModule:#hlo_module=jit_slice,program_id=172#               
+      0.1          1895369        200       9476.8       8599.5      7831     150948      10094.8  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.114#                 
+      0.1          1888950        200       9444.8       8846.0      8327      84516       5525.1  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.222#                                 
+      0.1          1887270        200       9436.4       8546.5      7767     149548       9991.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv-bias-activation.120#                 
+      0.1          1885025         66      28561.0      24561.5     20952      92277      12666.9  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=199#             
+      0.1          1883682        200       9418.4       8811.0      8251      96056       6218.4  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.156#                                 
+      0.1          1771209        200       8856.0       8206.5      7768      86590       5622.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.157#                                 
+      0.1          1738720        200       8693.6       7607.5      7059      83338       5886.3  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.167#                                 
+      0.1          1723516         18      95750.9      72406.0     63702     407131      78887.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=379#
+      0.1          1603884         66      24301.3      20955.0     17817     105754      11799.4  PushPop  TSL:XlaModule:#hlo_module=jit_dot,program_id=166#                 
+      0.1          1603451        200       8017.3       7443.5      6845      82291       5357.7  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.160#                                 
+      0.1          1560977        200       7804.9       7158.5      6650      81253       5418.2  PushPop  TSL:Thunk:#hlo_op=cudnn-conv.163#                                 
+      0.1          1546894         23      67256.3      52465.0     47051     315080      54656.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=397#
+      0.1          1497488         66      22689.2      18381.0     15962     133084      15747.9  PushPop  TSL:XlaModule:#hlo_module=jit_slice,program_id=174#               
+      0.1          1471078        121      12157.7       8943.0      7450      34030       5644.1  PushPop  TSL:Thunk:#hlo_op=custom-call.0#                                  
+      0.1          1434691         28      51239.0      44008.5     23569     251827      43567.1  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=233#    
+      0.1          1420447         35      40584.2      24786.0     20552     320603      52479.8  PushPop  TSL:Thunk:#hlo_op=reduce-window#                                  
+      0.1          1388180         66      21033.0      17310.0     14852     129527      14635.2  PushPop  TSL:XlaModule:#hlo_module=jit_slice,program_id=176#               
+      0.1          1326612         66      20100.2      17179.5     14305     110665      12440.2  PushPop  TSL:XlaModule:#hlo_module=jit_slice,program_id=178#               
+      0.1          1289368        130       9918.2       7673.0      5599      66477       7356.4  PushPop  TSL:Thunk:#hlo_op=fusion.5#                                       
+      0.1          1283186         23      55790.7      49528.0     43670     198731      31451.6  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=391#   
+      0.1          1274633         82      15544.3       8385.5      5426      70957      15968.1  PushPop  TSL:Thunk:#hlo_op=transpose.1#                                    
+      0.1          1244624          4     311156.0      40259.0     19793    1144313     555617.9  PushPop  TSL:Thunk:#hlo_op=custom-call.7#                                  
+      0.1          1239622         99      12521.4       9376.0      7175     119700      11953.4  PushPop  TSL:XlaModule:#hlo_module=jit_sigmoid,program_id=182#             
+      0.1          1226019         99      12384.0       9706.0      7356     117796      11687.3  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=186#                  
+      0.1          1206473         40      30161.8      24837.0     22934      89577      13323.8  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=337#             
+      0.1          1163444         37      31444.4      24918.0     19356     120213      17829.5  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=127#    
+      0.1          1140527         40      28513.2      25889.0     19961      85489      11380.5  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=329#    
+      0.1          1137388         36      31594.1      27093.5     23381     106136      14282.5  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=361#                
+      0.1          1136738        200       5683.7       4451.5      4159     208910      14475.2  PushPop  TSL:Thunk:#hlo_op=reduce-window.7#                                
+      0.1          1133570        200       5667.9       5297.5      4807      19654       1935.7  PushPop  TSL:Thunk:#hlo_op=fusion.145#                                     
+      0.1          1095583         33      33199.5      27502.0     24462     108903      15482.8  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=135#             
+      0.1          1077775         33      32659.8      25947.0     23281      95563      15729.7  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=131#             
+      0.1          1063181         18      59065.6      48050.5     43212     124260      22950.1  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=363#   
+      0.1          1054816         33      31964.1      26462.0     23039     103903      18598.5  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=168#             
+      0.1          1053230         33      31916.1      27210.0     24383     115006      16297.7  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=188#             
+      0.1          1052245         23      45749.8      29151.0     26530     327018      63036.0  PushPop  TSL:XlaModule:#hlo_module=jit_reduce_window_sum,program_id=387#   
+      0.1          1047725        200       5238.6       4155.5      3818     209308      14508.8  PushPop  TSL:Thunk:#hlo_op=fusion.15#                                      
+      0.1          1046944         40      26173.6      19952.5     15973     123288      18269.9  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=103#               
+      0.1          1045523         33      31682.5      26305.0     23462      80103      13826.7  PushPop  TSL:XlaModule:#hlo_module=jit_convert_element_type,program_id=207#
+      0.1          1041317         17      61253.9      48388.0     44754     120548      24710.3  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=399#   
+      0.1          1036681        200       5183.4       4211.5      3900     174705      12070.7  PushPop  TSL:Thunk:#hlo_op=fusion.159#                                     
+      0.1          1033963        200       5169.8       4688.0      4330      21161       2243.1  PushPop  TSL:Thunk:#hlo_op=fusion.128#                                     
+      0.1          1027571        200       5137.9       4873.5      4554      14386       1214.7  PushPop  TSL:Thunk:#hlo_op=fusion.64#                                      
+      0.1          1026004        200       5130.0       4798.0      4480      17208       1623.3  PushPop  TSL:Thunk:#hlo_op=concatenate.3#                                  
+      0.1          1023237        200       5116.2       4875.0      4628      13058       1190.0  PushPop  TSL:Thunk:#hlo_op=fusion.142#                                     
+      0.1          1010727         33      30628.1      26286.0     23448     102145      14441.9  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=203#             
+      0.1          1006424        200       5032.1       4680.5      4384      15164       1571.2  PushPop  TSL:Thunk:#hlo_op=fusion.54#                                      
+      0.1          1003189        204       4917.6       4610.5      4268      11507       1211.8  PushPop  TSL:Thunk:#hlo_op=fusion.1#                                       
+      0.1           999579        200       4997.9       4781.5      4449      12955       1113.9  PushPop  TSL:Thunk:#hlo_op=fusion.144#                                     
+      0.1           998037        200       4990.2       4709.0      4308      15701       1421.4  PushPop  TSL:Thunk:#hlo_op=fusion.146#                                     
+      0.1           993685        200       4968.4       4763.0      4409      12648       1083.9  PushPop  TSL:Thunk:#hlo_op=fusion.48#                                      
+      0.1           992229         28      35436.8      28310.0     20500     102944      17671.6  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=31#     
+      0.1           991533        200       4957.7       4699.5      4338      14113       1186.8  PushPop  TSL:Thunk:#hlo_op=fusion.135#                                     
+      0.1           990740        200       4953.7       4765.0      4404      14406       1033.2  PushPop  TSL:Thunk:#hlo_op=fusion.6#                                       
+      0.1           989858         40      24746.5      18569.0     14750     134039      19944.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=107#                  
+      0.1           988585        200       4942.9       3957.5      3692     175388      12131.6  PushPop  TSL:Thunk:#hlo_op=transpose.277#                                  
+      0.1           986633        200       4933.2       4620.5      4224      20354       1605.1  PushPop  TSL:Thunk:#hlo_op=fusion.154#                                     
+      0.1           983951        200       4919.8       4520.0      4194      18553       2008.4  PushPop  TSL:Thunk:#hlo_op=fusion.127#                                     
+      0.1           983146        200       4915.7       4694.0      4340      13882       1152.4  PushPop  TSL:Thunk:#hlo_op=fusion.52#                                      
+      0.1           983050        200       4915.3       4689.0      4407      12834       1038.3  PushPop  TSL:Thunk:#hlo_op=fusion.139#                                     
+      0.1           979191        200       4896.0       4595.0      4187      20190       1638.9  PushPop  TSL:Thunk:#hlo_op=fusion.69#                                      
+      0.1           977018         18      54278.8      48358.5     42738     112052      16354.9  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=373#   
+      0.1           974468        200       4872.3       4624.5      4252      14966       1299.0  PushPop  TSL:Thunk:#hlo_op=fusion.126#                                     
+      0.1           973760        200       4868.8       4554.0      4285      28948       1985.7  PushPop  TSL:Thunk:#hlo_op=fusion.132#                                     
+      0.1           973557        200       4867.8       4667.0      4282      13687       1093.4  PushPop  TSL:Thunk:#hlo_op=fusion.72#                                      
+      0.1           964682        200       4823.4       4561.5      4251      14612       1339.1  PushPop  TSL:Thunk:#hlo_op=fusion.62#                                      
+      0.1           964068        200       4820.3       4307.5      3971      66184       4600.4  PushPop  TSL:Thunk:#hlo_op=fusion.73#                                      
+      0.1           960849        200       4804.2       4552.0      4148      20253       1621.0  PushPop  TSL:Thunk:#hlo_op=fusion.4#                                       
+      0.1           960214        200       4801.1       4455.0      4090      14677       1586.2  PushPop  TSL:Thunk:#hlo_op=transpose.291#                                  
+      0.1           958511        200       4792.6       4394.5      4028      20434       1995.9  PushPop  TSL:Thunk:#hlo_op=fusion.123#                                     
+      0.1           957049        200       4785.2       4602.0      4271      12511        956.6  PushPop  TSL:Thunk:#hlo_op=fusion.152#                                     
+      0.1           956176        200       4780.9       3910.5      3586     148532      10239.2  PushPop  TSL:Thunk:#hlo_op=transpose.378#                                  
+      0.1           955102        200       4775.5       4491.0      4135      14669       1388.1  PushPop  TSL:Thunk:#hlo_op=fusion.51#                                      
+      0.1           954962        200       4774.8       4586.5      4172       9752        781.1  PushPop  TSL:Thunk:#hlo_op=reduce-window.10#                               
+      0.1           954638        200       4773.2       4563.5      4184      10905        865.8  PushPop  TSL:Thunk:#hlo_op=fusion.57#                                      
+      0.1           952646        200       4763.2       4401.0      4069      18532       1856.3  PushPop  TSL:Thunk:#hlo_op=fusion.109#                                     
+      0.1           951843        200       4759.2       4522.0      4214      15328       1251.8  PushPop  TSL:Thunk:#hlo_op=fusion.150#                                     
+      0.1           951124        200       4755.6       4365.5      4025      21927       2348.5  PushPop  TSL:Thunk:#hlo_op=fusion.79#                                      
+      0.1           950914        200       4754.6       4478.5      4140      14842       1223.4  PushPop  TSL:Thunk:#hlo_op=transpose.292#                                  
+      0.1           950708         40      23767.7      16125.0     14095     132607      19933.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=101#                  
+      0.1           949773        200       4748.9       4614.0      4235      12403        929.0  PushPop  TSL:Thunk:#hlo_op=fusion.12#                                      
+      0.1           949689        200       4748.4       4560.5      4219      13536       1001.6  PushPop  TSL:Thunk:#hlo_op=transpose.271#                                  
+      0.1           949358        200       4746.8       4563.5      4165      11565       1008.2  PushPop  TSL:Thunk:#hlo_op=fusion.46#                                      
+      0.1           949078        200       4745.4       4563.5      4159      18442       1192.1  PushPop  TSL:Thunk:#hlo_op=fusion.166#                                     
+      0.1           947975        200       4739.9       4604.5      4173      14617        999.3  PushPop  TSL:Thunk:#hlo_op=fusion.160#                                     
+      0.1           947694        200       4738.5       4505.5      4129      19793       1602.6  PushPop  TSL:Thunk:#hlo_op=fusion.74#                                      
+      0.1           947044        200       4735.2       4531.5      4216      11783       1019.0  PushPop  TSL:Thunk:#hlo_op=concatenate.1#                                  
+      0.1           944586        200       4722.9       4440.5      4092      17149       1554.6  PushPop  TSL:Thunk:#hlo_op=fusion.124#                                     
+      0.1           941806        200       4709.0       4535.5      4150      21683       1401.8  PushPop  TSL:Thunk:#hlo_op=fusion.30#                                      
+      0.1           941673        200       4708.4       4483.5      4071      12769       1129.2  PushPop  TSL:Thunk:#hlo_op=fusion.42#                                      
+      0.1           941566        200       4707.8       4511.5      4116      12560       1056.8  PushPop  TSL:Thunk:#hlo_op=fusion.40#                                      
+      0.1           940655        200       4703.3       4615.0      4201      11640        698.9  PushPop  TSL:Thunk:#hlo_op=fusion.22#                                      
+      0.1           940103        200       4700.5       4463.0      4093      14591       1216.4  PushPop  TSL:Thunk:#hlo_op=reduce-window.14#                               
+      0.1           939993        200       4700.0       4471.0      4201      11695        959.4  PushPop  TSL:Thunk:#hlo_op=transpose.285#                                  
+      0.1           939234        200       4696.2       4534.5      4144      11417        888.4  PushPop  TSL:Thunk:#hlo_op=fusion.156#                                     
+      0.1           939057        200       4695.3       4537.0      4167      15070       1058.5  PushPop  TSL:Thunk:#hlo_op=fusion.10#                                      
+      0.1           937006        200       4685.0       4552.0      4183      11890        870.2  PushPop  TSL:Thunk:#hlo_op=fusion.164#                                     
+      0.1           936104        200       4680.5       4464.0      4198      11002        911.2  PushPop  TSL:Thunk:#hlo_op=transpose.273#                                  
+      0.1           935288        200       4676.4       4488.0      4076       9704        707.9  PushPop  TSL:Thunk:#hlo_op=fusion.149#                                     
+      0.1           934972        200       4674.9       4424.0      4113      19462       1306.5  PushPop  TSL:Thunk:#hlo_op=broadcast.1420#                                 
+      0.1           932931        200       4664.7       4356.0      4030      22548       1860.0  PushPop  TSL:Thunk:#hlo_op=fusion.121#                                     
+      0.1           932680        200       4663.4       4365.0      4135      17203       1557.3  PushPop  TSL:Thunk:#hlo_op=transpose.275#                                  
+      0.1           931185        200       4655.9       4352.0      4003      22380       1938.3  PushPop  TSL:Thunk:#hlo_op=fusion.70#                                      
+      0.1           931157        200       4655.8       4544.5      4098      12477        807.2  PushPop  TSL:Thunk:#hlo_op=fusion.158#                                     
+      0.1           929538        200       4647.7       4532.5      4097      11150        740.9  PushPop  TSL:Thunk:#hlo_op=fusion.34#                                      
+      0.1           929082        200       4645.4       4428.0      4019      11191        927.0  PushPop  TSL:Thunk:#hlo_op=fusion.147#                                     
+      0.1           928418        200       4642.1       4515.0      4154      11790        803.0  PushPop  TSL:Thunk:#hlo_op=fusion.28#                                      
+      0.1           928398        200       4642.0       4555.0      4160      12491        694.3  PushPop  TSL:Thunk:#hlo_op=fusion.162#                                     
+      0.1           927805        200       4639.0       4316.0      4040      15550       1643.4  PushPop  TSL:Thunk:#hlo_op=fusion.112#                                     
+      0.1           926804        200       4634.0       4435.5      4182      11980       1020.2  PushPop  TSL:Thunk:#hlo_op=transpose.272#                                  
+      0.1           923204        200       4616.0       4360.0      4044      19368       1636.8  PushPop  TSL:Thunk:#hlo_op=fusion.118#                                     
+      0.1           923104        200       4615.5       4331.0      4003      17374       1616.3  PushPop  TSL:Thunk:#hlo_op=fusion.115#                                     
+      0.1           922793        200       4614.0       3979.5      3637     113582       7766.3  PushPop  TSL:Thunk:#hlo_op=reduce-window.34#                               
+      0.1           922301        200       4611.5       4435.0      4077      11083        945.0  PushPop  TSL:Thunk:#hlo_op=fusion.134#                                     
+      0.1           922038        200       4610.2       4378.5      4075      11786       1064.9  PushPop  TSL:Thunk:#hlo_op=fusion.148#                                     
+      0.1           922000        200       4610.0       4377.5      4121      13792       1245.1  PushPop  TSL:Thunk:#hlo_op=fusion.143#                                     
+      0.1           921570        200       4607.9       4329.5      3953      14673       1396.7  PushPop  TSL:Thunk:#hlo_op=fusion.129#                                     
+      0.1           918557        200       4592.8       4446.5      4084      11325        900.6  PushPop  TSL:Thunk:#hlo_op=fusion.36#                                      
+      0.1           917391        200       4587.0       4457.0      4062      14552       1003.0  PushPop  TSL:Thunk:#hlo_op=fusion.18#                                      
+      0.1           916904        200       4584.5       4370.0      4071      11243       1067.9  PushPop  TSL:Thunk:#hlo_op=fusion.136#                                     
+      0.1           916869        200       4584.3       4355.5      4068      11279        995.0  PushPop  TSL:Thunk:#hlo_op=transpose.276#                                  
+      0.1           916057        200       4580.3       4196.0      3871      46741       3111.1  PushPop  TSL:Thunk:#hlo_op=reduce-window.37#                               
+      0.1           913978        200       4569.9       4291.5      3941      14924       1353.9  PushPop  TSL:Thunk:#hlo_op=transpose.346#                                  
+      0.1           913765        200       4568.8       4354.0      4116      12417       1025.8  PushPop  TSL:Thunk:#hlo_op=fusion.60#                                      
+      0.1           913678        200       4568.4       4492.5      4107      12103        685.9  PushPop  TSL:Thunk:#hlo_op=fusion.16#                                      
+      0.1           913603        200       4568.0       4437.0      4006      10366        701.2  PushPop  TSL:Thunk:#hlo_op=transpose.381#                                  
+      0.1           913201        200       4566.0       4364.5      4046      12375       1128.8  PushPop  TSL:Thunk:#hlo_op=fusion.58#                                      
+      0.1           913009        200       4565.0       4415.0      4101      16656       1103.4  PushPop  TSL:Thunk:#hlo_op=fusion.85#                                      
+      0.1           912155         33      27641.1      23793.0     20549     103383      14412.1  PushPop  TSL:XlaModule:#hlo_module=jit_concatenate,program_id=164#         
+      0.1           911803        200       4559.0       4294.0      4013      14424       1270.8  PushPop  TSL:Thunk:#hlo_op=transpose.290#                                  
+      0.1           911626        200       4558.1       4144.5      3802      20148       1877.5  PushPop  TSL:Thunk:#hlo_op=fusion.130#                                     
+      0.0           909868        200       4549.3       4435.5      4044      12005        777.5  PushPop  TSL:Thunk:#hlo_op=fusion.24#                                      
+      0.0           908387        200       4541.9       4325.0      3975      14918       1353.2  PushPop  TSL:Thunk:#hlo_op=fusion.103#                                     
+      0.0           907986        200       4539.9       4324.5      3958      14151        977.1  PushPop  TSL:Thunk:#hlo_op=transpose.284#                                  
+      0.0           906185        200       4530.9       4274.5      4095      18779       1424.7  PushPop  TSL:Thunk:#hlo_op=fusion.141#                                     
+      0.0           904483        200       4522.4       4349.5      4016      13692       1073.7  PushPop  TSL:Thunk:#hlo_op=fusion.106#                                     
+      0.0           903851        200       4519.3       4373.0      4009      13332       1030.7  PushPop  TSL:Thunk:#hlo_op=fusion.100#                                     
+      0.0           902858        200       4514.3       4339.0      3976      17792       1285.3  PushPop  TSL:Thunk:#hlo_op=transpose.347#                                  
+      0.0           901842        200       4509.2       4276.5      4036      11152       1028.8  PushPop  TSL:Thunk:#hlo_op=transpose.351#                                  
+      0.0           901582        200       4507.9       4348.0      3975      16360       1152.9  PushPop  TSL:Thunk:#hlo_op=fusion.94#                                      
+      0.0           900740        200       4503.7       4214.0      3888      14523       1357.7  PushPop  TSL:Thunk:#hlo_op=fusion.131#                                     
+      0.0           900593        200       4503.0       4292.0      3997      12212       1135.2  PushPop  TSL:Thunk:#hlo_op=fusion.140#                                     
+      0.0           900086        200       4500.4       4289.5      4002      18420       1455.8  PushPop  TSL:Thunk:#hlo_op=fusion.76#                                      
+      0.0           898179        200       4490.9       4177.5      3818      15295       1382.8  PushPop  TSL:Thunk:#hlo_op=transpose.345#                                  
+      0.0           897036        200       4485.2       4386.5      4021      12922        814.2  PushPop  TSL:Thunk:#hlo_op=fusion.91#                                      
+      0.0           896785        200       4483.9       4186.5      3834      19895       1648.6  PushPop  TSL:Thunk:#hlo_op=fusion.119#                                     
+      0.0           895449        200       4477.2       4253.5      3974      12687       1230.7  PushPop  TSL:Thunk:#hlo_op=fusion.137#                                     
+      0.0           894947        200       4474.7       4301.0      3993      10067        782.4  PushPop  TSL:Thunk:#hlo_op=transpose.274#                                  
+      0.0           893054        200       4465.3       4173.5      3816      14497       1382.3  PushPop  TSL:Thunk:#hlo_op=fusion.114#                                     
+      0.0           892926        200       4464.6       4321.5      3962      17790       1150.0  PushPop  TSL:Thunk:#hlo_op=fusion.82#                                      
+      0.0           891660        200       4458.3       4325.0      3987      13893        971.4  PushPop  TSL:Thunk:#hlo_op=fusion.97#                                      
+      0.0           888387        200       4441.9       4182.0      3899      14553       1322.3  PushPop  TSL:Thunk:#hlo_op=transpose.358#                                  
+      0.0           886962        200       4434.8       4149.0      3816      14678       1348.7  PushPop  TSL:Thunk:#hlo_op=transpose.288#                                  
+      0.0           886302        200       4431.5       4263.0      3964       9584        732.6  PushPop  TSL:Thunk:#hlo_op=transpose.283#                                  
+      0.0           885349        200       4426.7       4212.0      3869      13623       1165.1  PushPop  TSL:Thunk:#hlo_op=fusion.133#                                     
+      0.0           883735        200       4418.7       4198.0      3842      13695       1175.0  PushPop  TSL:Thunk:#hlo_op=fusion.120#                                     
+      0.0           883177        200       4415.9       4184.0      3914      13624       1180.2  PushPop  TSL:Thunk:#hlo_op=fusion.138#                                     
+      0.0           881703        200       4408.5       4331.5      3990      14374        745.2  PushPop  TSL:Thunk:#hlo_op=fusion.88#                                      
+      0.0           881209        200       4406.0       4246.5      3932       9567        761.2  PushPop  TSL:Thunk:#hlo_op=fusion.151#                                     
+      0.0           879984        200       4399.9       4134.0      3798      19596       1540.2  PushPop  TSL:Thunk:#hlo_op=fusion.111#                                     
+      0.0           879483        200       4397.4       4180.0      3805      13101       1226.0  PushPop  TSL:Thunk:#hlo_op=fusion.125#                                     
+      0.0           879238        200       4396.2       4198.5      3880      11246       1012.9  PushPop  TSL:Thunk:#hlo_op=fusion.45#                                      
+      0.0           878651        200       4393.3       4166.5      3728      10950        911.0  PushPop  TSL:Thunk:#hlo_op=transpose.354#                                  
+      0.0           878007        200       4390.0       4169.5      3886      12065       1076.0  PushPop  TSL:Thunk:#hlo_op=fusion.117#                                     
+      0.0           876613        200       4383.1       4152.5      3843      14503       1242.5  PushPop  TSL:Thunk:#hlo_op=fusion.122#                                     
+      0.0           876481        200       4382.4       4113.0      3805      19919       1639.1  PushPop  TSL:Thunk:#hlo_op=fusion.80#                                      
+      0.0           875666        200       4378.3       4227.0      3837      14565       1132.5  PushPop  TSL:Thunk:#hlo_op=fusion.21#                                      
+      0.0           874157          2     437078.5     437078.5    259058     615099     251759.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=461#
+      0.0           873869        200       4369.3       4184.0      3862      14911       1154.8  PushPop  TSL:Thunk:#hlo_op=fusion.71#                                      
+      0.0           873023        200       4365.1       4048.0      3737      19928       1537.7  PushPop  TSL:Thunk:#hlo_op=transpose.295#                                  
+      0.0           872536        200       4362.7       4195.5      3856      12452        964.5  PushPop  TSL:Thunk:#hlo_op=fusion.3#                                       
+      0.0           869982         66      13181.5      10746.5      7782     100318      11592.4  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=184#            
+      0.0           869108        200       4345.5       4125.5      3743      16267       1299.6  PushPop  TSL:Thunk:#hlo_op=fusion.110#                                     
+      0.0           868429        200       4342.1       4139.5      3835      10312        868.1  PushPop  TSL:Thunk:#hlo_op=transpose.282#                                  
+      0.0           867952        200       4339.8       4160.5      3842      12793       1016.5  PushPop  TSL:Thunk:#hlo_op=fusion.113#                                     
+      0.0           865579        200       4327.9       4051.0      3703      19864       1391.9  PushPop  TSL:Thunk:#hlo_op=fusion.67#                                      
+      0.0           865460        200       4327.3       4164.5      3831       9905        802.1  PushPop  TSL:Thunk:#hlo_op=fusion.68#                                      
+      0.0           865192        200       4326.0       4131.5      3767      17151       1232.4  PushPop  TSL:Thunk:#hlo_op=fusion.98#                                      
+      0.0           864660        200       4323.3       4026.5      3763      19953       1632.4  PushPop  TSL:Thunk:#hlo_op=transpose.382#                                  
+      0.0           864232        200       4321.2       4142.5      3889      11704        858.6  PushPop  TSL:Thunk:#hlo_op=reduce-window.8#                                
+      0.0           863750        200       4318.8       3955.5      3677      24143       2126.3  PushPop  TSL:Thunk:#hlo_op=transpose.340#                                  
+      0.0           863348        200       4316.7       4094.0      3807      15469       1357.8  PushPop  TSL:Thunk:#hlo_op=fusion.78#                                      
+      0.0           863340        200       4316.7       4149.0      3864      11677        951.7  PushPop  TSL:Thunk:#hlo_op=fusion.101#                                     
+      0.0           863078        200       4315.4       3980.0      3602      18887       1490.3  PushPop  TSL:Thunk:#hlo_op=reduce-window.20#                               
+      0.0           863070        200       4315.4       3981.5      3614      19416       1457.1  PushPop  TSL:Thunk:#hlo_op=transpose.303#                                  
+      0.0           862483        200       4312.4       4152.5      3773      10556        839.6  PushPop  TSL:Thunk:#hlo_op=fusion.39#                                      
+      0.0           862071        200       4310.4       4001.0      3700      19897       1819.3  PushPop  TSL:Thunk:#hlo_op=transpose.325#                                  
+      0.0           861585        200       4307.9       4068.5      3770      20653       1430.1  PushPop  TSL:Thunk:#hlo_op=transpose.344#                                  
+      0.0           858560        200       4292.8       4166.0      3821      10812        786.2  PushPop  TSL:Thunk:#hlo_op=fusion.105#                                     
+      0.0           857744        200       4288.7       4068.5      3716      11781       1009.9  PushPop  TSL:Thunk:#hlo_op=reduce-window.15#                               
+      0.0           857376        200       4286.9       4116.0      3801      10459        778.6  PushPop  TSL:Thunk:#hlo_op=reduce-window.12#                               
+      0.0           857371        200       4286.9       4179.5      3834      11192        833.8  PushPop  TSL:Thunk:#hlo_op=fusion.99#                                      
+      0.0           857189        200       4285.9       4109.5      3823      17715       1263.8  PushPop  TSL:Thunk:#hlo_op=fusion.81#                                      
+      0.0           857179        200       4285.9       4087.5      3798      14421       1054.7  PushPop  TSL:Thunk:#hlo_op=transpose.348#                                  
+      0.0           856211        200       4281.1       4119.0      3838      11145        885.0  PushPop  TSL:Thunk:#hlo_op=fusion.153#                                     
+      0.0           856206        200       4281.0       4065.5      3710      15504       1270.5  PushPop  TSL:Thunk:#hlo_op=transpose.350#                                  
+      0.0           855472        200       4277.4       3989.5      3653      10782       1070.1  PushPop  TSL:Thunk:#hlo_op=reduce-window.16#                               
+      0.0           855007        200       4275.0       4125.0      3790       9284        713.4  PushPop  TSL:Thunk:#hlo_op=transpose.289#                                  
+      0.0           854693        200       4273.5       4146.0      3790      10114        744.0  PushPop  TSL:Thunk:#hlo_op=fusion.96#                                      
+      0.0           852624        200       4263.1       4069.0      3754      14144       1008.6  PushPop  TSL:Thunk:#hlo_op=transpose.293#                                  
+      0.0           852505        200       4262.5       4124.0      3797      10275        818.9  PushPop  TSL:Thunk:#hlo_op=fusion.108#                                     
+      0.0           852500        200       4262.5       4003.0      3594      12139       1167.1  PushPop  TSL:Thunk:#hlo_op=transpose.279#                                  
+      0.0           852432        200       4262.2       4056.5      3754      14530       1191.3  PushPop  TSL:Thunk:#hlo_op=fusion.116#                                     
+      0.0           852101        200       4260.5       4049.5      3730      19915       1443.2  PushPop  TSL:Thunk:#hlo_op=transpose.313#                                  
+      0.0           851251        200       4256.3       4111.5      3794      12361        909.2  PushPop  TSL:Thunk:#hlo_op=fusion.75#                                      
+      0.0           850969        200       4254.8       4136.0      3803      10881        771.8  PushPop  TSL:Thunk:#hlo_op=fusion.104#                                     
+      0.0           850936        200       4254.7       4144.0      3774      11488        767.4  PushPop  TSL:Thunk:#hlo_op=fusion.102#                                     
+      0.0           850737        200       4253.7       4112.0      3763      14291        974.8  PushPop  TSL:Thunk:#hlo_op=fusion.86#                                      
+      0.0           850690        200       4253.5       4120.0      3808      11396        720.8  PushPop  TSL:Thunk:#hlo_op=fusion.90#                                      
+      0.0           849963        200       4249.8       4113.5      3638      10213        786.1  PushPop  TSL:Thunk:#hlo_op=fusion.27#                                      
+      0.0           849612        200       4248.1       4113.5      3783      11270        892.4  PushPop  TSL:Thunk:#hlo_op=fusion.107#                                     
+      0.0           849367        200       4246.8       4117.5      3801      12593        829.0  PushPop  TSL:Thunk:#hlo_op=fusion.84#                                      
+      0.0           849343        200       4246.7       4036.5      3717      14019       1116.6  PushPop  TSL:Thunk:#hlo_op=transpose.298#                                  
+      0.0           849326        200       4246.6       4099.0      3777      12732        879.0  PushPop  TSL:Thunk:#hlo_op=fusion.167#                                     
+      0.0           849323         33      25737.1      21407.0     18557     103541      15410.0  PushPop  TSL:XlaModule:#hlo_module=jit__where,program_id=211#              
+      0.0           848347        200       4241.7       4020.5      3721      14416       1169.7  PushPop  TSL:Thunk:#hlo_op=transpose.307#                                  
+      0.0           847460        200       4237.3       4077.5      3797       9898        807.7  PushPop  TSL:Thunk:#hlo_op=reduce-window.13#                               
+      0.0           846799        200       4234.0       4092.5      3764      12754        964.4  PushPop  TSL:Thunk:#hlo_op=fusion.165#                                     
+      0.0           846651        200       4233.3       4045.5      3797      12239        951.8  PushPop  TSL:Thunk:#hlo_op=transpose.278#                                  
+      0.0           844959        200       4224.8       4174.5      3807      10365        482.1  PushPop  TSL:Thunk:#hlo_op=fusion.87#                                      
+      0.0           843824        200       4219.1       4142.0      3795       9941        618.0  PushPop  TSL:Thunk:#hlo_op=fusion.93#                                      
+      0.0           843577        200       4217.9       4054.5      3782      10643        849.9  PushPop  TSL:Thunk:#hlo_op=reduce-window.9#                                
+      0.0           842891        200       4214.5       3982.5      3663      11468       1008.9  PushPop  TSL:Thunk:#hlo_op=transpose.297#                                  
+      0.0           842614        200       4213.1       4024.5      3741      14538       1122.4  PushPop  TSL:Thunk:#hlo_op=transpose.301#                                  
+      0.0           842577        200       4212.9       3989.0      3638      19702       1241.2  PushPop  TSL:Thunk:#hlo_op=reduce-window.29#                               
+      0.0           842323        200       4211.6       4136.0      3817      10221        611.1  PushPop  TSL:Thunk:#hlo_op=fusion.95#                                      
+      0.0           842254        200       4211.3       4127.5      3802      10967        590.5  PushPop  TSL:Thunk:#hlo_op=fusion.9#                                       
+      0.0           841793        200       4209.0       4099.0      3767      10100        643.8  PushPop  TSL:Thunk:#hlo_op=fusion.92#                                      
+      0.0           840983        200       4204.9       3968.0      3634      14302       1033.6  PushPop  TSL:Thunk:#hlo_op=transpose.349#                                  
+      0.0           840922        200       4204.6       4108.5      3782      10227        613.3  PushPop  TSL:Thunk:#hlo_op=fusion.89#                                      
+      0.0           840765        200       4203.8       3952.0      3643      14294       1233.8  PushPop  TSL:Thunk:#hlo_op=transpose.309#                                  
+      0.0           840617        200       4203.1       3967.5      3670      10936       1058.1  PushPop  TSL:Thunk:#hlo_op=transpose.362#                                  
+      0.0           840062        200       4200.3       4030.0      3733      10352        838.3  PushPop  TSL:Thunk:#hlo_op=transpose.281#                                  
+      0.0           839749        200       4198.7       3975.5      3692      14350       1106.4  PushPop  TSL:Thunk:#hlo_op=transpose.287#                                  
+      0.0           839508        200       4197.5       3958.0      3640      19765       1410.1  PushPop  TSL:Thunk:#hlo_op=reduce-window.17#                               
+      0.0           839054        200       4195.3       3997.0      3705      10479        944.1  PushPop  TSL:Thunk:#hlo_op=transpose.304#                                  
+      0.0           839023        200       4195.1       3967.0      3620      10543        907.6  PushPop  TSL:Thunk:#hlo_op=reduce-window.19#                               
+      0.0           838745        200       4193.7       3999.0      3667      14280        990.0  PushPop  TSL:Thunk:#hlo_op=reduce-window.32#                               
+      0.0           837878        200       4189.4       4020.0      3571      10958        781.8  PushPop  TSL:Thunk:#hlo_op=reduce-window.26#                               
+      0.0           837288        200       4186.4       4008.0      3711      12118        937.9  PushPop  TSL:Thunk:#hlo_op=fusion.155#                                     
+      0.0           836881        200       4184.4       3947.0      3614      11595        979.2  PushPop  TSL:Thunk:#hlo_op=transpose.294#                                  
+      0.0           836648        200       4183.2       4084.5      3753       9206        638.7  PushPop  TSL:Thunk:#hlo_op=fusion.33#                                      
+      0.0           836404        200       4182.0       4010.0      3653       9464        695.8  PushPop  TSL:Thunk:#hlo_op=reduce-window.23#                               
+      0.0           834897        200       4174.5       3941.5      3612      14293       1216.6  PushPop  TSL:Thunk:#hlo_op=transpose.357#                                  
+      0.0           834881        200       4174.4       4026.0      3734      19881       1224.4  PushPop  TSL:Thunk:#hlo_op=transpose.328#                                  
+      0.0           834770        200       4173.9       4079.0      3750      14022        821.4  PushPop  TSL:Thunk:#hlo_op=fusion.83#                                      
+      0.0           834685        200       4173.4       4003.5      3662      10753        744.5  PushPop  TSL:Thunk:#hlo_op=transpose.318#                                  
+      0.0           834653         36      23184.8      17597.5     15285     100371      14914.9  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=355#            
+      0.0           834583        200       4172.9       4061.0      3751      12784        771.5  PushPop  TSL:Thunk:#hlo_op=fusion.77#                                      
+      0.0           834481        200       4172.4       3966.0      3636      12451        934.2  PushPop  TSL:Thunk:#hlo_op=transpose.339#                                  
+      0.0           833507        200       4167.5       3978.0      3613      11000        762.7  PushPop  TSL:Thunk:#hlo_op=transpose.312#                                  
+      0.0           832676        200       4163.4       3991.0      3652      12816        765.1  PushPop  TSL:Thunk:#hlo_op=transpose.330#                                  
+      0.0           832551        200       4162.8       4042.5      3739      19629       1159.9  PushPop  TSL:Thunk:#hlo_op=transpose.331#                                  
+      0.0           831143        200       4155.7       3914.0      3618      12778        989.6  PushPop  TSL:Thunk:#hlo_op=transpose.306#                                  
+      0.0           831094        200       4155.5       3955.5      3683      14335       1033.4  PushPop  TSL:Thunk:#hlo_op=transpose.355#                                  
+      0.0           828836        200       4144.2       4019.5      3723       9717        634.1  PushPop  TSL:Thunk:#hlo_op=fusion.157#                                     
+      0.0           828806        200       4144.0       3961.0      3643      13910        864.5  PushPop  TSL:Thunk:#hlo_op=reduce-window.35#                               
+      0.0           828640        200       4143.2       4017.5      3716      10433        716.6  PushPop  TSL:Thunk:#hlo_op=transpose.310#                                  
+      0.0           828445        200       4142.2       3974.5      3703      13563        973.7  PushPop  TSL:Thunk:#hlo_op=transpose.343#                                  
+      0.0           828259        200       4141.3       4001.5      3657      14267        917.5  PushPop  TSL:Thunk:#hlo_op=transpose.368#                                  
+      0.0           828067        200       4140.3       3913.5      3589      19917       1352.8  PushPop  TSL:Thunk:#hlo_op=transpose.296#                                  
+      0.0           827327        200       4136.6       3919.5      3649      14443       1084.0  PushPop  TSL:Thunk:#hlo_op=transpose.286#                                  
+      0.0           825717        200       4128.6       3952.0      3649      14147       1134.4  PushPop  TSL:Thunk:#hlo_op=transpose.337#                                  
+      0.0           822880        200       4114.4       3954.0      3586       8474        535.7  PushPop  TSL:Thunk:#hlo_op=transpose.324#                                  
+      0.0           822681        200       4113.4       3930.0      3621      19513       1313.2  PushPop  TSL:Thunk:#hlo_op=transpose.377#                                  
+      0.0           821138        200       4105.7       3999.5      3715       8426        552.8  PushPop  TSL:Thunk:#hlo_op=transpose.316#                                  
+      0.0           820834        200       4104.2       3913.0      3639      19670       1297.3  PushPop  TSL:Thunk:#hlo_op=transpose.342#                                  
+      0.0           820110        200       4100.6       3917.5      3663      11272        850.2  PushPop  TSL:Thunk:#hlo_op=transpose.280#                                  
+      0.0           819724        200       4098.6       3863.0      3591      19650       1366.4  PushPop  TSL:Thunk:#hlo_op=transpose.332#                                  
+      0.0           819523        200       4097.6       3958.0      3655       8369        687.1  PushPop  TSL:Thunk:#hlo_op=transpose.359#                                  
+      0.0           819384        200       4096.9       4004.5      3703      10992        600.2  PushPop  TSL:Thunk:#hlo_op=transpose.334#                                  
+      0.0           819361        200       4096.8       3969.0      3714       9369        609.0  PushPop  TSL:Thunk:#hlo_op=transpose.319#                                  
+      0.0           818746        200       4093.7       3825.0      3589      14254       1365.8  PushPop  TSL:Thunk:#hlo_op=transpose.317#                                  
+      0.0           818161        200       4090.8       3857.0      3543      19921       1385.2  PushPop  TSL:Thunk:#hlo_op=transpose.305#                                  
+      0.0           817728        200       4088.6       3942.5      3648       9196        737.0  PushPop  TSL:Thunk:#hlo_op=transpose.361#                                  
+      0.0           817686        200       4088.4       3901.0      3579      19544       1247.8  PushPop  TSL:Thunk:#hlo_op=reduce-window.31#                               
+      0.0           817096        200       4085.5       3937.0      3637      11729        817.0  PushPop  TSL:Thunk:#hlo_op=transpose.360#                                  
+      0.0           816279        200       4081.4       4021.0      3721       7922        418.1  PushPop  TSL:Thunk:#hlo_op=fusion.161#                                     
+      0.0           815573        200       4077.9       3968.0      3640       9199        662.8  PushPop  TSL:Thunk:#hlo_op=transpose.365#                                  
+      0.0           815430        200       4077.2       3917.5      3639      10723        761.8  PushPop  TSL:Thunk:#hlo_op=reduce-window.36#                               
+      0.0           814139        200       4070.7       4000.5      3733       8641        456.3  PushPop  TSL:Thunk:#hlo_op=fusion.163#                                     
+      0.0           812718         36      22575.5      17562.5     15351     101567      15133.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=359#                  
+      0.0           812706        200       4063.5       3906.5      3583       9711        753.6  PushPop  TSL:Thunk:#hlo_op=transpose.311#                                  
+      0.0           812139        200       4060.7       3925.5      3628      11484        714.4  PushPop  TSL:Thunk:#hlo_op=transpose.380#                                  
+      0.0           811010        200       4055.1       3888.5      3576      13079        904.0  PushPop  TSL:Thunk:#hlo_op=transpose.300#                                  
+      0.0           811002        200       4055.0       3865.5      3565       9904        927.6  PushPop  TSL:Thunk:#hlo_op=transpose.299#                                  
+      0.0           810979        200       4054.9       3893.0      3679       9485        780.4  PushPop  TSL:Thunk:#hlo_op=transpose.352#                                  
+      0.0           810373        200       4051.9       3909.0      3637      14572        877.3  PushPop  TSL:Thunk:#hlo_op=transpose.371#                                  
+      0.0           810238        200       4051.2       3927.0      3646       9180        648.1  PushPop  TSL:Thunk:#hlo_op=reduce-window.22#                               
+      0.0           810099        200       4050.5       3981.0      3680       9237        507.5  PushPop  TSL:Thunk:#hlo_op=transpose.322#                                  
+      0.0           809779        200       4048.9       3920.0      3601       9186        687.0  PushPop  TSL:Thunk:#hlo_op=transpose.364#                                  
+      0.0           809764        200       4048.8       3880.0      3609      10513        843.6  PushPop  TSL:Thunk:#hlo_op=transpose.302#                                  
+      0.0           808914        200       4044.6       3855.0      3622      10519        955.0  PushPop  TSL:Thunk:#hlo_op=transpose.356#                                  
+      0.0           808852        200       4044.3       3876.0      3652       8744        732.1  PushPop  TSL:Thunk:#hlo_op=transpose.353#                                  
+      0.0           808200        200       4041.0       3940.5      3637       9969        606.1  PushPop  TSL:Thunk:#hlo_op=transpose.327#                                  
+      0.0           808192         23      35138.8      22191.0     19807     184685      37939.3  PushPop  TSL:XlaModule:#hlo_module=jit_true_divide,program_id=389#         
+      0.0           807925        200       4039.6       3925.0      3601      11224        780.2  PushPop  TSL:Thunk:#hlo_op=transpose.336#                                  
+      0.0           807721        200       4038.6       3912.5      3602       9446        679.0  PushPop  TSL:Thunk:#hlo_op=reduce-window.25#                               
+      0.0           806783         33      24448.0      19537.0     16335     106927      16207.7  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=133#                  
+      0.0           805396        200       4027.0       3905.0      3659       9670        611.7  PushPop  TSL:Thunk:#hlo_op=transpose.373#                                  
+      0.0           804705        200       4023.5       3920.0      3641       9744        577.4  PushPop  TSL:Thunk:#hlo_op=transpose.321#                                  
+      0.0           803601        200       4018.0       3861.5      3553      10546        837.1  PushPop  TSL:Thunk:#hlo_op=transpose.383#                                  
+      0.0           802843        200       4014.2       3912.5      3624       7946        491.3  PushPop  TSL:Thunk:#hlo_op=transpose.367#                                  
+      0.0           802737        200       4013.7       3910.0      3639       8690        538.7  PushPop  TSL:Thunk:#hlo_op=transpose.370#                                  
+      0.0           801825        200       4009.1       3858.5      3564      10494        763.9  PushPop  TSL:Thunk:#hlo_op=transpose.308#                                  
+      0.0           801051        200       4005.3       3917.5      3647       8238        462.4  PushPop  TSL:Thunk:#hlo_op=transpose.374#                                  
+      0.0           801013        200       4005.1       3902.5      3646       9827        543.7  PushPop  TSL:Thunk:#hlo_op=transpose.333#                                  
+      0.0           800751        200       4003.8       3897.5      3617       7942        503.8  PushPop  TSL:Thunk:#hlo_op=transpose.315#                                  
+      0.0           800749        200       4003.7       3915.0      3585       7829        463.7  PushPop  TSL:Thunk:#hlo_op=transpose.375#                                  
+      0.0           800167        200       4000.8       3846.5      3570      19453       1225.4  PushPop  TSL:Thunk:#hlo_op=transpose.320#                                  
+      0.0           800104        200       4000.5       3922.0      3603       9932        568.3  PushPop  TSL:Thunk:#hlo_op=reduce-window.33#                               
+      0.0           799976        200       3999.9       3863.5      3553      10383        767.9  PushPop  TSL:Thunk:#hlo_op=transpose.363#                                  
+      0.0           797651        200       3988.3       3868.0      3602       9073        639.7  PushPop  TSL:Thunk:#hlo_op=transpose.366#                                  
+      0.0           794325        200       3971.6       3895.0      3615       9494        513.4  PushPop  TSL:Thunk:#hlo_op=transpose.379#                                  
+      0.0           794026        200       3970.1       3894.0      3593       8461        463.4  PushPop  TSL:Thunk:#hlo_op=reduce-window.28#                               
+      0.0           793440        200       3967.2       3922.5      3616       8090        356.5  PushPop  TSL:Thunk:#hlo_op=transpose.376#                                  
+      0.0           791698        200       3958.5       3859.5      3601       9754        641.1  PushPop  TSL:Thunk:#hlo_op=transpose.338#                                  
+      0.0           791524         33      23985.6      19587.0     16140     104687      15988.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=209#                  
+      0.0           790173        200       3950.9       3877.0      3544       8636        506.5  PushPop  TSL:Thunk:#hlo_op=transpose.314#                                  
+      0.0           787234        200       3936.2       3867.0      3585      10188        536.0  PushPop  TSL:Thunk:#hlo_op=transpose.341#                                  
+      0.0           785812        200       3929.1       3862.5      3558       7804        454.6  PushPop  TSL:Thunk:#hlo_op=transpose.372#                                  
+      0.0           784530        200       3922.7       3835.0      3531       8826        572.4  PushPop  TSL:Thunk:#hlo_op=transpose.369#                                  
+      0.0           782260        200       3911.3       3843.0      3546      10041        546.7  PushPop  TSL:Thunk:#hlo_op=transpose.335#                                  
+      0.0           781140         33      23670.9      20358.0     17217      98040      13977.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=201#                  
+      0.0           780790        200       3904.0       3845.5      3554       7471        400.3  PushPop  TSL:Thunk:#hlo_op=transpose.326#                                  
+      0.0           780344        200       3901.7       3838.0      3543       7556        412.0  PushPop  TSL:Thunk:#hlo_op=transpose.329#                                  
+      0.0           776908        200       3884.5       3818.5      3547       8567        439.0  PushPop  TSL:Thunk:#hlo_op=transpose.323#                                  
+      0.0           765716          4     191429.0     176027.0     73869     339793     126189.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=91# 
+      0.0           751686         14      53691.9      62456.5     27886      84268      21155.5  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=243#             
+      0.0           729141         82       8892.0       6750.5      5043      18703       4103.0  PushPop  TSL:Thunk:#hlo_op=transpose.2#                                    
+      0.0           726778         33      22023.6      18178.0     15918     115932      17059.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=170#                  
+      0.0           702903         33      21300.1      17260.0     15602     103933      15276.9  PushPop  TSL:XlaModule:#hlo_module=jit_sigmoid,program_id=205#             
+      0.0           682211         14      48729.4      45159.0     23216      86635      20500.5  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=235#    
+      0.0           668398         36      18566.6      13309.5     11362      99061      14985.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=357#                  
+      0.0           652625         33      19776.5      16540.0     14830      71384      10637.6  PushPop  TSL:Thunk:#hlo_op=select#                                         
+      0.0           644115          3     214705.0      97065.0     77080     469970     221291.7  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=81# 
+      0.0           628802         16      39300.1      31105.0     25369      97464      17893.3  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=419#    
+      0.0           620917          1     620917.0     620917.0    620917     620917          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=351#
+      0.0           619634         66       9388.4       7561.0      5934      69153       7996.0  PushPop  TSL:Thunk:#hlo_op=tanh#                                           
+      0.0           617379          4     154344.8      93520.0     65368     364971     141824.7  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=261#
+      0.0           612549         18      34030.5      20089.0     18089     178989      41113.5  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=385#                
+      0.0           601717         33      18233.8      15032.0     12416      71796      11128.7  PushPop  TSL:Thunk:#hlo_op=compare#                                        
+      0.0           587316         18      32628.7      24891.5     21838      98993      22596.6  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=383#                  
+      0.0           577971          1     577971.0     577971.0    577971     577971          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=443#
+      0.0           567353         14      40525.2      33219.5     24589      87687      19486.1  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=41#              
+      0.0           562971          2     281485.5     281485.5    151350     411621     184039.4  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=471#
+      0.0           532705         16      33294.1      25107.5     22625      88719      17661.2  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=273#    
+      0.0           530124          3     176708.0      73216.0     58931     397977     191757.6  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=129#
+      0.0           525830         14      37559.3      30821.5     21243      73379      16161.0  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=33#     
+      0.0           521538         20      26076.9      19795.5     16425     132102      25156.9  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=335#               
+      0.0           511160         20      25558.0      18572.5     15419     144831      28224.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=339#                  
+      0.0           510498          3     170166.0      95770.0     62097     352631     158913.7  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=489#
+      0.0           496800         20      24840.0      17770.0     15746     135556      26332.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=333#                  
+      0.0           495909          2     247954.5     247954.5     83955     411954     231930.3  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=299#
+      0.0           489874         23      21298.9      17421.0     15080      98908      17048.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=395#                  
+      0.0           486015          2     243007.5     243007.5    108176     377839     190680.5  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=415#
+      0.0           470211         20      23510.6      18961.0     16693      98457      17861.1  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=331#            
+      0.0           457115          1     457115.0     457115.0    457115     457115          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=27# 
+      0.0           454024         18      25223.6      18278.0     15322     105049      20772.3  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=367#                  
+      0.0           451343         20      22567.2      18252.0     14953      97138      17741.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=343#                  
+      0.0           444351         17      26138.3      17344.0     15551     104111      21536.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=403#                  
+      0.0           436371          2     218185.5     218185.5     89763     346608     181616.8  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=269#
+      0.0           429359          2     214679.5     214679.5     75421     353938     196941.3  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=219#
+      0.0           424445         20      21222.3      14712.0     12685     133018      26549.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=341#                  
+      0.0           421803         18      23433.5      17420.0     15393     100170      19428.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=377#                  
+      0.0           415624          1     415624.0     415624.0    415624     415624          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=63# 
+      0.0           402988          2     201494.0     201494.0     98085     304903     146242.4  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=323#
+      0.0           388699          1     388699.0     388699.0    388699     388699          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=497#
+      0.0           384437          2     192218.5     192218.5     71707     312730     170429.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=309#
+      0.0           383978          4      95994.5      87555.5     49285     159582      52976.4  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=85#    
+      0.0           382899          7      54699.9      45507.0     27308     147757      42628.0  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=241#               
+      0.0           379785          4      94946.3      99404.0     61037     119940      27379.9  PushPop  TSL:Thunk:#hlo_op=custom-call.23#                                 
+      0.0           376163          4      94040.8      86551.0     70553     132508      27313.9  PushPop  TSL:XlaModule:#hlo_module=jit__normal,program_id=143#             
+      0.0           371345          4      92836.3      89234.0     71814     121063      23729.5  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=137#   
+      0.0           350778          8      43847.3      35775.5     30579      83910      19320.9  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=429#             
+      0.0           343550          8      42943.8      38205.5     24956      81495      18102.4  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=421#    
+      0.0           323226          8      40403.3      29242.5     26651      87202      22942.1  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=283#             
+      0.0           317389          7      45341.3      38283.0     20226     115389      33292.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=245#                  
+      0.0           316560          4      79140.0      69321.0     46976     130942      37719.4  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=255#   
+      0.0           315758          7      45108.3      42318.0     20559     105592      29516.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=239#                  
+      0.0           293461          7      41923.0      22696.0     17299     153971      49656.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=43#                   
+      0.0           289612          8      36201.5      31511.0     23421      75399      16896.9  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=275#    
+      0.0           286364          6      47727.3      35467.0     25219     120833      36371.3  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=73#                 
+      0.0           283430          1     283430.0     283430.0    283430     283430          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_conv_general_dilated,program_id=229#
+      0.0           281005          2     140502.5     140502.5    124382     156623      22797.8  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=455#   
+      0.0           276360          4      69090.0      49980.0     36292     140108      48554.1  PushPop  TSL:XlaModule:#hlo_module=jit_reduce_window_sum,program_id=251#   
+      0.0           274461          7      39208.7      28676.0     18472     108324      32220.1  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=39#                
+      0.0           272569          4      68142.3      65023.0     35221     107302      29703.8  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=453#                
+      0.0           270264          2     135132.0     135132.0    100521     169743      48947.3  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=465#   
+      0.0           264832          3      88277.3      81654.0     56212     126966      35839.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=483#   
+      0.0           248402          4      62100.5      42581.0     35707     127533      43786.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=160#                  
+      0.0           246140          7      35162.9      22533.0     16277      96656      28703.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=37#                   
+      0.0           232791          4      58197.8      50682.0     26311     105116      33368.8  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=447#            
+      0.0           231857          4      57964.3      48706.5     40471      93973      24335.1  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=156#    
+      0.0           229299          3      76433.0      59957.0     48715     120627      38683.7  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=75#    
+      0.0           228698          4      57174.5      47680.0     21394     111944      38584.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=451#                  
+      0.0           228427          3      76142.3      55804.0     50450     122173      39953.5  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=121#   
+      0.0           224098          4      56024.5      31282.0     27844     133690      51802.7  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=291#                
+      0.0           220998          1     220998.0     220998.0    220998     220998          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=57#    
+      0.0           217690          6      36281.7      25131.5     19487      99341      31132.6  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=67#             
+      0.0           213799          6      35633.2      20693.5     16879     114647      38782.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=71#                   
+      0.0           211468          3      70489.3      34790.0     29355     147323      66595.4  PushPop  TSL:XlaModule:#hlo_module=jit_reduce_window_sum,program_id=117#   
+      0.0           211053          4      52763.3      34165.5     15852     126870      51552.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=109#                  
+      0.0           208518          4      52129.5      41907.0     20261     104443      39070.1  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=99#             
+      0.0           206565          4      51641.3      39806.5     17842     109110      42485.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=111#                  
+      0.0           206258          4      51564.5      35779.5     26520     108179      38077.2  PushPop  TSL:XlaModule:#hlo_module=jit_reduce_window_sum,program_id=479#   
+      0.0           204527          4      51131.8      38612.5     17329     109973      42295.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=89#                   
+      0.0           203099          4      50774.8      30349.5     23702     118698      45646.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=141#                  
+      0.0           202507          4      50626.8      30589.5     21468     119860      46926.5  PushPop  TSL:XlaModule:#hlo_module=jit_true_divide,program_id=481#         
+      0.0           202496          4      50624.0      37927.5     20632     106009      37857.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=449#                  
+      0.0           201986          3      67328.7      20121.0     17487     164378      84057.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=125#                  
+      0.0           200316          4      50079.0      37755.5     22542     102263      36678.0  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=427#               
+      0.0           198512          4      49628.0      34913.0     22736     105950      38533.5  PushPop  TSL:XlaModule:#hlo_module=jit_true_divide,program_id=253#         
+      0.0           192743          3      64247.7      34664.0     31142     126937      54319.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=113#                  
+      0.0           190129          4      47532.3      25895.5     21589     116749      46197.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=158#                  
+      0.0           188909          4      47227.3      31250.0     19531     106878      40338.5  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=423#            
+      0.0           188255          4      47063.8      26914.0     21323     113104      44113.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=431#                  
+      0.0           187714          2      93857.0      93857.0     65486     122228      40122.7  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=55#     
+      0.0           186547          4      46636.8      26505.5     24127     109409      41870.5  PushPop  TSL:XlaModule:#hlo_module=jit_rsqrt,program_id=281#               
+      0.0           185017          4      46254.3      21606.5     17167     124637      52297.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=289#                  
+      0.0           180494          4      45123.5      30580.5     16751     102582      39874.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=259#                  
+      0.0           179857          4      44964.3      25406.0     21479     107566      41781.3  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=435#                  
+      0.0           178326          6      29721.0      16077.0     11988      98948      34184.6  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=69#                   
+      0.0           177945          2      88972.5      88972.5     56532     121413      45877.8  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=293#   
+      0.0           175685          2      87842.5      87842.5     61942     113743      36628.8  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=409#   
+      0.0           175431          4      43857.8      28759.5     17942      99970      37956.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=425#                  
+      0.0           174391          2      87195.5      87195.5     55466     118925      44872.3  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=263#   
+      0.0           169215          4      42303.8      20545.0     18715     109410      44745.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=285#                  
+      0.0           167928          2      83964.0      83964.0     48202     119726      50575.1  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=213#   
+      0.0           164853          3      54951.0      25448.0     23466     115939      52826.5  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=115#                
+      0.0           164339          2      82169.5      82169.5     60935     103404      30030.1  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=317#   
+      0.0           162991          2      81495.5      81495.5     51760     111231      42052.3  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=303#   
+      0.0           160911          4      40227.8      19688.5     15868     105666      43686.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=287#                  
+      0.0           160060          4      40015.0      22444.5     20295      94876      36598.3  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=277#            
+      0.0           159562          3      53187.3      21908.0     20777     116877      55159.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=249#                  
+      0.0           158739          3      52913.0      31180.0     18642     108917      48904.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=487#                  
+      0.0           157362          4      39340.5      20440.0     18727      97755      38952.5  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=279#                  
+      0.0           157129          4      39282.3      19517.0     13416     104679      43701.4  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=433#                  
+      0.0           154687          2      77343.5      77343.5     49767     104920      38999.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=459#                  
+      0.0           153998          3      51332.7      27832.0     26800      99366      41601.3  PushPop  TSL:XlaModule:#hlo_module=jit_true_divide,program_id=119#         
+      0.0           152402          3      50800.7      26928.0     22063     103411      45626.8  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=237#            
+      0.0           152385          3      50795.0      20930.0     18502     112953      53844.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=79#                   
+      0.0           144145          3      48048.3      17898.0     16584     109663      53363.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=247#                  
+      0.0           142932          4      35733.0      19799.0     11463      91871      37691.9  PushPop  TSL:XlaModule:#hlo_module=jit_sign,program_id=154#                
+      0.0           140780          1     140780.0     140780.0    140780     140780          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_transpose,program_id=10#            
+      0.0           136264          4      34066.0      17862.0     13066      87474      35691.9  PushPop  TSL:XlaModule:#hlo_module=jit__diag,program_id=152#               
+      0.0           133379          1     133379.0     133379.0    133379     133379          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__normal,program_id=2#               
+      0.0           129672          2      64836.0      64836.0     29315     100357      50234.3  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=477#                
+      0.0           129017          2      64508.5      64508.5     35448      93569      41097.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=475#                  
+      0.0           128416          1     128416.0     128416.0    128416     128416          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=223#   
+      0.0           126808          1     126808.0     126808.0    126808     126808          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=345#   
+      0.0           125169          1     125169.0     125169.0    125169     125169          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=491#   
+      0.0           124259          1     124259.0     124259.0    124259     124259          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=61#                   
+      0.0           124064          1     124064.0     124064.0    124064     124064          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_broadcast_in_dim,program_id=509#    
+      0.0           122732          2      61366.0      61366.0     20088     102644      58375.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=307#                  
+      0.0           121623          1     121623.0     121623.0    121623     121623          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=47#                   
+      0.0           121477          1     121477.0     121477.0    121477     121477          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=45#                   
+      0.0           119446          2      59723.0      59723.0     34348      85098      35885.7  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=469#                  
+      0.0           119392          2      59696.0      59696.0     20807      98585      54997.4  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=315#                
+      0.0           119324          1     119324.0     119324.0    119324     119324          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=437#   
+      0.0           119128          2      59564.0      59564.0     20540      98588      55188.3  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=267#                  
+      0.0           117739          2      58869.5      58869.5     26277      91462      46092.8  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=313#                  
+      0.0           117694          2      58847.0      58847.0     22788      94906      50995.1  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=413#                  
+      0.0           116958          1     116958.0     116958.0    116958     116958          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=21#    
+      0.0           116498          2      58249.0      58249.0     17539      98959      57572.6  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=217#                  
+      0.0           116340          1     116340.0     116340.0    116340     116340          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=6#                    
+      0.0           116229          1     116229.0     116229.0    116229     116229          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=190#   
+      0.0           115950          1     115950.0     115950.0    115950     115950          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_reduce_window_max,program_id=53#    
+      0.0           115867          1     115867.0     115867.0    115867     115867          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=507#                  
+      0.0           114536          1     114536.0     114536.0    114536     114536          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__truncated_normal,program_id=503#   
+      0.0           111574          2      55787.0      55787.0     19183      92391      51765.9  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=297#                  
+      0.0           110626          2      55313.0      55313.0     22426      88200      46509.2  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=321#                  
+      0.0           109374          1     109374.0     109374.0    109374     109374          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_dot_general,program_id=511#         
+      0.0           108404          1     108404.0     108404.0    108404     108404          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=194#                  
+      0.0           104803          1     104803.0     104803.0    104803     104803          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_relu,program_id=49#                 
+      0.0           104689          1     104689.0     104689.0    104689     104689          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__pad,program_id=51#                 
+      0.0           104608          1     104608.0     104608.0    104608     104608          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=35#             
+      0.0           103459          1     103459.0     103459.0    103459     103459          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=515#                  
+      0.0           101936          1     101936.0     101936.0    101936     101936          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=227#                  
+      0.0           100316          1     100316.0     100316.0    100316     100316          0.0  PushPop  TSL:XlaModule:#hlo_module=jit__lambda_,program_id=8#              
+      0.0            99746          1      99746.0      99746.0     99746      99746          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=349#                  
+      0.0            99032          4      24758.0      13880.5      7761      63510      26026.9  PushPop  TSL:Thunk:#hlo_op=sign#                                           
+      0.0            96468          1      96468.0      96468.0     96468      96468          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=441#                  
+      0.0            95421          1      95421.0      95421.0     95421      95421          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=513#             
+      0.0            94452          1      94452.0      94452.0     94452      94452          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=25#                   
+      0.0            87206          5      17441.2      13194.0     10500      32707       9103.6  PushPop  TSL:Thunk:#hlo_op=custom-call.1#                                  
+      0.0            85208          1      85208.0      85208.0     85208      85208          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_fn,program_id=495#                  
+      0.0            67707          1      67707.0      67707.0     67707      67707          0.0  PushPop  TSL:XlaModule:#hlo_module=jit_reshape,program_id=501#             
+
+[4/7] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)    Med (ns)   Min (ns)  Max (ns)   StdDev (ns)                      Name                     
+ --------  ---------------  ---------  ----------  ----------  --------  ---------  -----------  ---------------------------------------------
+     46.2       1584600275         16  99037517.2      1317.5       499  856336101  255205478.4  cudaFree                                     
+      8.6        295498170       5746     51426.8     56576.5      7784      84062      19547.6  cuMemcpyDtoHAsync_v2                         
+      7.1        243323470      59859      4064.9       387.0       319  212963150     870440.0  cudaStreamIsCapturing_v10000                 
+      6.8        234313692         22  10650622.4      1938.5      1170  150808994   35946969.3  cudaStreamCreateWithFlags                    
+      6.1        210060466      70428      2982.6      2395.0      1891     214647       2852.7  cuLaunchKernel                               
+      5.9        203956206       2302     88599.6     25551.5      1651   12832154     482057.8  cuModuleUnload                               
+      5.3        180704019       1109    162943.2     70349.0     55414    1017274     184304.6  cuModuleLoadFatBinary                        
+      3.9        134204848      41214      3256.3      3032.5      2327     206061       1597.6  cudaLaunchKernel                             
+      1.5         53041940       2823     18789.2      2414.0      1715   43067937     810524.8  cuMemAlloc_v2                                
+      1.5         50262087       3120     16109.6      6485.5       589     143567      21245.4  cuEventSynchronize                           
+      1.1         36546845       3381     10809.5      7610.0      2125     155545       9867.6  cuMemcpyHtoDAsync_v2                         
+      1.0         34502956       5399      6390.6      5054.0       828     708525      11495.5  cuLaunchHostFunc                             
+      0.8         27829693     148501       187.4       123.0        98      18397        348.5  cuCtxSetCurrent                              
+      0.7         23623851      18412      1283.1      1172.5       227      83839       2135.4  cuEventRecord                                
+      0.6         20491788       6120      3348.3      2963.0      2543      21860       1230.6  cudaLaunchKernelExC_v11060                   
+      0.5         18233048          1  18233048.0  18233048.0  18233048   18233048          0.0  cudaProfilerStop                             
+      0.5         17778843       4962      3583.0      2690.0      1606      41183       3508.9  cuMemsetD32Async                             
+      0.4         14393000       5301      2715.1      2538.0       133      25224       1332.9  cudaMemsetAsync                              
+      0.3         10858898        726     14957.2     12324.5      5232      53240       6864.2  cuMemcpyPeerAsync                            
+      0.3          9833046       8211      1197.5       909.0       316      32293       1217.4  cuStreamWaitEvent                            
+      0.2          7455701       2822      2642.0      2507.0      1541      24384       1337.1  cuMemFree_v2                                 
+      0.1          5123527       7261       705.6       461.0       206     118074       2236.1  cuEventCreate                                
+      0.1          2930122         31     94520.1     18494.0      2851     411179     129840.7  cudaMalloc                                   
+      0.1          2907593       5746       506.0       415.0       348      11538        254.1  cuStreamSynchronize                          
+      0.1          2031011       6240       325.5       260.0       155     314274       3979.0  cuEventDestroy_v2                            
+      0.0          1498442        726      2064.0      1661.5      1207       9958       1005.0  cudaStreamGetCaptureInfo_v10010              
+      0.0           832282        602      1382.5       430.0       305      28288       2811.7  cuEventQuery                                 
+      0.0           700037          1    700037.0    700037.0    700037     700037          0.0  cuMemHostAlloc                               
+      0.0           606372          1    606372.0    606372.0    606372     606372          0.0  cudaHostAlloc                                
+      0.0           509139       2688       189.4       148.0        95       3029        127.0  cuGetProcAddress                             
+      0.0           436845         14     31203.2      5627.0      3263     295124      77233.2  cuStreamCreate                               
+      0.0           376217         28     13436.3     13955.0      5491      16863       2716.9  cuCtxSynchronize                             
+      0.0           246307        354       695.8       468.0       370       4604        469.3  cudaStreamWaitEvent                          
+      0.0           232725        336       692.6       452.5       322      17772       1137.5  cudaOccupancyMaxActiveBlocksPerMultiprocessor
+      0.0           184801        244       757.4       486.0       356       5611        638.3  cudaEventRecord                              
+      0.0           105615        181       583.5       447.0       297       3854        491.5  cudaEventCreateWithFlags                     
+      0.0            48250          1     48250.0     48250.0     48250      48250          0.0  cuMemGetInfo_v2                              
+      0.0            31423          1     31423.0     31423.0     31423      31423          0.0  cudaProfilerStart                            
+      0.0            19201         18      1066.7       741.0       449       2839        706.5  cudaEventCreate                              
+      0.0            10153          7      1450.4      1465.0       920       2001        339.5  cuInit                                       
+      0.0             8156         12       679.7       577.5       496       1067        218.9  cudaEventDestroy                             
+      0.0             1729          7       247.0       234.0       116        335         78.3  cuModuleGetLoadingMode                       
+
+[5/7] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     30.9        250522321       9648   25966.2   23712.0     23360     36928       3543.5  redzone_checker                                                                                     
+      9.5         77056200       3600   21404.5   20992.0     20704     23168        828.1  reduce_window_14                                                                                    
+      5.9         48138545      13085    3678.9    1856.0      1312     67809       5716.8  void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(…
+      5.6         45632222        600   76053.7   74433.0     74400     81665       2988.4  reduce_window_7                                                                                     
+      5.1         41431806       4086   10139.9    9696.0      4480     14656       1016.7  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage4_war…
+      3.6         28811443       3600    8003.2    7871.0      7616      9056        312.6  transpose_290                                                                                       
+      2.8         22744198       4453    5107.6    4864.0      4192     12064        584.2  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)                
+      2.8         22644968       6623    3419.1    3424.0      1728      9216        940.5  void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)2, (int)2, (bo…
+      2.3         18801482        600   31335.8   30656.0     30560     33856       1221.9  reduce_window_10                                                                                    
+      2.0         16230768       3426    4737.5    4640.0      4512      5472        226.5  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)               
+      1.5         12430594       1017   12222.8   10336.0      9216     56865       3980.0  cudnn_ampere_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1                                  
+      1.4         11576796        496   23340.3   15648.0      1856    112513      12562.0  void implicit_convolve_sgemm<float, float, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)…
+      1.3         10704954        400   26762.4   26433.0     25888     28704        859.0  transpose_345                                                                                       
+      1.3         10292226        900   11435.8    8448.0      1856    112257       9114.0  void implicit_convolve_sgemm<float, float, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1…
+      1.2          9504107       7200    1320.0    1312.0      1215      1568         55.9  fusion_128                                                                                          
+      1.1          9203983       1800    5113.3    5024.0      4992      5473        188.6  fusion_150                                                                                          
+      1.1          8983844       3600    2495.5    2496.0      2303      3072        122.5  transpose_291                                                                                       
+      1.1          8563597       3400    2518.7    2527.0      2335      2912        111.5  transpose_293                                                                                       
+      0.9          7448738       4600    1619.3    1600.0      1439      1888         80.1  transpose_358                                                                                       
+      0.8          6588436       3400    1937.8    1920.0      1823      2240         72.4  fusion_123                                                                                          
+      0.8          6466381       4055    1594.7    1568.0      1471      1920         70.8  void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)0, (bool…
+      0.8          6316174       1800    3509.0    3456.0      3423      3777        131.8  fusion_54                                                                                           
+      0.7          5630252        200   28151.3   27648.0     27104     30529       1110.8  fusion_69                                                                                           
+      0.5          3998601        812    4924.4    4800.0      4608      6752        256.8  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_256x64_16x4_nn_align4>(T1::Params)               
+      0.5          3852433        232   16605.3   15072.0      5472     76768       7854.5  cudnn_ampere_scudnn_128x64_relu_medium_nn_v1                                                        
+      0.4          3543643        366    9682.1    8896.0      8160     14912       1630.6  void tensorTransformGeneric<float, float, float, (bool)1, (bool)0, (bool)0, (cudnnKernelDataType_t)…
+      0.4          3349455        471    7111.4    7296.0      2976     22400       1786.1  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage4_warpsize2x2…
+      0.4          2850632       1800    1583.7    1568.0      1535      1728         61.2  fusion_51                                                                                           
+      0.4          2842637       2400    1184.4    1184.0      1087      1281         51.0  fusion_62                                                                                           
+      0.3          2782840       1800    1546.0    1505.0      1503      1665         59.7  fusion_151                                                                                          
+      0.3          2769718        410    6755.4    6592.0      6528     11552        371.4  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)               
+      0.3          2600855       1642    1584.0    1504.0      1344      2880        289.8  void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(…
+      0.3          2436249        400    6090.6    6080.0      5824      6432         96.1  transpose_346                                                                                       
+      0.3          2263843       1200    1886.5    1888.0      1728      2240         88.1  fusion_144                                                                                          
+      0.3          2222194        200   11111.0   10912.0     10784     12032        420.3  reduce_window_37                                                                                    
+      0.3          2179277        200   10896.4   10880.0     10752     11168         89.9  fusion_68                                                                                           
+      0.3          2145073        200   10725.4   10720.0     10591     10944         68.9  transpose_347                                                                                       
+      0.3          2093935         68   30793.2   18960.0      5920    124353      26701.4  sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x128x16_stage4_warpsize2…
+      0.2          1914029       1433    1335.7    1120.0       864     10656        761.4  fusion                                                                                              
+      0.2          1721029        922    1866.6    1376.0      1087      5536        997.5  __xla_fp32_comparison                                                                               
+      0.2          1695086         75   22601.1   15936.0      1824     93313      18484.0  void precomputed_convolve_sgemm<float, (int)1024, (int)5, (int)5, (int)4, (int)3, (int)3, (int)1, (…
+      0.2          1582540        400    3956.4    3904.0      3776      4352        145.6  transpose_284                                                                                       
+      0.2          1521902         46   33084.8   19152.0      5920    123713      30264.0  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x128x16_stage3_warpsize2…
+      0.2          1494832       1029    1452.7    1376.0      1279     17088        859.5  void cudnn::winograd::generateWinogradTilesKernel<(int)0, float, float>(cudnn::winograd::GenerateWi…
+      0.2          1464556         61   24009.1   16608.0      7616     90112      18753.1  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x128x32_stage2_warpsize2x…
+      0.2          1383216         71   19481.9   12192.0      3776     81089      17103.4  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_analytic_tf32_128x64_32x3_nhwc_align4>(T1::P…
+      0.2          1377675         68   20259.9   12960.0      3776     83713      18172.2  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x16x32_s…
+      0.2          1370666         70   19580.9   12400.0      5600     77569      16060.6  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x32x64_s…
+      0.2          1353673         62   21833.4   16064.0      7136     78177      16371.5  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x64x32_stage2_warpsize2x…
+      0.2          1331019         78   17064.3   14048.0      6080     65184      11741.4  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x128x16_stage3_warpsize2…
+      0.2          1313002         71   18493.0   12161.0      2944     83681      17685.7  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_analytic_tf32_128x64_16x6_nhwc_align4>(T1::P…
+      0.2          1278763         49   26097.2   17088.0      3712    122816      28489.2  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_256x64_16x4_nhwc_align4>(T1::…
+      0.2          1242155         50   24843.1   16640.0      3168    122337      28373.3  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x128_16x4_nhwc_align4>(T1:…
+      0.2          1235436         65   19006.7   11936.0      5312     73600      15936.9  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x16x64_s…
+      0.2          1228969        211    5824.5    5664.0      5600     10528        414.4  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_16x6_nn_align1>(T1::Params)                
+      0.1          1200109        200    6000.5    5985.0      5792      6240         86.6  transpose_348                                                                                       
+      0.1          1170051         56   20893.8   14016.0      5120     83808      18886.5  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage2_warpsize2x…
+      0.1          1129577         63   17929.8   16928.0     10496     31872       5308.1  sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x128x16_stage4_w…
+      0.1          1112070        400    2780.2    2720.5      2656      3104         99.3  fusion_139                                                                                          
+      0.1          1084711         70   15495.9   10528.0      3264     63776      12934.3  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x128x32_stage4_warpsize2x…
+      0.1          1073677        800    1342.1    1313.0      1248      1536         56.1  fusion_74                                                                                           
+      0.1          1070253         67   15973.9   10880.0      5088     63840      13057.5  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage4_warpsize2x…
+      0.1          1062888        600    1771.5    1728.0      1695      2017         68.1  transpose_273                                                                                       
+      0.1          1042053        800    1302.6    1280.0      1216      1505         55.0  fusion_134                                                                                          
+      0.1          1040653         42   24777.5   19184.0      2176     61921      17779.6  void precomputed_convolve_sgemm<float, (int)512, (int)6, (int)7, (int)4, (int)3, (int)5, (int)1, (b…
+      0.1          1037930         42   24712.6   14544.0      3552     99521      25794.7  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x32x64_s…
+      0.1          1017578        204    4988.1    4960.0       992      5441        588.7  fusion_1                                                                                            
+      0.1          1016042        800    1270.1    1248.0      1183      1504         60.8  transpose_274                                                                                       
+      0.1          1015949         36   28220.8   16624.0      4192    142274      36523.3  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x16x32_s…
+      0.1          1014940        800    1268.7    1248.0      1183      1408         48.5  transpose_354                                                                                       
+      0.1           968007         68   14235.4    9600.0      3904     62753      12861.9  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align4>(T1::…
+      0.1           963595        827    1165.2    1152.0      1024      1536         75.5  concatenate                                                                                         
+      0.1           960678        600    1601.1    1600.0      1471      1888         74.5  transpose_381                                                                                       
+      0.1           957698        121    7914.9    7072.0      2784     21696       3526.8  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage4_warpsize2x2…
+      0.1           956042         32   29876.3   16608.0      2560    142434      38495.7  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x16x32_s…
+      0.1           947751         34   27875.0   20960.0      5376     74593      22380.9  cudnn_ampere_scudnn_128x64_relu_small_nn_v1                                                         
+      0.1           917063         46   19936.2   12608.0      3264     87041      22235.9  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x32x64_s…
+      0.1           905929         35   25883.7   19552.0      5280     73889      20558.8  cudnn_ampere_scudnn_128x64_relu_interior_nn_v1                                                      
+      0.1           897254         80   11215.7    7040.0      2912     53729      10981.6  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage3_war…
+      0.1           883783         65   13596.7    9696.0      3679     63137      12650.7  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_16x6_nhwc_align4>(T1::…
+      0.1           867879         31   27996.1   18880.0      6208     87969      25103.1  cudnn_ampere_scudnn_128x128_relu_medium_nn_v1                                                       
+      0.1           865318         29   29838.6   25793.0      6080     87777      25296.5  cudnn_ampere_scudnn_128x128_relu_interior_nn_v1                                                     
+      0.1           853894         61   13998.3    9344.0      3360     62976      13340.5  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_64x128_16x6_nhwc_align4>(T1::…
+      0.1           784227         19   41275.1   32065.0      3200    106688      35299.5  void implicit_convolve_sgemm<float, float, (int)512, (int)6, (int)8, (int)3, (int)3, (int)5, (int)1…
+      0.1           779270         24   32469.6   21072.5      2656     92545      29364.8  void implicit_convolve_sgemm<float, float, (int)128, (int)6, (int)7, (int)3, (int)3, (int)5, (int)1…
+      0.1           765594        200    3828.0    3840.0      3647      4064         92.5  transpose_344                                                                                       
+      0.1           757313         75   10097.5    7167.0      2560     42688       8465.0  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_64x64_16x10_nhwc_align4>(T1::…
+      0.1           747546        600    1245.9    1216.0      1183      1408         49.6  transpose_351                                                                                       
+      0.1           735464         81    9079.8    6144.0      2752     33120       7226.5  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_64x64_32x5_nhwc_align4>(T1::P…
+      0.1           731593        200    3658.0    3663.5      3488      3936         90.8  transpose_292                                                                                       
+      0.1           702403        400    1756.0    1728.0      1664      1920         64.3  fusion_132                                                                                          
+      0.1           691906        200    3459.5    3392.0      3328      3808        133.1  fusion_145                                                                                          
+      0.1           690633         71    9727.2    7232.0      3104     34240       6505.9  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage3_warpsize2x2…
+      0.1           658341         38   17324.8   18048.0      6176     36448       9494.5  sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x128x16_stage4_w…
+      0.1           654506         60   10908.4   10288.0      7136     21632       3127.8  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage4_wa…
+      0.1           629251        200    3146.3    3073.0      3071      3392        118.2  fusion_64                                                                                           
+      0.1           623360        400    1558.4    1568.0      1407      1856        103.2  transpose_285                                                                                       
+      0.1           621027         67    9269.1    9184.0      5952     13664       1925.1  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x64x64_stage3_war…
+      0.1           615302        454    1355.3    1151.0      1088      6976        676.7  jax::cuda::<unnamed>::ThreeFry2x32Kernel(const unsigned int *, const unsigned int *, const unsigned…
+      0.1           612838         38   16127.3   12560.0      6272     35744       8936.0  sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x128x16_stage4_warpsize2…
+      0.1           605252         15   40350.1   30688.0      3072    106593      37785.7  void precomputed_convolve_sgemm<float, (int)512, (int)6, (int)8, (int)3, (int)3, (int)5, (int)1, (b…
+      0.1           601857        592    1016.7    1024.0       960      1057         21.0  slice                                                                                               
+      0.1           601732          6  100288.7  101681.0     67840    135745      32662.1  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x128x16_stage3_warpsize2…
+      0.1           589076        400    1472.7    1472.0      1376      1696         75.1  transpose_283                                                                                       
+      0.1           587654         49   11992.9   10304.0      4352     35360       8270.3  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x64x32_stage4_wa…
+      0.1           578279        200    2891.4    2848.0      2783      3168        103.3  fusion_142                                                                                          
+      0.1           555622         17   32683.6   10336.0      4800    127617      38645.1  cudnn_ampere_scudnn_128x32_relu_interior_nn_v1                                                      
+      0.1           552164         16   34510.3   10832.5      4960    129889      40160.2  cudnn_ampere_scudnn_128x32_relu_small_nn_v1                                                         
+      0.1           509352        400    1273.4    1248.0      1184      1504         60.9  transpose_276                                                                                       
+      0.1           488961         18   27164.5   14320.0      2720     98560      32807.3  void implicit_convolve_sgemm<float, float, (int)1024, (int)6, (int)7, (int)3, (int)3, (int)5, (int)…
+      0.1           483525        397    1217.9    1184.0      1152      1408         46.5  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams)           
+      0.1           481444         35   13755.5   11104.0      2976     41440       9683.0  reduce_window                                                                                       
+      0.1           435081        200    2175.4    2144.0      2080      2432         79.9  fusion_126                                                                                          
+      0.1           409794         47    8719.0    7296.0      3616     21281       4430.8  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage2_warpsize2x2…
+      0.0           403395          6   67232.5   67425.0     46336     88096      22542.6  ampere_sgemm_128x128_nn                                                                             
+      0.0           390436          3  130145.3  126849.0    126785    136802       5764.9  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x128x16_stage3_warpsize2…
+      0.0           375595        200    1878.0    1888.0      1760      2080         80.0  transpose_282                                                                                       
+      0.0           372643         12   31053.6   25776.5     11168     62400      20185.1  cudnn_ampere_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1                                  
+      0.0           366815        368     996.8     992.0       928      1184         44.4  broadcast                                                                                           
+      0.0           360161        200    1800.8    1792.0      1695      1985         88.0  transpose_289                                                                                       
+      0.0           353861        200    1769.3    1760.0      1663      2016         79.1  transpose_271                                                                                       
+      0.0           338850         82    4132.3    1504.0      1152     28992       4955.4  transpose_1                                                                                         
+      0.0           337949        328    1030.3    1024.0       991      1280         45.3  slice_1                                                                                             
+      0.0           332644        200    1663.2    1632.0      1600      1793         63.7  fusion_57                                                                                           
+      0.0           326170        200    1630.9    1600.0      1536      1824         60.1  fusion_135                                                                                          
+      0.0           324380        290    1118.6    1024.0       959      3040        288.4  add                                                                                                 
+      0.0           321727        200    1608.6    1568.0      1567      1728         62.2  fusion_149                                                                                          
+      0.0           313503         39    8038.5    2528.0      2463     74784      19160.2  void cudnn::cnn::conv2d_grouped_direct_kernel<(bool)0, (bool)1, (bool)0, (bool)0, (bool)0, (bool)0,…
+      0.0           306152        200    1530.8    1504.0      1471      1664         59.9  fusion_148                                                                                          
+      0.0           299996        200    1500.0    1472.0      1439      1697         58.2  fusion_72                                                                                           
+      0.0           289250        200    1446.3    1408.0      1407      1569         56.2  fusion_147                                                                                          
+      0.0           285185         52    5484.3    4000.0      2400     13440       3132.7  void fft2d_r2c_16x16<float>(float2 *, const T1 *, int, int, int, int, int, int, int, int)           
+      0.0           275049        200    1375.2    1344.0      1312      1473         52.5  fusion_146                                                                                          
+      0.0           249631        200    1248.2    1216.0      1184      1440         57.3  transpose_272                                                                                       
+      0.0           247971         14   17712.2   12064.5      8832     35265      10121.2  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage2_warpsize2x2…
+      0.0           236541        200    1182.7    1152.0      1119      1376         53.3  fusion_67                                                                                           
+      0.0           222497         13   17115.2   11809.0      7712     34144      10224.7  sm86_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage3_warpsize2x2…
+      0.0           219874        200    1099.4    1088.0      1055      1248         48.8  concatenate_1                                                                                       
+      0.0           205539        116    1771.9    1504.0      1216      6400        774.7  transpose                                                                                           
+      0.0           197856        130    1522.0    1216.0       864      6048        974.0  fusion_5                                                                                            
+      0.0           192643        200     963.2     960.0       927      1056         37.3  broadcast_1420                                                                                      
+      0.0           192641         61    3158.0    3488.0      1408      6816       1293.3  void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)2, (int)2, (bo…
+      0.0           188417        181    1041.0    1024.0       959      1280         55.2  multiply                                                                                            
+      0.0           178433        130    1372.6    1184.0       992      4192        598.4  fusion_2                                                                                            
+      0.0           161601        132    1224.3    1088.0       928      1984        280.8  void cudnn::cnn::kern_precompute_indices<(bool)0>(int *, int, int, int, int, int)                   
+      0.0           160902         26    6188.5    6368.0      2400     11840       3399.5  void flip_filter<float, float>(T2 *, const T1 *, int, int, int, int)                                
+      0.0           160194          3   53398.0   50912.0     50881     58401       4332.8  sm86_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize128x256x16_stage3_w…
+      0.0           139072         16    8692.0    9808.0      4768     10528       2309.2  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x32x16_s…
+      0.0           137378          3   45792.7   45665.0     45664     46049        222.0  void cutlass_cudnn::Kernel<cutlass_tensorop_s1688fprop_analytic_tf32_256x128_16x3_nhwc_align4>(T1::…
+      0.0           134562         82    1641.0    1536.0      1440      2496        230.5  transpose_2                                                                                         
+      0.0           132768          6   22128.0   22256.0     10624     33696      12348.4  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align1>(T1::Params)                
+      0.0           129663        121    1071.6    1056.0       992      1248         50.8  divide                                                                                              
+      0.0           128257         26    4933.0    4784.5      2400      8448       2041.3  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float2, float2, float2, float2, (…
+      0.0           127391        121    1052.8    1056.0      1024      1120         16.7  sqrt                                                                                                
+      0.0            91616         25    3664.6    3488.0      2848      6432        910.9  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_16x6_nn_align4>(T1::Params)                
+      0.0            84224         82    1027.1    1024.0       960      1120         34.7  rsqrt                                                                                               
+      0.0            69697         66    1056.0    1056.0      1024      1089         19.5  tanh                                                                                                
+      0.0            68448          6   11408.0   10560.0      4480     23616       7638.5  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::Win…
+      0.0            62877         45    1397.3    1344.0      1280      1920        123.3  void dot_kernel<float, (int)128, (int)0, cublasDotParams<cublasGemvTensorStridedBatched<const float…
+      0.0            62178         45    1381.7    1376.0      1248      1600         95.4  void reduce_1Block_kernel<float, (int)128, (int)7, cublasGemvTensorStridedBatched<float>, cublasGem…
+      0.0            60416         12    5034.7    4896.0      4736      5536        313.0  void fft1d_r2c_32<float, float, float2, (bool)1, (bool)0>(T3 *, const T1 *, int, int3, int3, int2, …
+      0.0            58912         26    2265.8    2272.0      2208      2336         31.4  void fft2d_c2r_16x16<float, (bool)0>(T1 *, float2 *, int, int, int, int, int, int, int, int, int, i…
+      0.0            51552          4   12888.0   12880.0     12800     12992         80.0  void geqr2_smem<float, float, (int)8, (int)5, (int)5>(int, int, T1 *, unsigned long, T1 *, int)     
+      0.0            50880          7    7268.6    5408.0      5088     10304       2595.4  sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize128x32x16_s…
+      0.0            47456          3   15818.7   15616.0     15584     16256        379.1  cudnn_ampere_scudnn_128x64_relu_xregs_large_nn_v1                                                   
+      0.0            43840          7    6262.9    6976.0      4672      8064       1417.7  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)               
+      0.0            42784         12    3565.3    3472.0      3392      3936        215.1  void fft1d_r2c_32<float, float, float2, (bool)0, (bool)0>(T3 *, const T1 *, int, int3, int3, int2, …
+      0.0            36607         33    1109.3    1120.0      1024      1440         80.7  select                                                                                              
+      0.0            34177         33    1035.7    1024.0       992      1057         17.7  compare                                                                                             
+      0.0            32288         12    2690.7    2384.5      1920      3840        691.7  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float2, float2, float2, float2, (…
+      0.0            31074         23    1351.0    1376.0      1280      1408         36.0  void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(…
+      0.0            24351          5    4870.2    4832.0      4800      5055        104.2  void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_16x10_nn_align4>(T1::Params)               
+      0.0            23870          6    3978.3    4048.0      3167      4767        769.5  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Winog…
+      0.0            21216         12    1768.0    1728.0      1696      1952        105.8  void fft1d_c2r_32<float2, float, float, (bool)0, (bool)1, (bool)0, (bool)0>(T3 *, const T1 *, int, …
+      0.0            19039          6    3173.2    3151.5      2816      3680        371.6  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::Win…
+      0.0            17599          8    2199.9    2208.0      2047      2560        170.1  void gemmSN_NN_kernel<float, (int)256, (int)4, (int)2, (int)8, (int)5, (int)4, (bool)0, cublasGemvT…
+      0.0            12351          8    1543.9    1488.0      1472      1792        119.3  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      0.0            11776          4    2944.0    2832.0      2816      3296        235.2  void larft_T_32<float, (int)256>(int, T1 *, int, const T1 *)                                        
+      0.0             8383          4    2095.8    1984.0      1951      2464        247.4  void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)10, (int)11, (bool)0, cublasGe…
+      0.0             7999          8     999.9     912.0       895      1632        255.9  copy_info_kernel(int, int *)                                                                        
+      0.0             5536          4    1384.0    1344.0      1248      1600        159.7  void larft_vtv_32<float, (int)128>(int, int, const T1 *, unsigned long, T1 *, unsigned long)        
+      0.0             4385          4    1096.3    1088.5      1024      1184         84.4  sign                                                                                                
+      0.0             4288          4    1072.0    1072.0      1056      1088         18.5  void lacpy_kernel<float, float, (int)5, (int)3>(int, int, const T1 *, unsigned long, T2 *, unsigned…
+      0.0             3936          4     984.0     992.0       960       992         16.0  void batch_eye_kernel<float, (int)5, (int)3>(int, int, T1 *, unsigned long, long long, int)         
+      0.0             3936          4     984.0     960.0       896      1120        108.9  void orgqr_step1_kernel<float, (int)5, (int)3>(int, int, int, T1 *, int)                            
+
+[6/7] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)            Operation           
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ------------------------------
+     45.8         11960647   9866    1212.3     384.0       319      8672       1387.3  [CUDA memset]                 
+     31.3          8177257   3381    2418.6    3872.0       351      5216       1902.6  [CUDA memcpy Host-to-Device]  
+     20.1          5239112   5746     911.8     896.0       832      7456        110.6  [CUDA memcpy Device-to-Host]  
+      2.8           732136    726    1008.5     992.0       928      2624        110.5  [CUDA memcpy Device-to-Device]
+
+[7/7] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)            Operation           
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------------------
+  18003.376   9866     1.825     0.000     0.000     8.389        3.455  [CUDA memset]                 
+     72.326   3381     0.021     0.040     0.000     0.040        0.020  [CUDA memcpy Host-to-Device]  
+     16.875    726     0.023     0.000     0.000     3.211        0.201  [CUDA memcpy Device-to-Device]
+      0.046   5746     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy Device-to-Host]  
+
+Generated:
+    /root/mlir/baseline/skipnet/report6.nsys-rep
+    /root/mlir/baseline/skipnet/report6.sqlite
